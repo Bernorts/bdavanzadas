@@ -54,8 +54,8 @@ create table PROY_PRODUCTO
 	FECHALANZAMIENTO DATE(7),
 	ESTADO VARCHAR2(512) default 'Nuevo'  not null,
 	DISPONIBLE NUMBER(2),
-	PRECIOVENTA NUMBER(5,2),
-	DESCUENTO NUMBER(5,2)
+	PRECIOVENTA NUMBER(6,2),
+	DESCUENTO NUMBER(6,2)
 )
 /
 
@@ -78,7 +78,7 @@ create table PROY_SUCURSAL
 /
 
 alter table PROY_EMPLEADO
-	add constraint IDSUCURSAL_FK
+	add constraint PROY_EMPLEADO_FK1
 		foreign key (IDSUCURSAL) references PROY_SUCURSAL
 			on delete cascade
 /
@@ -86,6 +86,7 @@ alter table PROY_EMPLEADO
 alter table PROY_PRODUCTO
 	add constraint IDSUCURSAL_SUC_FK
 		foreign key (IDSUCURSAL) references PROY_SUCURSAL
+			on delete cascade
 /
 
 create table PROY_TRANSACCION
@@ -127,7 +128,6 @@ create table PROY_VIDEOJUEGO
 	JUGADORES VARCHAR2(512)
 )
 
-
 CREATE OR REPLACE VIEW PROY_TODOS_EMPLEADOS AS  SELECT "IDEMPLEADO","IDSUCURSAL","NOMBRE","APELLIDOS","DIRECCION","TELEFONO","EMAIL","FECHAREGISTRO","PUESTO","SALARIO"
 FROM PROY_EMPLEADO
 UNION ALL
@@ -152,8 +152,40 @@ order by Nombre
 CREATE OR REPLACE VIEW PROY_VIDEO_COMPLETO AS  SELECT prod.IDPRODUCTO, prod.idSucursal, prod.nombre, prod.descripcion, prod.precioVenta, prod.descuento, prod.fechaLanzamiento, prod.estado, prod.disponible, video.rating, video.clasificacion, video.genero, video.desarrollador, video.jugadores, prodist.precioprov
 FROM PROY_VIDEOJUEGO video, PROY_PRODUCTO prod, PROY_PRODUCTO@dist prodist
 WHERE video.IDPRODUCTO = prod.IDPRODUCTO AND prod.IDPRODUCTO = prodist.IDPRODUCTO
-/
 
+
+CREATE PROCEDURE PROY_RegistrarPedidoVideojuego
+(
+  P_IDPROV IN NUMBER,
+  P_NOMBRE IN VARCHAR, 
+  P_DESCRIPCION IN VARCHAR, 
+  P_PRECIOPROV IN NUMBER,
+  P_PRECIOVENTA IN NUMBER, 
+  P_FECHALANZAMIENTO IN DATE, 
+  P_PAISORIGEN IN VARCHAR, 
+  P_MODOENVIO IN VARCHAR, 
+  P_CONSOLA IN VARCHAR, 
+  P_RATING IN NUMBER, 
+  P_CLASIFICACION IN VARCHAR, 
+  P_GENERO IN VARCHAR, 
+  P_DESARROLLADOR IN VARCHAR, 
+  P_JUGADORES IN VARCHAR
+) 
+AS 
+var_idpedido number := proy_pedido_seq.nextval@dist;
+var_idproducto number := proy_producto_seq.nextval@dist;
+var_idsucursal number := 2;
+BEGIN
+   INSERT INTO PROY_PEDIDO@dist VALUES (var_idpedido, P_IDPROV, SYSDATE, NULL, NULL, P_PAISORIGEN, P_MODOENVIO);
+   commit;
+   INSERT INTO PROY_PRODUCTO@dist VALUES (var_idproducto, var_idpedido, var_idsucursal, P_PRECIOPROV, P_NOMBRE, P_DESCRIPCION);
+   commit;
+   INSERT INTO PROY_PRODUCTO VALUES (var_idproducto, var_idsucursal, P_NOMBRE, P_DESCRIPCION, TO_DATE(P_FECHALANZAMIENTO, 'DD/MM/YY') , 'Nuevo', 0, P_PRECIOVENTA, 0);
+   commit;
+   INSERT INTO PROY_VIDEOJUEGO VALUES (var_idproducto, P_RATING, P_CLASIFICACION, P_GENERO, P_DESARROLLADOR, P_JUGADORES);
+   commit;
+END PROY_RegistrarPedidoVideojuego;
+/
 
 CREATE PROCEDURE PROY_TRANSFERIR_EMPLEADO_GALE
 (

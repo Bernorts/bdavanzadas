@@ -1,4 +1,3 @@
-
 create sequence PROY_PEDIDO_SEQ
 /
 
@@ -8,7 +7,6 @@ create sequence PROY_PRODUCTO_SEQ
 create sequence PROY_PROVEEDOR_SEQ
 /
 
-
 create table PROY_PRODUCTO
 (
 	IDPRODUCTO NUMBER not null
@@ -17,8 +15,8 @@ create table PROY_PRODUCTO
 	IDPEDIDO NUMBER,
 	IDSUCURSAL NUMBER,
 	PRECIOPROV NUMBER,
-	NOMBRE VARCHAR2(20),
-	DESCRIPCION VARCHAR2(20)
+	NOMBRE VARCHAR2(512),
+	DESCRIPCION VARCHAR2(1024)
 )
 /
 
@@ -67,6 +65,7 @@ END;
 alter table PROY_PRODUCTO
 	add constraint IDPEDIDO_FK
 		foreign key (IDPEDIDO) references PROY_PEDIDO
+			on delete cascade
 /
 
 create table PROY_PROVEEDOR
@@ -99,7 +98,7 @@ END;
 alter table PROY_PEDIDO
 	add constraint IDPROV_FK
 		foreign key (IDPROV) references PROY_PROVEEDOR
+			on delete cascade
 /
-
 
 
