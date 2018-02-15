@@ -1,31 +1,31 @@
-idSucursal,Nombre,Descripcion,FechaLanzamiento,Estado,Disponible,PrecioVenta,Descuento
-3,Call of Duty WWII,"Call of Duty regresa a sus raices con Call of Duty: WWII, una experiencia sobrecogedora que redefine la Segunda Guerra Mundial para una nueva generacion",01/06/17,Nuevo,1,1000,0
-3,Call of Duty WWII,"Call of Duty regresa a sus raices con Call of Duty: WWII, una experiencia sobrecogedora que redefine la Segunda Guerra Mundial para una nueva generacion",01/06/17,Nuevo,1,1000,0
-3,Call of Duty WWII,"Call of Duty regresa a sus raices con Call of Duty: WWII, una experiencia sobrecogedora que redefine la Segunda Guerra Mundial para una nueva generacion",01/06/17,Nuevo,1,1000,0
-3,Call of Duty WWII,"Call of Duty regresa a sus raices con Call of Duty: WWII, una experiencia sobrecogedora que redefine la Segunda Guerra Mundial para una nueva generacion",01/06/17,Nuevo,1,1000,0
-3,Call of Duty WWII,"Call of Duty regresa a sus raices con Call of Duty: WWII, una experiencia sobrecogedora que redefine la Segunda Guerra Mundial para una nueva generacion",01/06/17,Nuevo,1,1000,0
-3,Star Wars Batllefront II,Conviértete en el héroe de una galaxia en guerra con Star Wars Battlefront II.,01/11/17,Nuevo,1,1200,0
-3,Star Wars Batllefront II,Conviértete en el héroe de una galaxia en guerra con Star Wars Battlefront II.,01/11/17,Nuevo,1,1200,0
-3,Star Wars Batllefront II,Conviértete en el héroe de una galaxia en guerra con Star Wars Battlefront II.,01/11/17,Nuevo,1,1200,0
-3,Star Wars Batllefront II,Conviértete en el héroe de una galaxia en guerra con Star Wars Battlefront II.,01/11/17,Nuevo,1,1200,0
-3,Star Wars Batllefront II,Conviértete en el héroe de una galaxia en guerra con Star Wars Battlefront II.,01/11/17,Nuevo,1,1200,0
-3,Mario Kart 8,Vuelven las carreras más locas de las consolas de Nintendo.,01/09/17,Nuevo,1,900,0
-3,Mario Kart 8,Vuelven las carreras más locas de las consolas de Nintendo.,01/09/17,Nuevo,1,900,0
-3,Mario Kart 8,Vuelven las carreras más locas de las consolas de Nintendo.,01/09/17,Nuevo,1,900,0
-3,Mario Kart 8,Vuelven las carreras más locas de las consolas de Nintendo.,01/09/17,Nuevo,1,900,0
-3,Mario Kart 8,Vuelven las carreras más locas de las consolas de Nintendo.,01/09/17,Nuevo,1,900,0
-3,Xbox One S,Empieza a disfrutar de la mejor oferta en videojuegos y entretenimiento 4K con la consola Xbox One  REACONDICIONADA. ,01/01/16,Nuevo,1,6000,0
-3,Xbox One S,Empieza a disfrutar de la mejor oferta en videojuegos y entretenimiento 4K con la consola Xbox One  REACONDICIONADA. ,01/01/16,Nuevo,1,6000,0
-3,Xbox One S,Empieza a disfrutar de la mejor oferta en videojuegos y entretenimiento 4K con la consola Xbox One  REACONDICIONADA. ,01/01/16,Nuevo,1,6000,0
-3,Xbox One S,Empieza a disfrutar de la mejor oferta en videojuegos y entretenimiento 4K con la consola Xbox One  REACONDICIONADA. ,01/01/16,Nuevo,1,6000,0
-3,Xbox One S,Empieza a disfrutar de la mejor oferta en videojuegos y entretenimiento 4K con la consola Xbox One  REACONDICIONADA. ,01/01/16,Nuevo,1,6000,0
-3,Playstation 4,Este bundle es ideal para los fans de PlayStation que están adquiriendo su consola de PS4,01/04/16,Nuevo,1,7000,0
-3,Playstation 4,Este bundle es ideal para los fans de PlayStation que están adquiriendo su consola de PS4,01/04/16,Nuevo,1,7000,0
-3,Playstation 4,Este bundle es ideal para los fans de PlayStation que están adquiriendo su consola de PS4,01/04/16,Nuevo,1,7000,0
-3,Playstation 4,Este bundle es ideal para los fans de PlayStation que están adquiriendo su consola de PS4,01/04/16,Nuevo,1,7000,0
-3,Playstation 4,Este bundle es ideal para los fans de PlayStation que están adquiriendo su consola de PS4,01/04/16,Nuevo,1,7000,0
-3,Wii U Negro Deluxe,"Con Wii U, experimentaras una nueva forma de vivir la experiencia de juego – envolvente. ",01/02/17,Nuevo,1,5000,0.2
-3,Wii U Negro Deluxe,"Con Wii U, experimentaras una nueva forma de vivir la experiencia de juego – envolvente. ",01/02/17,Nuevo,1,5000,0.2
-3,Wii U Negro Deluxe,"Con Wii U, experimentaras una nueva forma de vivir la experiencia de juego – envolvente. ",01/02/17,Nuevo,1,5000,0.2
-3,Wii U Negro Deluxe,"Con Wii U, experimentaras una nueva forma de vivir la experiencia de juego – envolvente. ",01/02/17,Nuevo,1,5000,0.2
-3,Wii U Negro Deluxe,"Con Wii U, experimentaras una nueva forma de vivir la experiencia de juego – envolvente. ",01/02/17,Nuevo,1,5000,0.2
+idproducto,idSucursal,Nombre,Descripcion,FechaLanzamiento,Estado,Disponible,PrecioVenta,Descuento
+61,3,Call of Duty WWII,"Call of Duty regresa a sus raices con Call of Duty: WWII, una experiencia sobrecogedora que redefine la Segunda Guerra Mundial para una nueva generacion",01/06/17,Nuevo,1,1000,0
+62,3,Call of Duty WWII,"Call of Duty regresa a sus raices con Call of Duty: WWII, una experiencia sobrecogedora que redefine la Segunda Guerra Mundial para una nueva generacion",01/06/17,Nuevo,1,1000,0
+63,3,Call of Duty WWII,"Call of Duty regresa a sus raices con Call of Duty: WWII, una experiencia sobrecogedora que redefine la Segunda Guerra Mundial para una nueva generacion",01/06/17,Nuevo,1,1000,0
+64,3,Call of Duty WWII,"Call of Duty regresa a sus raices con Call of Duty: WWII, una experiencia sobrecogedora que redefine la Segunda Guerra Mundial para una nueva generacion",01/06/17,Nuevo,1,1000,0
+65,3,Call of Duty WWII,"Call of Duty regresa a sus raices con Call of Duty: WWII, una experiencia sobrecogedora que redefine la Segunda Guerra Mundial para una nueva generacion",01/06/17,Nuevo,1,1000,0
+66,3,Star Wars Batllefront II,Conviértete en el héroe de una galaxia en guerra con Star Wars Battlefront II.,01/11/17,Nuevo,1,1200,0
+67,3,Star Wars Batllefront II,Conviértete en el héroe de una galaxia en guerra con Star Wars Battlefront II.,01/11/17,Nuevo,1,1200,0
+68,3,Star Wars Batllefront II,Conviértete en el héroe de una galaxia en guerra con Star Wars Battlefront II.,01/11/17,Nuevo,1,1200,0
+69,3,Star Wars Batllefront II,Conviértete en el héroe de una galaxia en guerra con Star Wars Battlefront II.,01/11/17,Nuevo,1,1200,0
+70,3,Star Wars Batllefront II,Conviértete en el héroe de una galaxia en guerra con Star Wars Battlefront II.,01/11/17,Nuevo,1,1200,0
+71,3,Mario Kart 8,Vuelven las carreras más locas de las consolas de Nintendo.,01/09/17,Nuevo,1,900,0
+72,3,Mario Kart 8,Vuelven las carreras más locas de las consolas de Nintendo.,01/09/17,Nuevo,1,900,0
+73,3,Mario Kart 8,Vuelven las carreras más locas de las consolas de Nintendo.,01/09/17,Nuevo,1,900,0
+74,3,Mario Kart 8,Vuelven las carreras más locas de las consolas de Nintendo.,01/09/17,Nuevo,1,900,0
+75,3,Mario Kart 8,Vuelven las carreras más locas de las consolas de Nintendo.,01/09/17,Nuevo,1,900,0
+76,3,Xbox One S,Empieza a disfrutar de la mejor oferta en videojuegos y entretenimiento 4K con la consola Xbox One  REACONDICIONADA. ,01/01/16,Nuevo,1,6000,0
+77,3,Xbox One S,Empieza a disfrutar de la mejor oferta en videojuegos y entretenimiento 4K con la consola Xbox One  REACONDICIONADA. ,01/01/16,Nuevo,1,6000,0
+78,3,Xbox One S,Empieza a disfrutar de la mejor oferta en videojuegos y entretenimiento 4K con la consola Xbox One  REACONDICIONADA. ,01/01/16,Nuevo,1,6000,0
+79,3,Xbox One S,Empieza a disfrutar de la mejor oferta en videojuegos y entretenimiento 4K con la consola Xbox One  REACONDICIONADA. ,01/01/16,Nuevo,1,6000,0
+80,3,Xbox One S,Empieza a disfrutar de la mejor oferta en videojuegos y entretenimiento 4K con la consola Xbox One  REACONDICIONADA. ,01/01/16,Nuevo,1,6000,0
+81,3,Playstation 4,Este bundle es ideal para los fans de PlayStation que están adquiriendo su consola de PS4,01/04/16,Nuevo,1,7000,0
+82,3,Playstation 4,Este bundle es ideal para los fans de PlayStation que están adquiriendo su consola de PS4,01/04/16,Nuevo,1,7000,0
+83,3,Playstation 4,Este bundle es ideal para los fans de PlayStation que están adquiriendo su consola de PS4,01/04/16,Nuevo,1,7000,0
+84,3,Playstation 4,Este bundle es ideal para los fans de PlayStation que están adquiriendo su consola de PS4,01/04/16,Nuevo,1,7000,0
+85,3,Playstation 4,Este bundle es ideal para los fans de PlayStation que están adquiriendo su consola de PS4,01/04/16,Nuevo,1,7000,0
+86,3,Wii U Negro Deluxe,"Con Wii U, experimentaras una nueva forma de vivir la experiencia de juego – envolvente. ",01/02/17,Nuevo,1,5000,0.2
+87,3,Wii U Negro Deluxe,"Con Wii U, experimentaras una nueva forma de vivir la experiencia de juego – envolvente. ",01/02/17,Nuevo,1,5000,0.2
+88,3,Wii U Negro Deluxe,"Con Wii U, experimentaras una nueva forma de vivir la experiencia de juego – envolvente. ",01/02/17,Nuevo,1,5000,0.2
+89,3,Wii U Negro Deluxe,"Con Wii U, experimentaras una nueva forma de vivir la experiencia de juego – envolvente. ",01/02/17,Nuevo,1,5000,0.2
+90,3,Wii U Negro Deluxe,"Con Wii U, experimentaras una nueva forma de vivir la experiencia de juego – envolvente. ",01/02/17,Nuevo,1,5000,0.2
