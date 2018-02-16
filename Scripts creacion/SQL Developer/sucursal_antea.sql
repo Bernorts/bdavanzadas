@@ -1,5 +1,5 @@
 --------------------------------------------------------
--- Archivo creado  - jueves-febrero-15-2018   
+-- Archivo creado  - viernes-febrero-16-2018   
 --------------------------------------------------------
 --------------------------------------------------------
 --  DDL for DB Link BETA.QRO.ITESM.MX
@@ -192,6 +192,112 @@
   BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
   TABLESPACE "USERS" ;
 --------------------------------------------------------
+--  DDL for View PROY_CONSOLAMASVENDIDA
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "A1209023"."PROY_CONSOLAMASVENDIDA" ("NOMBRE") AS 
+  SELECT nombre
+FROM (SELECT nombre, sum(contadorSucursal) as contadorGlobal
+FROM ((SELECT nombre, count(*) as contadorSucursal
+FROM proy_producto, proy_consola, proy_transaccion
+Where  proy_producto.idproducto = proy_consola.idproducto and proy_producto.idproducto = proy_transaccion.idproducto
+group by proy_producto.nombre)
+
+UNION
+
+(SELECT nombre, count(*) as contadorSucursal
+FROM proy_producto@bule, proy_consola@bule, proy_transaccion@bule
+Where  proy_producto.idproducto = proy_consola.idproducto and proy_producto.idproducto = proy_transaccion.idproducto
+group by proy_producto.nombre)
+
+UNION
+
+(SELECT nombre, count(*) as contadorSucursal
+FROM proy_producto@gale, proy_consola@gale, proy_transaccion@gale
+Where  proy_producto.idproducto = proy_consola.idproducto and proy_producto.idproducto = proy_transaccion.idproducto
+group by proy_producto.nombre))
+group by nombre 
+order by contadorGlobal desc)
+WHERE rownum = 1
+;
+--------------------------------------------------------
+--  DDL for View PROY_CONSOLAS_GLOBALES_TOTALES
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "A1209023"."PROY_CONSOLAS_GLOBALES_TOTALES" ("IDSUCURSAL", "CIUDAD", "NOMBRE", "IDPRODUCTO", "Producto", "ALMACENAMIENTO") AS 
+  (SELECT su.idSucursal ,su.ciudad,su.nombre ,pro.idProducto ,pro.nombre as "Producto"  ,co.almacenamiento
+FROM proy_sucursal su, proy_producto pro, proy_consola co
+WHERE pro.idProducto=co.idProducto
+and su.idSucursal=pro.idsucursal)
+UNION
+(SELECT su.idSucursal ,su.ciudad,su.nombre ,pro.idProducto ,pro.nombre as "Producto",co.almacenamiento
+FROM proy_sucursal@bule su, proy_producto@bule pro, proy_consola@bule co
+WHERE pro.idProducto=co.idProducto
+and su.idSucursal=pro.idsucursal)
+UNION
+(SELECT su.idSucursal ,su.ciudad,su.nombre ,pro.idProducto ,pro.nombre as "Producto" ,co.almacenamiento
+FROM proy_sucursal@gale su, proy_producto@gale pro, proy_consola@gale co
+WHERE pro.idProducto=co.idProducto
+and su.idSucursal=pro.idsucursal)
+;
+--------------------------------------------------------
+--  DDL for View PROY_EMPLEADOS_GLOBALES
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "A1209023"."PROY_EMPLEADOS_GLOBALES" ("IDEMPLEADO", "Sucursal", "NOMBRE", "APELLIDOS", "PUESTO", "SALARIO") AS 
+  SELECT em.idEmpleado,su.nombre as "Sucursal",em.nombre,em.apellidos,em.puesto,em.salario
+FROM proy_empleado em,proy_sucursal su
+WHERE su.idSucursal=em.idSucursal
+union
+SELECT em.idEmpleado,su.nombre as "Sucursal",em.nombre,em.apellidos,em.puesto,em.salario
+FROM proy_empleado@bule em,proy_sucursal@bule su
+WHERE su.idSucursal=em.idSucursal
+union
+SELECT em.idEmpleado,su.nombre as "Sucursal",em.nombre,em.apellidos,em.puesto,em.salario
+FROM proy_empleado@gale em,proy_sucursal@gale su
+WHERE su.idSucursal=em.idSucursal
+;
+--------------------------------------------------------
+--  DDL for View PROY_EMPLEADOVENDEMAS
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "A1209023"."PROY_EMPLEADOVENDEMAS" ("NOMBRE") AS 
+  SELECT nombre
+FROM (SELECT nombre, sum(contadorEmpleado) as contadorGlobal
+FROM((SELECT nombre, count(*) as contadorEmpleado
+FROM proy_empleado, proy_transaccion
+WHERE proy_empleado.idempleado = proy_transaccion.idempleado
+group by nombre)
+
+UNION
+
+(SELECT nombre, count(*) as contadorEmpleado
+FROM proy_empleado@bule, proy_transaccion@bule
+WHERE proy_empleado.idempleado = proy_transaccion.idempleado
+group by nombre)
+
+UNION
+
+(SELECT nombre, count(*) as contadorEmpleado
+FROM proy_empleado@gale, proy_transaccion@gale
+WHERE proy_empleado.idempleado = proy_transaccion.idempleado
+group by nombre))
+group by nombre 
+order by contadorGlobal desc)
+WHERE rownum = 1
+;
+--------------------------------------------------------
+--  DDL for View PROY_PRODUCTOS_BOLEVARES_DIST
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "A1209023"."PROY_PRODUCTOS_BOLEVARES_DIST" ("IDSUCURSAL", "CIUDAD", "Sucursal", "IDPRODUCTO", "Producto", "PRECIOVENTA", "Distribuidor") AS 
+  SELECT su.idSucursal ,su.ciudad,su.nombre as "Sucursal", pro.idProducto , pro.nombre as "Producto",pro.precioVenta, prov.nombre as "Distribuidor"
+FROM proy_sucursal su, proy_producto pro, proy_pedido@dist pe, proy_proveedor@dist prov
+WHERE su.idSucursal=pro.idSucursal
+and prov.idProv=pe.idProv
+and pro.idsucursal=pe.idPedido
+;
+--------------------------------------------------------
 --  DDL for View PROY_PRODUCTOS_DISPONIBLES
 --------------------------------------------------------
 
@@ -246,10 +352,39 @@ order by Nombre
 --  DDL for View PROY_VIDEO_COMPLETO
 --------------------------------------------------------
 
-  CREATE OR REPLACE FORCE VIEW "A1209023"."PROY_VIDEO_COMPLETO" ("IDPRODUCTO", "IDSUCURSAL", "NOMBRE", "DESCRIPCION", "PRECIOVENTA", "DESCUENTO", "FECHALANZAMIENTO", "ESTADO", "DISPONIBLE", "RATING", "CLASIFICACION", "GENERO", "DESARROLLADOR", "JUGADORES", "PRECIOPROV") AS 
-  SELECT prod.IDPRODUCTO, prod.idSucursal, prod.nombre, prod.descripcion, prod.precioVenta, prod.descuento, prod.fechaLanzamiento, prod.estado, prod.disponible, video.rating, video.clasificacion, video.genero, video.desarrollador, video.jugadores, prodist.precioprov
+  CREATE OR REPLACE FORCE VIEW "A1209023"."PROY_VIDEO_COMPLETO" ("IDPRODUCTO", "IDSUCURSAL", "IDPEDIDO", "NOMBRE", "DESCRIPCION", "PRECIOVENTA", "DESCUENTO", "FECHALANZAMIENTO", "ESTADO", "DISPONIBLE", "RATING", "CLASIFICACION", "GENERO", "DESARROLLADOR", "JUGADORES", "PRECIOPROV") AS 
+  SELECT prod.IDPRODUCTO, prod.idSucursal, prodist.idpedido, prod.nombre, prod.descripcion, prod.precioVenta, prod.descuento, prod.fechaLanzamiento, prod.estado, prod.disponible, video.rating, video.clasificacion, video.genero, video.desarrollador, video.jugadores, prodist.precioprov
 FROM PROY_VIDEOJUEGO video, PROY_PRODUCTO prod, PROY_PRODUCTO@dist prodist
 WHERE video.IDPRODUCTO = prod.IDPRODUCTO AND prod.IDPRODUCTO = prodist.IDPRODUCTO
+;
+--------------------------------------------------------
+--  DDL for View PROY_VIDEOJUEGOMASVENDIDO
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "A1209023"."PROY_VIDEOJUEGOMASVENDIDO" ("NOMBRE") AS 
+  SELECT nombre
+FROM (SELECT nombre, sum(contadorSucursal) as contadorGlobal
+FROM ((SELECT nombre, count(*) as contadorSucursal
+FROM proy_producto, proy_videojuego, proy_transaccion
+Where  proy_producto.idproducto = proy_videojuego.idproducto and proy_producto.idproducto = proy_transaccion.idproducto
+group by proy_producto.nombre)
+
+UNION
+
+(SELECT nombre, count(*) as contadorSucursal
+FROM proy_producto@bule, proy_videojuego@bule, proy_transaccion@bule
+Where  proy_producto.idproducto = proy_videojuego.idproducto and proy_producto.idproducto = proy_transaccion.idproducto
+group by proy_producto.nombre)
+
+UNION
+
+(SELECT nombre, count(*) as contadorSucursal
+FROM proy_producto@gale, proy_videojuego@gale, proy_transaccion@gale
+Where  proy_producto.idproducto = proy_videojuego.idproducto and proy_producto.idproducto = proy_transaccion.idproducto
+group by proy_producto.nombre))
+group by nombre 
+order by contadorGlobal desc)
+WHERE rownum = 1
 ;
 REM INSERTING into A1209023.PROY_CLIENTE
 SET DEFINE OFF;
@@ -298,6 +433,7 @@ Insert into A1209023.PROY_EMPLEADO (IDEMPLEADO,IDSUCURSAL,NOMBRE,APELLIDOS,DIREC
 Insert into A1209023.PROY_EMPLEADO (IDEMPLEADO,IDSUCURSAL,NOMBRE,APELLIDOS,DIRECCION,TELEFONO,EMAIL,FECHAREGISTRO,PUESTO,SALARIO) values (12,2,'Lolita','Youngman','24 Merchant Point','538-327-9379','lyoungmanb@mlb.com',to_date('02/03/08','DD/MM/RR'),'Services',74.81);
 Insert into A1209023.PROY_EMPLEADO (IDEMPLEADO,IDSUCURSAL,NOMBRE,APELLIDOS,DIRECCION,TELEFONO,EMAIL,FECHAREGISTRO,PUESTO,SALARIO) values (13,2,'Caria','Heino','6 Donald Plaza','503-543-2143','cheinoc@newyorker.com',to_date('02/03/01','DD/MM/RR'),'Sales',61.92);
 Insert into A1209023.PROY_EMPLEADO (IDEMPLEADO,IDSUCURSAL,NOMBRE,APELLIDOS,DIRECCION,TELEFONO,EMAIL,FECHAREGISTRO,PUESTO,SALARIO) values (14,2,'Hardy','Ornelas','3 Loomis Trail','105-463-8108','hornelasd@vk.com',to_date('01/12/92','DD/MM/RR'),'Legal',84.23);
+Insert into A1209023.PROY_EMPLEADO (IDEMPLEADO,IDSUCURSAL,NOMBRE,APELLIDOS,DIRECCION,TELEFONO,EMAIL,FECHAREGISTRO,PUESTO,SALARIO) values (8,2,'Melvin','O''Callaghan','43512 Grover Drive','621-487-9308','mocallaghan7@java.com',to_date('01/12/18','DD/MM/RR'),'Human Resources',70.11);
 REM INSERTING into A1209023.PROY_PRODUCTO
 SET DEFINE OFF;
 Insert into A1209023.PROY_PRODUCTO (IDPRODUCTO,IDSUCURSAL,NOMBRE,DESCRIPCION,FECHALANZAMIENTO,ESTADO,DISPONIBLE,PRECIOVENTA,DESCUENTO) values (96,2,'Overwatch','Nuevo juego de Blizzard',to_date('01/06/17','DD/MM/RR'),'Nuevo',0,1200,0);
@@ -356,6 +492,115 @@ Insert into A1209023.PROY_VIDEOJUEGO (IDPRODUCTO,RATING,CLASIFICACION,GENERO,DES
 Insert into A1209023.PROY_VIDEOJUEGO (IDPRODUCTO,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES) values (43,3,'E','Carreras','Nintendo','1 a 6');
 Insert into A1209023.PROY_VIDEOJUEGO (IDPRODUCTO,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES) values (44,3,'E','Carreras','Nintendo','1 a 6');
 Insert into A1209023.PROY_VIDEOJUEGO (IDPRODUCTO,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES) values (45,3,'E','Carreras','Nintendo','1 a 6');
+REM INSERTING into A1209023.PROY_CONSOLAMASVENDIDA
+SET DEFINE OFF;
+Insert into A1209023.PROY_CONSOLAMASVENDIDA (NOMBRE) values ('Xbox One S');
+REM INSERTING into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES
+SET DEFINE OFF;
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (1,'Queretaro','Boulevares',16,'Xbox One S','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (1,'Queretaro','Boulevares',17,'Xbox One S','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (1,'Queretaro','Boulevares',18,'Xbox One S','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (1,'Queretaro','Boulevares',19,'Xbox One S','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (1,'Queretaro','Boulevares',20,'Xbox One S','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (1,'Queretaro','Boulevares',21,'Playstation 4','1TB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (1,'Queretaro','Boulevares',22,'Playstation 4','1TB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (1,'Queretaro','Boulevares',23,'Playstation 4','1TB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (1,'Queretaro','Boulevares',24,'Playstation 4','1TB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (1,'Queretaro','Boulevares',25,'Playstation 4','1TB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (1,'Queretaro','Boulevares',26,'Wii U Negro Deluxe','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (1,'Queretaro','Boulevares',27,'Wii U Negro Deluxe','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (1,'Queretaro','Boulevares',28,'Wii U Negro Deluxe','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (1,'Queretaro','Boulevares',29,'Wii U Negro Deluxe','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (1,'Queretaro','Boulevares',30,'Wii U Negro Deluxe','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (2,'Queretaro','Antea',46,'Xbox One S','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (2,'Queretaro','Antea',47,'Xbox One S','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (2,'Queretaro','Antea',48,'Xbox One S','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (2,'Queretaro','Antea',49,'Xbox One S','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (2,'Queretaro','Antea',50,'Xbox One S','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (2,'Queretaro','Antea',51,'Playstation 4','1TB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (2,'Queretaro','Antea',52,'Playstation 4','1TB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (2,'Queretaro','Antea',53,'Playstation 4','1TB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (2,'Queretaro','Antea',54,'Playstation 4','1TB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (2,'Queretaro','Antea',55,'Playstation 4','1TB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (2,'Queretaro','Antea',56,'Wii U Negro Deluxe','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (2,'Queretaro','Antea',57,'Wii U Negro Deluxe','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (2,'Queretaro','Antea',58,'Wii U Negro Deluxe','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (2,'Queretaro','Antea',59,'Wii U Negro Deluxe','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (2,'Queretaro','Antea',60,'Wii U Negro Deluxe','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (3,'Queretaro','Galerias',76,'Xbox One S','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (3,'Queretaro','Galerias',77,'Xbox One S','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (3,'Queretaro','Galerias',78,'Xbox One S','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (3,'Queretaro','Galerias',79,'Xbox One S','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (3,'Queretaro','Galerias',80,'Xbox One S','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (3,'Queretaro','Galerias',81,'Playstation 4','1TB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (3,'Queretaro','Galerias',82,'Playstation 4','1TB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (3,'Queretaro','Galerias',83,'Playstation 4','1TB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (3,'Queretaro','Galerias',84,'Playstation 4','1TB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (3,'Queretaro','Galerias',85,'Playstation 4','1TB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (3,'Queretaro','Galerias',86,'Wii U Negro Deluxe','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (3,'Queretaro','Galerias',87,'Wii U Negro Deluxe','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (3,'Queretaro','Galerias',88,'Wii U Negro Deluxe','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (3,'Queretaro','Galerias',89,'Wii U Negro Deluxe','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (3,'Queretaro','Galerias',90,'Wii U Negro Deluxe','500GB');
+Insert into A1209023.PROY_CONSOLAS_GLOBALES_TOTALES (IDSUCURSAL,CIUDAD,NOMBRE,IDPRODUCTO,"Producto",ALMACENAMIENTO) values (3,'Queretaro','Galerias',97,'PSP','10gb');
+REM INSERTING into A1209023.PROY_EMPLEADOS_GLOBALES
+SET DEFINE OFF;
+Insert into A1209023.PROY_EMPLEADOS_GLOBALES (IDEMPLEADO,"Sucursal",NOMBRE,APELLIDOS,PUESTO,SALARIO) values (1,'Galerias','Cordelia','Houlworth','Human Resources',16.04);
+Insert into A1209023.PROY_EMPLEADOS_GLOBALES (IDEMPLEADO,"Sucursal",NOMBRE,APELLIDOS,PUESTO,SALARIO) values (2,'Galerias','Carin','Fellis','Services',84.62);
+Insert into A1209023.PROY_EMPLEADOS_GLOBALES (IDEMPLEADO,"Sucursal",NOMBRE,APELLIDOS,PUESTO,SALARIO) values (3,'Galerias','Marcus','Vink','Services',55.64);
+Insert into A1209023.PROY_EMPLEADOS_GLOBALES (IDEMPLEADO,"Sucursal",NOMBRE,APELLIDOS,PUESTO,SALARIO) values (4,'Galerias','Meggie','McVitty','Training',68.4);
+Insert into A1209023.PROY_EMPLEADOS_GLOBALES (IDEMPLEADO,"Sucursal",NOMBRE,APELLIDOS,PUESTO,SALARIO) values (5,'Galerias','Jenny','Bardnam','Support',44.97);
+Insert into A1209023.PROY_EMPLEADOS_GLOBALES (IDEMPLEADO,"Sucursal",NOMBRE,APELLIDOS,PUESTO,SALARIO) values (6,'Galerias','Annmaria','Mulheron','Training',95.11);
+Insert into A1209023.PROY_EMPLEADOS_GLOBALES (IDEMPLEADO,"Sucursal",NOMBRE,APELLIDOS,PUESTO,SALARIO) values (8,'Antea','Melvin','O''Callaghan','Human Resources',70.11);
+Insert into A1209023.PROY_EMPLEADOS_GLOBALES (IDEMPLEADO,"Sucursal",NOMBRE,APELLIDOS,PUESTO,SALARIO) values (9,'Antea','Addie','Coxon','Accounting',69.97);
+Insert into A1209023.PROY_EMPLEADOS_GLOBALES (IDEMPLEADO,"Sucursal",NOMBRE,APELLIDOS,PUESTO,SALARIO) values (10,'Antea','Tabor','Marshal','Accounting',20.55);
+Insert into A1209023.PROY_EMPLEADOS_GLOBALES (IDEMPLEADO,"Sucursal",NOMBRE,APELLIDOS,PUESTO,SALARIO) values (11,'Antea','Lorianna','Kneesha','Support',70.13);
+Insert into A1209023.PROY_EMPLEADOS_GLOBALES (IDEMPLEADO,"Sucursal",NOMBRE,APELLIDOS,PUESTO,SALARIO) values (12,'Antea','Lolita','Youngman','Services',74.81);
+Insert into A1209023.PROY_EMPLEADOS_GLOBALES (IDEMPLEADO,"Sucursal",NOMBRE,APELLIDOS,PUESTO,SALARIO) values (13,'Antea','Caria','Heino','Sales',61.92);
+Insert into A1209023.PROY_EMPLEADOS_GLOBALES (IDEMPLEADO,"Sucursal",NOMBRE,APELLIDOS,PUESTO,SALARIO) values (14,'Antea','Hardy','Ornelas','Legal',84.23);
+Insert into A1209023.PROY_EMPLEADOS_GLOBALES (IDEMPLEADO,"Sucursal",NOMBRE,APELLIDOS,PUESTO,SALARIO) values (21,'Boulevares','Alastair','Eminson','Engineering',44.97);
+Insert into A1209023.PROY_EMPLEADOS_GLOBALES (IDEMPLEADO,"Sucursal",NOMBRE,APELLIDOS,PUESTO,SALARIO) values (22,'Boulevares','Ev','Devenport','Services',87.81);
+Insert into A1209023.PROY_EMPLEADOS_GLOBALES (IDEMPLEADO,"Sucursal",NOMBRE,APELLIDOS,PUESTO,SALARIO) values (23,'Boulevares','Olympie','Sunter','Legal',18.78);
+Insert into A1209023.PROY_EMPLEADOS_GLOBALES (IDEMPLEADO,"Sucursal",NOMBRE,APELLIDOS,PUESTO,SALARIO) values (24,'Boulevares','Keriann','Corder','Marketing',80.41);
+Insert into A1209023.PROY_EMPLEADOS_GLOBALES (IDEMPLEADO,"Sucursal",NOMBRE,APELLIDOS,PUESTO,SALARIO) values (25,'Boulevares','Livvy','Plane','Support',58.34);
+Insert into A1209023.PROY_EMPLEADOS_GLOBALES (IDEMPLEADO,"Sucursal",NOMBRE,APELLIDOS,PUESTO,SALARIO) values (26,'Boulevares','Delila','Dalziell','Business Development',84.39);
+Insert into A1209023.PROY_EMPLEADOS_GLOBALES (IDEMPLEADO,"Sucursal",NOMBRE,APELLIDOS,PUESTO,SALARIO) values (27,'Boulevares','Michal','Tidmas','Human Resources',60.05);
+REM INSERTING into A1209023.PROY_EMPLEADOVENDEMAS
+SET DEFINE OFF;
+Insert into A1209023.PROY_EMPLEADOVENDEMAS (NOMBRE) values ('Marcus');
+REM INSERTING into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST
+SET DEFINE OFF;
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',96,'Overwatch',1200,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',60,'Wii U Negro Deluxe',5000,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',32,'Call of Duty WWII',1000,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',33,'Call of Duty WWII',1000,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',34,'Call of Duty WWII',1000,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',35,'Call of Duty WWII',1000,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',36,'Star Wars Batllefront II',1200,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',37,'Star Wars Batllefront II',1200,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',38,'Star Wars Batllefront II',1200,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',39,'Star Wars Batllefront II',1200,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',40,'Star Wars Batllefront II',1200,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',41,'Mario Kart 8',900,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',42,'Mario Kart 8',900,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',43,'Mario Kart 8',900,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',44,'Mario Kart 8',900,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',45,'Mario Kart 8',900,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',46,'Xbox One S',6000,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',47,'Xbox One S',6000,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',48,'Xbox One S',6000,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',49,'Xbox One S',6000,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',50,'Xbox One S',6000,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',51,'Playstation 4',7000,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',52,'Playstation 4',7000,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',53,'Playstation 4',7000,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',54,'Playstation 4',7000,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',55,'Playstation 4',7000,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',56,'Wii U Negro Deluxe',5000,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',57,'Wii U Negro Deluxe',5000,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',58,'Wii U Negro Deluxe',5000,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',59,'Wii U Negro Deluxe',5000,'Youspan');
+Insert into A1209023.PROY_PRODUCTOS_BOLEVARES_DIST (IDSUCURSAL,CIUDAD,"Sucursal",IDPRODUCTO,"Producto",PRECIOVENTA,"Distribuidor") values (2,'Queretaro','Antea',31,'Call of Duty WWII',1000,'Youspan');
 REM INSERTING into A1209023.PROY_PRODUCTOS_DISPONIBLES
 SET DEFINE OFF;
 Insert into A1209023.PROY_PRODUCTOS_DISPONIBLES (IDPRODUCTO,IDSUCURSAL,NOMBRE,PRECIOVENTA) values (31,2,'Call of Duty WWII',1000);
@@ -441,13 +686,13 @@ Insert into A1209023.PROY_TODOS_EMPLEADOS (IDEMPLEADO,IDSUCURSAL,NOMBRE,APELLIDO
 Insert into A1209023.PROY_TODOS_EMPLEADOS (IDEMPLEADO,IDSUCURSAL,NOMBRE,APELLIDOS,DIRECCION,TELEFONO,EMAIL,FECHAREGISTRO,PUESTO,SALARIO) values (12,2,'Lolita','Youngman','24 Merchant Point','538-327-9379','lyoungmanb@mlb.com',to_date('02/03/08','DD/MM/RR'),'Services',74.81);
 Insert into A1209023.PROY_TODOS_EMPLEADOS (IDEMPLEADO,IDSUCURSAL,NOMBRE,APELLIDOS,DIRECCION,TELEFONO,EMAIL,FECHAREGISTRO,PUESTO,SALARIO) values (13,2,'Caria','Heino','6 Donald Plaza','503-543-2143','cheinoc@newyorker.com',to_date('02/03/01','DD/MM/RR'),'Sales',61.92);
 Insert into A1209023.PROY_TODOS_EMPLEADOS (IDEMPLEADO,IDSUCURSAL,NOMBRE,APELLIDOS,DIRECCION,TELEFONO,EMAIL,FECHAREGISTRO,PUESTO,SALARIO) values (14,2,'Hardy','Ornelas','3 Loomis Trail','105-463-8108','hornelasd@vk.com',to_date('01/12/92','DD/MM/RR'),'Legal',84.23);
+Insert into A1209023.PROY_TODOS_EMPLEADOS (IDEMPLEADO,IDSUCURSAL,NOMBRE,APELLIDOS,DIRECCION,TELEFONO,EMAIL,FECHAREGISTRO,PUESTO,SALARIO) values (8,2,'Melvin','O''Callaghan','43512 Grover Drive','621-487-9308','mocallaghan7@java.com',to_date('01/12/18','DD/MM/RR'),'Human Resources',70.11);
 Insert into A1209023.PROY_TODOS_EMPLEADOS (IDEMPLEADO,IDSUCURSAL,NOMBRE,APELLIDOS,DIRECCION,TELEFONO,EMAIL,FECHAREGISTRO,PUESTO,SALARIO) values (1,3,'Cordelia','Houlworth','9 Montana Center','717-253-2027','choulworthe@flavors.me',to_date('02/03/07','DD/MM/RR'),'Human Resources',16.04);
 Insert into A1209023.PROY_TODOS_EMPLEADOS (IDEMPLEADO,IDSUCURSAL,NOMBRE,APELLIDOS,DIRECCION,TELEFONO,EMAIL,FECHAREGISTRO,PUESTO,SALARIO) values (2,3,'Carin','Fellis','86976 Morningstar Alley','964-912-5217','cfellisf@1688.com',to_date('02/03/17','DD/MM/RR'),'Services',84.62);
 Insert into A1209023.PROY_TODOS_EMPLEADOS (IDEMPLEADO,IDSUCURSAL,NOMBRE,APELLIDOS,DIRECCION,TELEFONO,EMAIL,FECHAREGISTRO,PUESTO,SALARIO) values (3,3,'Marcus','Vink','6784 Alpine Road','992-212-7339','mvinkg@va.gov',to_date('01/12/17','DD/MM/RR'),'Services',55.64);
 Insert into A1209023.PROY_TODOS_EMPLEADOS (IDEMPLEADO,IDSUCURSAL,NOMBRE,APELLIDOS,DIRECCION,TELEFONO,EMAIL,FECHAREGISTRO,PUESTO,SALARIO) values (4,3,'Meggie','McVitty','7458 3rd Point','837-277-5174','mmcvittyh@soundcloud.com',to_date('02/03/17','DD/MM/RR'),'Training',68.4);
 Insert into A1209023.PROY_TODOS_EMPLEADOS (IDEMPLEADO,IDSUCURSAL,NOMBRE,APELLIDOS,DIRECCION,TELEFONO,EMAIL,FECHAREGISTRO,PUESTO,SALARIO) values (5,3,'Jenny','Bardnam','7 Hintze Hill','612-199-1436','jbardnami@theglobeandmail.com',to_date('01/12/17','DD/MM/RR'),'Support',44.97);
 Insert into A1209023.PROY_TODOS_EMPLEADOS (IDEMPLEADO,IDSUCURSAL,NOMBRE,APELLIDOS,DIRECCION,TELEFONO,EMAIL,FECHAREGISTRO,PUESTO,SALARIO) values (6,3,'Annmaria','Mulheron','63 Lighthouse Bay Parkway','245-963-0455','amulheronj@acquirethisname.com',to_date('01/12/17','DD/MM/RR'),'Training',95.11);
-Insert into A1209023.PROY_TODOS_EMPLEADOS (IDEMPLEADO,IDSUCURSAL,NOMBRE,APELLIDOS,DIRECCION,TELEFONO,EMAIL,FECHAREGISTRO,PUESTO,SALARIO) values (8,3,'Melvin','O''Callaghan','43512 Grover Drive','621-487-9308','mocallaghan7@java.com',to_date('01/12/18','DD/MM/RR'),'Human Resources',70.11);
 Insert into A1209023.PROY_TODOS_EMPLEADOS (IDEMPLEADO,IDSUCURSAL,NOMBRE,APELLIDOS,DIRECCION,TELEFONO,EMAIL,FECHAREGISTRO,PUESTO,SALARIO) values (21,1,'Alastair','Eminson','3 Dexter Court','923-796-9227','aeminson0@bigcartel.com',to_date('01/12/12','DD/MM/RR'),'Engineering',44.97);
 Insert into A1209023.PROY_TODOS_EMPLEADOS (IDEMPLEADO,IDSUCURSAL,NOMBRE,APELLIDOS,DIRECCION,TELEFONO,EMAIL,FECHAREGISTRO,PUESTO,SALARIO) values (22,1,'Ev','Devenport','758 Stone Corner Parkway','355-264-4618','edevenport1@vimeo.com',to_date('02/03/17','DD/MM/RR'),'Services',87.81);
 Insert into A1209023.PROY_TODOS_EMPLEADOS (IDEMPLEADO,IDSUCURSAL,NOMBRE,APELLIDOS,DIRECCION,TELEFONO,EMAIL,FECHAREGISTRO,PUESTO,SALARIO) values (23,1,'Olympie','Sunter','6 Dakota Center','754-436-8876','osunter2@php.net',to_date('01/12/11','DD/MM/RR'),'Legal',18.78);
@@ -461,26 +706,30 @@ Insert into A1209023.PROY_TOTAL_PRODUCTOS (NOMBRE,TOTAL) values ('Call of Duty W
 Insert into A1209023.PROY_TOTAL_PRODUCTOS (NOMBRE,TOTAL) values ('Mario Kart 8',10);
 Insert into A1209023.PROY_TOTAL_PRODUCTOS (NOMBRE,TOTAL) values ('Overwatch',1);
 Insert into A1209023.PROY_TOTAL_PRODUCTOS (NOMBRE,TOTAL) values ('Playstation 4',15);
+Insert into A1209023.PROY_TOTAL_PRODUCTOS (NOMBRE,TOTAL) values ('PSP',1);
 Insert into A1209023.PROY_TOTAL_PRODUCTOS (NOMBRE,TOTAL) values ('Star Wars Batllefront II',10);
 Insert into A1209023.PROY_TOTAL_PRODUCTOS (NOMBRE,TOTAL) values ('Wii U Negro Deluxe',15);
 Insert into A1209023.PROY_TOTAL_PRODUCTOS (NOMBRE,TOTAL) values ('Xbox One S',15);
 REM INSERTING into A1209023.PROY_VIDEO_COMPLETO
 SET DEFINE OFF;
-Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (96,2,'Overwatch','Nuevo juego de Blizzard',1200,0,to_date('01/06/17','DD/MM/RR'),'Nuevo',0,5,'T','Shooter','Blizzard','1 a 16',900);
-Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (32,2,'Call of Duty WWII','Call of Duty regresa a sus raices con¿Call of Duty:¿WWII, una experiencia sobrecogedora que redefine la Segunda Guerra Mundial para una nueva generacion',1000,0,to_date('01/06/17','DD/MM/RR'),'Nuevo',1,4,'M','FPS','Activition','1 a 16',800);
-Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (33,2,'Call of Duty WWII','Call of Duty regresa a sus raices con¿Call of Duty:¿WWII, una experiencia sobrecogedora que redefine la Segunda Guerra Mundial para una nueva generacion',1000,0,to_date('01/06/17','DD/MM/RR'),'Nuevo',1,4,'M','FPS','Activition','1 a 16',800);
-Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (34,2,'Call of Duty WWII','Call of Duty regresa a sus raices con¿Call of Duty:¿WWII, una experiencia sobrecogedora que redefine la Segunda Guerra Mundial para una nueva generacion',1000,0,to_date('01/06/17','DD/MM/RR'),'Nuevo',1,4,'M','FPS','Activition','1 a 16',800);
-Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (35,2,'Call of Duty WWII','Call of Duty regresa a sus raices con¿Call of Duty:¿WWII, una experiencia sobrecogedora que redefine la Segunda Guerra Mundial para una nueva generacion',1000,0,to_date('01/06/17','DD/MM/RR'),'Nuevo',1,4,'M','FPS','Activition','1 a 16',800);
-Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (36,2,'Star Wars Batllefront II','Convi¿rtete en el h¿roe de una galaxia en guerra con Star Wars¿Battlefront II.',1200,0,to_date('01/11/17','DD/MM/RR'),'Nuevo',1,5,'M','TPS, FPS','EA DICE','1 a 40',900);
-Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (37,2,'Star Wars Batllefront II','Convi¿rtete en el h¿roe de una galaxia en guerra con Star Wars¿Battlefront II.',1200,0,to_date('01/11/17','DD/MM/RR'),'Nuevo',1,5,'M','TPS, FPS','EA DICE','1 a 40',900);
-Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (38,2,'Star Wars Batllefront II','Convi¿rtete en el h¿roe de una galaxia en guerra con Star Wars¿Battlefront II.',1200,0,to_date('01/11/17','DD/MM/RR'),'Nuevo',1,5,'M','TPS, FPS','EA DICE','1 a 40',900);
-Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (39,2,'Star Wars Batllefront II','Convi¿rtete en el h¿roe de una galaxia en guerra con Star Wars¿Battlefront II.',1200,0,to_date('01/11/17','DD/MM/RR'),'Nuevo',1,5,'M','TPS, FPS','EA DICE','1 a 40',900);
-Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (40,2,'Star Wars Batllefront II','Convi¿rtete en el h¿roe de una galaxia en guerra con Star Wars¿Battlefront II.',1200,0,to_date('01/11/17','DD/MM/RR'),'Nuevo',1,5,'M','TPS, FPS','EA DICE','1 a 40',900);
-Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (41,2,'Mario Kart 8','Vuelven las carreras m¿s locas de las consolas de Nintendo.',900,0,to_date('01/09/17','DD/MM/RR'),'Nuevo',1,3,'E','Carreras','Nintendo','1 a 6',700);
-Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (42,2,'Mario Kart 8','Vuelven las carreras m¿s locas de las consolas de Nintendo.',900,0,to_date('01/09/17','DD/MM/RR'),'Nuevo',1,3,'E','Carreras','Nintendo','1 a 6',700);
-Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (43,2,'Mario Kart 8','Vuelven las carreras m¿s locas de las consolas de Nintendo.',900,0,to_date('01/09/17','DD/MM/RR'),'Nuevo',1,3,'E','Carreras','Nintendo','1 a 6',700);
-Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (44,2,'Mario Kart 8','Vuelven las carreras m¿s locas de las consolas de Nintendo.',900,0,to_date('01/09/17','DD/MM/RR'),'Nuevo',1,3,'E','Carreras','Nintendo','1 a 6',700);
-Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (45,2,'Mario Kart 8','Vuelven las carreras m¿s locas de las consolas de Nintendo.',900,0,to_date('01/09/17','DD/MM/RR'),'Nuevo',1,3,'E','Carreras','Nintendo','1 a 6',700);
+Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,IDPEDIDO,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (96,2,5,'Overwatch','Nuevo juego de Blizzard',1200,0,to_date('01/06/17','DD/MM/RR'),'Nuevo',0,5,'T','Shooter','Blizzard','1 a 16',900);
+Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,IDPEDIDO,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (32,2,2,'Call of Duty WWII','Call of Duty regresa a sus raices con¿Call of Duty:¿WWII, una experiencia sobrecogedora que redefine la Segunda Guerra Mundial para una nueva generacion',1000,0,to_date('01/06/17','DD/MM/RR'),'Nuevo',1,4,'M','FPS','Activition','1 a 16',800);
+Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,IDPEDIDO,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (33,2,2,'Call of Duty WWII','Call of Duty regresa a sus raices con¿Call of Duty:¿WWII, una experiencia sobrecogedora que redefine la Segunda Guerra Mundial para una nueva generacion',1000,0,to_date('01/06/17','DD/MM/RR'),'Nuevo',1,4,'M','FPS','Activition','1 a 16',800);
+Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,IDPEDIDO,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (34,2,2,'Call of Duty WWII','Call of Duty regresa a sus raices con¿Call of Duty:¿WWII, una experiencia sobrecogedora que redefine la Segunda Guerra Mundial para una nueva generacion',1000,0,to_date('01/06/17','DD/MM/RR'),'Nuevo',1,4,'M','FPS','Activition','1 a 16',800);
+Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,IDPEDIDO,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (35,2,2,'Call of Duty WWII','Call of Duty regresa a sus raices con¿Call of Duty:¿WWII, una experiencia sobrecogedora que redefine la Segunda Guerra Mundial para una nueva generacion',1000,0,to_date('01/06/17','DD/MM/RR'),'Nuevo',1,4,'M','FPS','Activition','1 a 16',800);
+Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,IDPEDIDO,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (36,2,2,'Star Wars Batllefront II','Convi¿rtete en el h¿roe de una galaxia en guerra con Star Wars¿Battlefront II.',1200,0,to_date('01/11/17','DD/MM/RR'),'Nuevo',1,5,'M','TPS, FPS','EA DICE','1 a 40',900);
+Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,IDPEDIDO,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (37,2,2,'Star Wars Batllefront II','Convi¿rtete en el h¿roe de una galaxia en guerra con Star Wars¿Battlefront II.',1200,0,to_date('01/11/17','DD/MM/RR'),'Nuevo',1,5,'M','TPS, FPS','EA DICE','1 a 40',900);
+Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,IDPEDIDO,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (38,2,2,'Star Wars Batllefront II','Convi¿rtete en el h¿roe de una galaxia en guerra con Star Wars¿Battlefront II.',1200,0,to_date('01/11/17','DD/MM/RR'),'Nuevo',1,5,'M','TPS, FPS','EA DICE','1 a 40',900);
+Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,IDPEDIDO,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (39,2,2,'Star Wars Batllefront II','Convi¿rtete en el h¿roe de una galaxia en guerra con Star Wars¿Battlefront II.',1200,0,to_date('01/11/17','DD/MM/RR'),'Nuevo',1,5,'M','TPS, FPS','EA DICE','1 a 40',900);
+Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,IDPEDIDO,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (40,2,2,'Star Wars Batllefront II','Convi¿rtete en el h¿roe de una galaxia en guerra con Star Wars¿Battlefront II.',1200,0,to_date('01/11/17','DD/MM/RR'),'Nuevo',1,5,'M','TPS, FPS','EA DICE','1 a 40',900);
+Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,IDPEDIDO,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (41,2,2,'Mario Kart 8','Vuelven las carreras m¿s locas de las consolas de Nintendo.',900,0,to_date('01/09/17','DD/MM/RR'),'Nuevo',1,3,'E','Carreras','Nintendo','1 a 6',700);
+Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,IDPEDIDO,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (42,2,2,'Mario Kart 8','Vuelven las carreras m¿s locas de las consolas de Nintendo.',900,0,to_date('01/09/17','DD/MM/RR'),'Nuevo',1,3,'E','Carreras','Nintendo','1 a 6',700);
+Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,IDPEDIDO,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (43,2,2,'Mario Kart 8','Vuelven las carreras m¿s locas de las consolas de Nintendo.',900,0,to_date('01/09/17','DD/MM/RR'),'Nuevo',1,3,'E','Carreras','Nintendo','1 a 6',700);
+Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,IDPEDIDO,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (44,2,2,'Mario Kart 8','Vuelven las carreras m¿s locas de las consolas de Nintendo.',900,0,to_date('01/09/17','DD/MM/RR'),'Nuevo',1,3,'E','Carreras','Nintendo','1 a 6',700);
+Insert into A1209023.PROY_VIDEO_COMPLETO (IDPRODUCTO,IDSUCURSAL,IDPEDIDO,NOMBRE,DESCRIPCION,PRECIOVENTA,DESCUENTO,FECHALANZAMIENTO,ESTADO,DISPONIBLE,RATING,CLASIFICACION,GENERO,DESARROLLADOR,JUGADORES,PRECIOPROV) values (45,2,2,'Mario Kart 8','Vuelven las carreras m¿s locas de las consolas de Nintendo.',900,0,to_date('01/09/17','DD/MM/RR'),'Nuevo',1,3,'E','Carreras','Nintendo','1 a 6',700);
+REM INSERTING into A1209023.PROY_VIDEOJUEGOMASVENDIDO
+SET DEFINE OFF;
+Insert into A1209023.PROY_VIDEOJUEGOMASVENDIDO (NOMBRE) values ('Call of Duty WWII');
 --------------------------------------------------------
 --  DDL for Index PROY_CLIENTE_PK
 --------------------------------------------------------
@@ -648,6 +897,183 @@ END;
 /
 ALTER TRIGGER "A1209023"."PROY_VIDEOJUEGO_TRG" ENABLE;
 --------------------------------------------------------
+--  DDL for Procedure PROY_BORRAPRODUCTO
+--------------------------------------------------------
+set define off;
+
+  CREATE OR REPLACE PROCEDURE "A1209023"."PROY_BORRAPRODUCTO" 
+(
+ nombre_juego IN VARCHAR 
+) 
+AS 
+auxLocal number;
+auxBule number;
+auxGalerias number;
+existencia_Producto number;
+BEGIN
+----------------------------------------------------------------checar que exista el id
+
+select count(nombre) into auxLocal --LOCAL BOULEVARES
+ from proy_producto 
+ where nombre = nombre_juego;
+
+select count(nombre) into auxBule --LOCAL BOULEVARES
+ from proy_producto@bule
+ where nombre = nombre_juego;
+
+select count(nombre) into auxGalerias --LOCAL BOULEVARES
+ from proy_producto@gale
+ where nombre = nombre_juego;
+
+
+ if auxLocal > 0 or auxBule > 0 or auxGalerias > 0 then
+ existencia_Producto:= 1;
+ else
+ existencia_Producto :=0;
+ end if;
+
+
+  if existencia_Producto=0 then
+    raise_application_error(-20000,'{EL JUEGO NO EXISTE}'); -- aqui mando a decir que no existe la cuenta
+
+  else
+
+    ----------------------------LOCAL
+    DELETE -- borrar consola
+    FROM proy_consola con
+    WHERE con.idproducto IN (
+    select pro.idproducto
+    from proy_producto pro
+    where nombre=nombre_juego);
+
+    DELETE -- borrar videojuego
+    FROM proy_videojuego vid
+    WHERE vid.idproducto IN (
+    select pro.idproducto
+    from proy_producto pro
+    where nombre=nombre_juego);
+
+    DELETE FROM proy_producto
+    WHERE nombre = nombre_juego;
+    ----------------------------LOCAL
+
+    ----------------------------ANTEA
+    DELETE -- borrar consola
+    FROM proy_consola con
+    WHERE con.idproducto IN (
+    select pro.idproducto
+    from proy_producto@bule pro
+    where nombre=nombre_juego);
+
+    DELETE -- borrar videojuego
+    FROM proy_videojuego vid
+    WHERE vid.idproducto IN (
+    select pro.idproducto
+    from proy_producto@bule pro
+    where nombre=nombre_juego);
+
+    DELETE FROM proy_producto
+    WHERE nombre = nombre_juego;
+    ----------------------------ANTEA
+
+    ----------------------------GALERIAS
+       DELETE -- borrar consola
+    FROM proy_consola@gale con
+    WHERE con.idproducto IN (
+    select pro.idproducto
+    from proy_producto@gale pro
+    where nombre=nombre_juego);
+
+    DELETE -- borrar videojuego
+    FROM proy_videojuego@gale vid
+    WHERE vid.idproducto IN (
+    select pro.idproducto
+    from proy_producto@gale pro
+    where nombre=nombre_juego);
+
+    DELETE FROM proy_producto@gale
+    WHERE nombre = nombre_juego;
+
+    ----------------------------GALERIAS
+
+    commit;
+
+   end if;
+
+END PROY_BORRAPRODUCTO;
+
+/
+--------------------------------------------------------
+--  DDL for Procedure PROY_CANCELAR_PEDIDO
+--------------------------------------------------------
+set define off;
+
+  CREATE OR REPLACE PROCEDURE "A1209023"."PROY_CANCELAR_PEDIDO" 
+(
+ P_idPedido in number
+) 
+AS 
+var_verificar_entregado date;
+BEGIN
+----------------------------------------------------------------checar que exista el id
+ select fechaEntregadist into var_verificar_entregado--LOCAL BOULEVARES
+ from proy_pedido@dist
+ where idPedido = P_idPedido;
+
+ if (var_verificar_entregado is null) then
+    delete --local ANTEA
+    from proy_producto@dist
+    where idpedido=P_idPedido;
+
+    delete 
+    from proy_pedido@dist
+    where idpedido=P_idPedido;
+    commit;
+ else
+    raise_application_error(-20000,'{El PEDIDO YA FUE ENTREGADO}');
+ end if;
+
+END PROY_CANCELAR_PEDIDO;
+
+/
+--------------------------------------------------------
+--  DDL for Procedure PROY_REGISTRARPEDIDOCONSOLA
+--------------------------------------------------------
+set define off;
+
+  CREATE OR REPLACE PROCEDURE "A1209023"."PROY_REGISTRARPEDIDOCONSOLA" 
+(
+  P_IDPROV IN NUMBER,
+  P_NOMBRE IN VARCHAR, 
+  P_DESCRIPCION IN VARCHAR, 
+  P_PRECIOPROV IN NUMBER,
+  P_PRECIOVENTA IN NUMBER, 
+  P_FECHALANZAMIENTO IN DATE, 
+  P_PAISORIGEN IN VARCHAR, 
+  P_MODOENVIO IN VARCHAR, 
+  P_EMPRESA IN VARCHAR, 
+  P_ALMACENAMIENTO IN VARCHAR,
+  P_ACCESORIOS IN VARCHAR
+) 
+AS 
+var_idpedido number := proy_pedido_seq2.nextval@dist;
+var_idproducto number := proy_producto_seq.nextval@dist;
+var_idsucursal number := 2;
+BEGIN
+    dbms_output.Put_line(var_idpedido);
+   INSERT INTO PROY_PEDIDO@dist VALUES (var_idpedido, P_IDPROV, SYSDATE, NULL, NULL, P_PAISORIGEN, P_MODOENVIO);
+   commit;
+   INSERT INTO PROY_PRODUCTO@dist VALUES (var_idproducto, var_idpedido, var_idsucursal, P_PRECIOPROV, P_NOMBRE, P_DESCRIPCION);
+   commit;
+   INSERT INTO PROY_PRODUCTO VALUES (var_idproducto, var_idsucursal, P_NOMBRE, P_DESCRIPCION, TO_DATE(P_FECHALANZAMIENTO, 'DD/MM/YY') , 'Nuevo', 0, P_PRECIOVENTA, 0);
+   commit;
+   INSERT INTO PROY_CONSOLA VALUES (var_idproducto, P_EMPRESA , P_ALMACENAMIENTO, P_ACCESORIOS);
+   commit;
+END PROY_RegistrarPedidoConsola;
+
+
+/
+--------------------------------------------------------
 --  DDL for Procedure PROY_REGISTRARPEDIDOVIDEOJUEGO
 --------------------------------------------------------
 set define off;
@@ -683,6 +1109,44 @@ BEGIN
    INSERT INTO PROY_VIDEOJUEGO VALUES (var_idproducto, P_RATING, P_CLASIFICACION, P_GENERO, P_DESARROLLADOR, P_JUGADORES);
    commit;
 END PROY_RegistrarPedidoVideojuego;
+
+/
+--------------------------------------------------------
+--  DDL for Procedure PROY_TRANSFERIR_EMPLEADO_BULE
+--------------------------------------------------------
+set define off;
+
+  CREATE OR REPLACE PROCEDURE "A1209023"."PROY_TRANSFERIR_EMPLEADO_BULE" 
+(
+  P_IDEMPLEADO IN NUMBER 
+) AS 
+v_nombre varchar(512);
+v_apellidos varchar(512);
+v_direccion varchar(512);
+v_ciudad varchar(512);
+v_estado varchar(512);
+v_telefono varchar(512);
+v_email varchar(512);
+v_fregistro date;
+v_puesto varchar(512);
+v_salario number;
+v_instancia varchar(512);
+v_idsucursal number;
+
+BEGIN
+
+v_idsucursal:= 1;
+
+SELECT emp.nombre, emp.apellidos, emp.direccion, emp.telefono, emp.email, emp.fecharegistro, emp.puesto, emp.salario
+INTO v_nombre, v_apellidos, v_direccion, v_telefono, v_email,  v_fregistro, v_puesto,  v_salario
+from PROY_EMPLEADO emp
+Where emp.idempleado = P_IDEMPLEADO;
+
+DELETE from PROY_EMPLEADO WHERE idEmpleado = P_IDEMPLEADO;
+
+INSERT INTO PROY_EMPLEADO@bule(idempleado, idsucursal, nombre, apellidos, direccion, telefono, email, fecharegistro, puesto, salario) VALUES (P_IDEMPLEADO, v_idsucursal, v_nombre, v_apellidos, v_direccion, v_telefono, v_email,  v_fregistro, v_puesto,  v_salario);
+
+END PROY_TRANSFERIR_EMPLEADO_BULE;
 
 /
 --------------------------------------------------------
