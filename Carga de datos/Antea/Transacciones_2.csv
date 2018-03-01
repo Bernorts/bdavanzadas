@@ -1,340 +1,340 @@
-IDPRODUCTO	IDCLIENTE	IDEMPLEADO	TIPO	MONTO	FECHA	METODOPAGO
-900	157	11	Venta		02/04/2017	Tarjeta
-945	102	9	Venta		16/05/2017	Tarjeta
-1174	194	8	Venta		30/09/2017	Efectivo
-1198	37	10	Venta		04/07/2017	Efectivo
-805	68	8	Venta		08/07/2017	Tarjeta
-1097	110	9	Venta		13/02/2017	Tarjeta
-851	84	14	Venta		16/08/2017	Efectivo
-742	2	11	Venta		06/10/2017	Tarjeta
-1026	79	8	Venta		02/12/2017	Tarjeta
-1120	123	9	Venta		14/03/2017	Tarjeta
-1023	187	14	Venta		22/02/2017	Tarjeta
-1152	188	13	Venta		19/10/2017	Tarjeta
-701	131	9	Venta		24/07/2017	Tarjeta
-644	189	8	Venta		14/11/2017	Tarjeta
-787	101	10	Venta		21/01/2017	Tarjeta
-689	148	10	Venta		06/12/2017	Efectivo
-607	133	12	Venta		26/09/2017	Efectivo
-908	27	10	Venta		27/02/2017	Tarjeta
-1121	31	13	Venta		05/12/2017	Efectivo
-1188	188	11	Venta		20/10/2017	Efectivo
-1157	83	11	Venta		15/09/2017	Tarjeta
-616	152	11	Venta		03/11/2017	Efectivo
-785	139	11	Venta		26/06/2017	Efectivo
-773	6	10	Venta		06/05/2017	Tarjeta
-633	141	8	Venta		16/01/2017	Tarjeta
-832	34	9	Venta		29/05/2017	Tarjeta
-907	16	11	Venta		22/08/2017	Tarjeta
-698	74	9	Venta		17/10/2017	Efectivo
-697	157	14	Venta		04/06/2017	Efectivo
-758	85	13	Venta		28/11/2017	Tarjeta
-1065	124	11	Venta		29/03/2017	Tarjeta
-861	196	14	Venta		02/03/2017	Tarjeta
-719	46	10	Venta		30/08/2017	Efectivo
-674	99	10	Venta		28/04/2017	Tarjeta
-750	143	11	Venta		21/01/2017	Efectivo
-1126	190	12	Venta		26/10/2017	Efectivo
-1138	11	13	Venta		09/04/2017	Efectivo
-686	167	8	Venta		02/09/2017	Tarjeta
-954	131	14	Venta		08/05/2017	Tarjeta
-943	114	9	Venta		28/08/2017	Tarjeta
-732	153	14	Venta		01/10/2017	Efectivo
-1032	193	10	Venta		14/09/2017	Tarjeta
-879	29	9	Venta		17/07/2017	Tarjeta
-627	117	14	Venta		18/11/2017	Tarjeta
-643	124	8	Venta		19/04/2017	Efectivo
-767	63	14	Venta		26/05/2017	Efectivo
-1063	166	12	Venta		18/11/2017	Tarjeta
-1072	118	8	Venta		07/09/2017	Efectivo
-700	39	12	Venta		19/10/2017	Tarjeta
-972	125	10	Venta		10/03/2017	Efectivo
-734	107	8	Venta		03/10/2017	Tarjeta
-1196	176	13	Venta		10/08/2017	Tarjeta
-884	21	9	Venta		22/03/2017	Efectivo
-819	159	10	Venta		14/03/2017	Tarjeta
-825	113	12	Venta		15/07/2017	Tarjeta
-1104	46	14	Venta		21/01/2017	Efectivo
-1030	155	14	Venta		07/08/2017	Efectivo
-842	186	10	Venta		17/11/2017	Efectivo
-997	92	10	Venta		15/12/2017	Efectivo
-731	135	11	Venta		13/02/2017	Efectivo
-866	148	14	Venta		20/11/2017	Efectivo
-948	79	10	Venta		16/06/2017	Tarjeta
-1190	115	8	Venta		13/09/2017	Tarjeta
-696	152	8	Venta		26/04/2017	Tarjeta
-834	101	9	Venta		03/04/2017	Tarjeta
-862	141	14	Venta		01/10/2017	Efectivo
-802	180	12	Venta		20/08/2017	Tarjeta
-873	197	8	Venta		05/09/2017	Tarjeta
-953	147	14	Venta		28/04/2017	Tarjeta
-725	15	10	Venta		27/01/2017	Efectivo
-770	26	14	Venta		17/01/2017	Tarjeta
-1149	152	9	Venta		09/10/2017	Tarjeta
-1089	175	13	Venta		12/11/2017	Tarjeta
-1141	190	12	Venta		15/10/2017	Tarjeta
-657	127	9	Venta		12/09/2017	Tarjeta
-1146	21	10	Venta		06/10/2017	Tarjeta
-1014	68	14	Venta		26/01/2017	Tarjeta
-855	74	13	Venta		28/01/2017	Tarjeta
-1153	98	8	Venta		30/12/2017	Efectivo
-917	57	8	Venta		18/04/2017	Efectivo
-1069	169	8	Venta		11/10/2017	Efectivo
-786	1	11	Venta		29/04/2017	Efectivo
-872	25	14	Venta		10/08/2017	Efectivo
-777	115	14	Venta		29/01/2017	Tarjeta
-867	140	12	Venta		04/07/2017	Tarjeta
-951	10	12	Venta		18/10/2017	Tarjeta
-608	195	12	Venta		24/10/2017	Efectivo
-885	38	10	Venta		27/06/2017	Tarjeta
-940	45	12	Venta		27/01/2017	Tarjeta
-1168	100	9	Venta		28/03/2017	Tarjeta
-944	56	11	Venta		17/04/2017	Tarjeta
-844	78	13	Venta		24/01/2017	Efectivo
-969	75	14	Venta		12/04/2017	Tarjeta
-883	123	12	Venta		10/03/2017	Tarjeta
-1119	9	11	Venta		20/05/2017	Tarjeta
-1096	16	11	Venta		03/11/2017	Efectivo
-771	3	8	Venta		25/06/2017	Tarjeta
-1136	174	14	Venta		03/03/2017	Efectivo
-1000	154	14	Venta		28/10/2017	Tarjeta
-724	112	11	Venta		02/09/2017	Tarjeta
-748	150	12	Venta		17/08/2017	Tarjeta
-901	148	11	Venta		24/06/2017	Tarjeta
-982	17	12	Venta		01/07/2017	Tarjeta
-612	73	13	Venta		11/02/2017	Tarjeta
-892	92	8	Venta		23/03/2017	Tarjeta
-1150	8	8	Venta		12/03/2017	Efectivo
-808	72	9	Venta		01/04/2017	Efectivo
-1073	163	10	Venta		22/07/2017	Tarjeta
-823	170	12	Venta		11/10/2017	Tarjeta
-1117	183	12	Venta		22/04/2017	Efectivo
-1125	174	14	Venta		18/10/2017	Efectivo
-1086	10	14	Venta		08/11/2017	Tarjeta
-964	54	9	Venta		18/06/2017	Tarjeta
-1034	74	13	Venta		21/04/2017	Tarjeta
-886	141	13	Venta		05/06/2017	Tarjeta
-889	160	8	Venta		24/10/2017	Tarjeta
-619	86	8	Venta		14/07/2017	Efectivo
-682	64	13	Venta		08/12/2017	Efectivo
-1176	177	8	Venta		11/04/2017	Tarjeta
-1036	136	11	Venta		28/09/2017	Tarjeta
-977	91	12	Venta		01/08/2017	Tarjeta
-1098	89	9	Venta		26/08/2017	Tarjeta
-913	7	13	Venta		07/03/2017	Efectivo
-1081	64	12	Venta		03/03/2017	Efectivo
-956	119	13	Venta		22/04/2017	Tarjeta
-683	5	14	Venta		07/08/2017	Efectivo
-929	6	9	Venta		26/09/2017	Efectivo
-1132	179	12	Venta		22/11/2017	Tarjeta
-1011	51	14	Venta		12/07/2017	Tarjeta
-662	194	13	Venta		26/09/2017	Efectivo
-906	114	11	Venta		26/08/2017	Efectivo
-922	19	9	Venta		09/10/2017	Efectivo
-765	99	10	Venta		03/04/2017	Efectivo
-1010	138	11	Venta		29/03/2017	Tarjeta
-658	5	9	Venta		13/04/2017	Tarjeta
-1061	65	8	Venta		10/10/2017	Efectivo
-959	164	8	Venta		27/09/2017	Efectivo
-1162	13	11	Venta		08/11/2017	Efectivo
-626	105	14	Venta		30/01/2017	Efectivo
-1173	17	13	Venta		09/02/2017	Efectivo
-981	200	9	Venta		22/05/2017	Tarjeta
-1056	84	9	Venta		30/08/2017	Tarjeta
-918	105	11	Venta		23/10/2017	Tarjeta
-1195	121	12	Venta		13/05/2017	Tarjeta
-1020	144	14	Venta		26/01/2017	Efectivo
-1172	131	12	Venta		08/07/2017	Tarjeta
-814	120	10	Venta		31/08/2017	Tarjeta
-665	114	13	Venta		25/03/2017	Efectivo
-740	195	10	Venta		26/05/2017	Efectivo
-1057	159	10	Venta		30/01/2017	Tarjeta
-1145	46	9	Venta		31/03/2017	Tarjeta
-1131	156	8	Venta		01/10/2017	Efectivo
-755	127	14	Venta		24/02/2017	Tarjeta
-1180	25	11	Venta		09/02/2017	Tarjeta
-877	195	11	Venta		17/07/2017	Tarjeta
-919	198	10	Venta		31/03/2017	Tarjeta
-663	72	8	Venta		21/12/2017	Tarjeta
-794	142	10	Venta		02/03/2017	Efectivo
-904	163	11	Venta		15/03/2017	Tarjeta
-950	172	10	Venta		27/09/2017	Efectivo
-634	116	12	Venta		30/10/2017	Efectivo
-896	141	10	Venta		17/02/2017	Efectivo
-780	125	8	Venta		09/04/2017	Tarjeta
-699	159	11	Venta		18/04/2017	Tarjeta
-774	151	13	Venta		01/10/2017	Tarjeta
-800	171	10	Venta		08/06/2017	Tarjeta
-1050	85	9	Venta		29/08/2017	Tarjeta
-630	100	10	Venta		25/01/2017	Efectivo
-841	132	14	Venta		10/02/2017	Efectivo
-1163	72	12	Venta		24/11/2017	Tarjeta
-875	116	11	Venta		15/09/2017	Efectivo
-741	58	9	Venta		14/05/2017	Tarjeta
-1025	180	14	Venta		05/05/2017	Tarjeta
-961	46	10	Venta		11/12/2017	Tarjeta
-1085	198	8	Venta		20/06/2017	Efectivo
-1133	98	11	Venta		17/09/2017	Efectivo
-625	67	8	Venta		30/04/2017	Tarjeta
-1018	181	8	Venta		23/10/2017	Efectivo
-824	183	9	Venta		27/04/2017	Efectivo
-902	91	10	Venta		20/04/2017	Efectivo
-974	164	9	Venta		19/08/2017	Tarjeta
-611	5	8	Venta		23/04/2017	Efectivo
-1142	187	14	Venta		20/12/2017	Efectivo
-1171	57	14	Venta		08/03/2017	Tarjeta
-659	177	13	Venta		28/10/2017	Tarjeta
-728	147	10	Venta		21/01/2017	Tarjeta
-1013	128	13	Venta		07/09/2017	Efectivo
-1093	168	8	Venta		24/05/2017	Tarjeta
-789	164	10	Venta		14/12/2017	Tarjeta
-1175	132	13	Venta		04/08/2017	Efectivo
-1184	154	14	Venta		04/07/2017	Efectivo
-1192	102	13	Venta		02/09/2017	Efectivo
-712	144	13	Venta		09/09/2017	Tarjeta
-937	32	8	Venta		26/03/2017	Tarjeta
-708	105	13	Venta		30/05/2017	Efectivo
-809	44	12	Venta		05/02/2017	Efectivo
-678	114	13	Venta		07/04/2017	Tarjeta
-759	101	11	Venta		17/07/2017	Tarjeta
-1111	70	9	Venta		02/10/2017	Tarjeta
-1058	159	14	Venta		30/01/2017	Efectivo
-745	83	8	Venta		30/03/2017	Efectivo
-803	117	12	Venta		11/08/2017	Tarjeta
-1040	166	8	Venta		23/06/2017	Tarjeta
-1017	4	14	Venta		25/04/2017	Efectivo
-910	58	12	Venta		07/12/2017	Tarjeta
-743	185	12	Venta		30/11/2017	Efectivo
-962	129	12	Venta		23/04/2017	Tarjeta
-761	163	8	Venta		29/11/2017	Efectivo
-783	54	10	Venta		14/07/2017	Efectivo
-1066	30	11	Venta		01/11/2017	Efectivo
-684	32	10	Venta		13/04/2017	Tarjeta
-854	54	9	Venta		06/08/2017	Tarjeta
-975	49	9	Venta		12/05/2017	Tarjeta
-737	66	13	Venta		29/03/2017	Efectivo
-978	161	8	Venta		21/06/2017	Efectivo
-1100	161	14	Venta		24/02/2017	Efectivo
-993	11	8	Venta		17/04/2017	Tarjeta
-836	3	9	Venta		01/04/2017	Tarjeta
-673	133	12	Venta		08/08/2017	Tarjeta
-852	88	8	Venta		01/07/2017	Tarjeta
-979	40	9	Venta		06/12/2017	Efectivo
-710	118	13	Venta		12/02/2017	Tarjeta
-967	6	11	Venta		02/08/2017	Efectivo
-744	175	11	Venta		01/07/2017	Tarjeta
-669	50	11	Venta		15/12/2017	Efectivo
-826	87	9	Venta		04/08/2017	Efectivo
-1028	123	11	Venta		19/09/2017	Efectivo
-1115	161	9	Venta		21/03/2017	Efectivo
-796	77	8	Venta		28/02/2017	Efectivo
-602	69	10	Venta		04/09/2017	Tarjeta
-928	93	14	Venta		01/11/2017	Efectivo
-810	106	13	Venta		23/01/2017	Efectivo
-1004	133	10	Venta		09/02/2017	Efectivo
-934	13	14	Venta		02/04/2017	Efectivo
-890	141	12	Venta		02/12/2017	Tarjeta
-718	79	12	Venta		16/11/2017	Efectivo
-1158	21	8	Venta		21/10/2017	Efectivo
-606	44	10	Venta		16/07/2017	Tarjeta
-1156	54	13	Venta		28/08/2017	Tarjeta
-894	181	14	Venta		29/04/2017	Tarjeta
-706	18	10	Venta		27/05/2017	Efectivo
-1169	124	14	Venta		30/04/2017	Tarjeta
-888	58	12	Venta		26/10/2017	Efectivo
-812	72	9	Venta		11/08/2017	Efectivo
-863	24	12	Venta		24/11/2017	Efectivo
-1084	116	8	Venta		02/12/2017	Efectivo
-1147	87	12	Venta		21/05/2017	Tarjeta
-651	78	9	Venta		18/07/2017	Efectivo
-1122	152	10	Venta		30/03/2017	Tarjeta
-931	145	10	Venta		15/11/2017	Tarjeta
-603	184	12	Venta		20/11/2017	Tarjeta
-1102	78	8	Venta		26/06/2017	Tarjeta
-617	137	12	Venta		30/07/2017	Efectivo
-667	87	12	Venta		06/04/2017	Efectivo
-1134	89	9	Venta		28/09/2017	Efectivo
-792	80	8	Venta		20/07/2017	Tarjeta
-676	126	8	Venta		08/05/2017	Tarjeta
-1160	171	11	Venta		27/02/2017	Tarjeta
-1049	12	13	Venta		26/01/2017	Tarjeta
-690	115	14	Venta		10/08/2017	Efectivo
-752	45	8	Venta		09/12/2017	Efectivo
-893	110	13	Venta		16/08/2017	Tarjeta
-858	96	10	Venta		02/08/2017	Tarjeta
-1193	107	10	Venta		19/10/2017	Efectivo
-1042	45	9	Venta		15/03/2017	Tarjeta
-970	161	9	Venta		31/08/2017	Efectivo
-622	11	8	Venta		24/10/2017	Efectivo
-1091	192	8	Venta		13/11/2017	Tarjeta
-639	18	8	Venta		11/05/2017	Efectivo
-668	144	8	Venta		23/03/2017	Tarjeta
-801	76	11	Venta		18/07/2017	Efectivo
-811	46	11	Venta		28/02/2017	Tarjeta
-837	120	11	Venta		21/12/2017	Efectivo
-645	44	8	Venta		27/04/2017	Efectivo
-1095	71	12	Venta		01/08/2017	Tarjeta
-921	4	9	Venta		03/04/2017	Tarjeta
-797	113	12	Venta		23/03/2017	Efectivo
-960	103	10	Venta		03/10/2017	Tarjeta
-1044	191	9	Venta		28/05/2017	Efectivo
-925	178	12	Venta		11/05/2017	Efectivo
-649	146	8	Venta		23/01/2017	Efectivo
-656	74	11	Venta		13/08/2017	Efectivo
-1016	191	10	Venta		19/07/2017	Tarjeta
-881	44	9	Venta		20/02/2017	Tarjeta
-798	37	13	Venta		23/02/2017	Tarjeta
-1186	41	8	Venta		12/12/2017	Efectivo
-1019	179	14	Venta		04/08/2017	Efectivo
-806	18	10	Venta		08/09/2017	Efectivo
-769	67	12	Venta		03/06/2017	Tarjeta
-1003	166	10	Venta		03/09/2017	Efectivo
-887	135	12	Venta		13/05/2017	Tarjeta
-637	56	11	Venta		11/06/2017	Efectivo
-1001	136	8	Venta		15/08/2017	Efectivo
-1076	55	10	Venta		30/10/2017	Tarjeta
-942	98	10	Venta		17/03/2017	Tarjeta
-1109	84	11	Venta		01/06/2017	Efectivo
-609	101	14	Venta		15/01/2017	Tarjeta
-947	73	13	Venta		20/02/2017	Tarjeta
-1116	197	9	Venta		13/11/2017	Efectivo
-693	75	10	Venta		17/03/2017	Tarjeta
-715	175	8	Venta		09/07/2017	Tarjeta
-1103	34	11	Venta		25/05/2017	Efectivo
-1083	107	11	Venta		05/12/2017	Efectivo
-1197	11	11	Venta		30/01/2017	Tarjeta
-1035	176	14	Venta		05/06/2017	Tarjeta
-1191	168	13	Venta		16/12/2017	Tarjeta
-756	44	11	Venta		18/12/2017	Efectivo
-1139	110	12	Venta		19/11/2017	Tarjeta
-966	111	11	Venta		02/03/2017	Efectivo
-936	70	11	Venta		25/07/2017	Tarjeta
-736	107	12	Venta		03/08/2017	Efectivo
-965	92	11	Venta		20/11/2017	Tarjeta
-1113	175	8	Venta		20/12/2017	Efectivo
-729	93	9	Venta		18/10/2017	Efectivo
-1080	152	13	Venta		16/07/2017	Efectivo
-638	83	14	Venta		17/01/2017	Tarjeta
-726	14	13	Venta		18/05/2017	Tarjeta
-915	30	11	Venta		09/06/2017	Tarjeta
-926	193	11	Venta		11/05/2017	Tarjeta
-856	30	8	Venta		02/07/2017	Efectivo
-1031	54	8	Venta		11/03/2017	Tarjeta
-631	151	11	Venta		20/09/2017	Efectivo
-695	128	13	Venta		16/12/2017	Tarjeta
-963	159	11	Venta		14/06/2017	Tarjeta
-1029	37	8	Venta		22/07/2017	Tarjeta
-845	153	14	Venta		10/03/2017	Tarjeta
-822	12	10	Venta		12/04/2017	Tarjeta
-1178	133	12	Venta		14/02/2017	Efectivo
-1185	179	11	Venta		13/05/2017	Efectivo
-1177	55	14	Venta		19/08/2017	Tarjeta
-733	156	13	Venta		25/06/2017	Tarjeta
-843	58	9	Venta		10/02/2017	Efectivo
-784	116	11	Venta		09/03/2017	Tarjeta
-949	99	10	Venta		07/11/2017	Efectivo
-642	37	9	Venta		28/08/2017	Efectivo
-1128	101	11	Venta		23/11/2017	Tarjeta
-1078	102	10	Venta		29/07/2017	Efectivo
-1129	30	14	Venta		19/03/2017	Efectivo
-876	15	13	Venta		07/03/2017	Efectivo
+IDPRODUCTO,IDCLIENTE,IDEMPLEADO,TIPO,MONTO,FECHA,METODOPAGO
+900,157,11,Venta,,02/04/17,Tarjeta
+945,102,9,Venta,,16/05/17,Tarjeta
+1174,194,8,Venta,,30/09/17,Efectivo
+1198,37,10,Venta,,04/07/17,Efectivo
+805,68,8,Venta,,08/07/17,Tarjeta
+1097,110,9,Venta,,13/02/17,Tarjeta
+851,84,14,Venta,,16/08/17,Efectivo
+742,2,11,Venta,,06/10/17,Tarjeta
+1026,79,8,Venta,,02/12/17,Tarjeta
+1120,123,9,Venta,,14/03/17,Tarjeta
+1023,187,14,Venta,,22/02/17,Tarjeta
+1152,188,13,Venta,,19/10/17,Tarjeta
+701,131,9,Venta,,24/07/17,Tarjeta
+644,189,8,Venta,,14/11/17,Tarjeta
+787,101,10,Venta,,21/01/17,Tarjeta
+689,148,10,Venta,,06/12/17,Efectivo
+607,133,12,Venta,,26/09/17,Efectivo
+908,27,10,Venta,,27/02/17,Tarjeta
+1121,31,13,Venta,,05/12/17,Efectivo
+1188,188,11,Venta,,20/10/17,Efectivo
+1157,83,11,Venta,,15/09/17,Tarjeta
+616,152,11,Venta,,03/11/17,Efectivo
+785,139,11,Venta,,26/06/17,Efectivo
+773,6,10,Venta,,06/05/17,Tarjeta
+633,141,8,Venta,,16/01/17,Tarjeta
+832,34,9,Venta,,29/05/17,Tarjeta
+907,16,11,Venta,,22/08/17,Tarjeta
+698,74,9,Venta,,17/10/17,Efectivo
+697,157,14,Venta,,04/06/17,Efectivo
+758,85,13,Venta,,28/11/17,Tarjeta
+1065,124,11,Venta,,29/03/17,Tarjeta
+861,196,14,Venta,,02/03/17,Tarjeta
+719,46,10,Venta,,30/08/17,Efectivo
+674,99,10,Venta,,28/04/17,Tarjeta
+750,143,11,Venta,,21/01/17,Efectivo
+1126,190,12,Venta,,26/10/17,Efectivo
+1138,11,13,Venta,,09/04/17,Efectivo
+686,167,8,Venta,,02/09/17,Tarjeta
+954,131,14,Venta,,08/05/17,Tarjeta
+943,114,9,Venta,,28/08/17,Tarjeta
+732,153,14,Venta,,01/10/17,Efectivo
+1032,193,10,Venta,,14/09/17,Tarjeta
+879,29,9,Venta,,17/07/17,Tarjeta
+627,117,14,Venta,,18/11/17,Tarjeta
+643,124,8,Venta,,19/04/17,Efectivo
+767,63,14,Venta,,26/05/17,Efectivo
+1063,166,12,Venta,,18/11/17,Tarjeta
+1072,118,8,Venta,,07/09/17,Efectivo
+700,39,12,Venta,,19/10/17,Tarjeta
+972,125,10,Venta,,10/03/17,Efectivo
+734,107,8,Venta,,03/10/17,Tarjeta
+1196,176,13,Venta,,10/08/17,Tarjeta
+884,21,9,Venta,,22/03/17,Efectivo
+819,159,10,Venta,,14/03/17,Tarjeta
+825,113,12,Venta,,15/07/17,Tarjeta
+1104,46,14,Venta,,21/01/17,Efectivo
+1030,155,14,Venta,,07/08/17,Efectivo
+842,186,10,Venta,,17/11/17,Efectivo
+997,92,10,Venta,,15/12/17,Efectivo
+731,135,11,Venta,,13/02/17,Efectivo
+866,148,14,Venta,,20/11/17,Efectivo
+948,79,10,Venta,,16/06/17,Tarjeta
+1190,115,8,Venta,,13/09/17,Tarjeta
+696,152,8,Venta,,26/04/17,Tarjeta
+834,101,9,Venta,,03/04/17,Tarjeta
+862,141,14,Venta,,01/10/17,Efectivo
+802,180,12,Venta,,20/08/17,Tarjeta
+873,197,8,Venta,,05/09/17,Tarjeta
+953,147,14,Venta,,28/04/17,Tarjeta
+725,15,10,Venta,,27/01/17,Efectivo
+770,26,14,Venta,,17/01/17,Tarjeta
+1149,152,9,Venta,,09/10/17,Tarjeta
+1089,175,13,Venta,,12/11/17,Tarjeta
+1141,190,12,Venta,,15/10/17,Tarjeta
+657,127,9,Venta,,12/09/17,Tarjeta
+1146,21,10,Venta,,06/10/17,Tarjeta
+1014,68,14,Venta,,26/01/17,Tarjeta
+855,74,13,Venta,,28/01/17,Tarjeta
+1153,98,8,Venta,,30/12/17,Efectivo
+917,57,8,Venta,,18/04/17,Efectivo
+1069,169,8,Venta,,11/10/17,Efectivo
+786,1,11,Venta,,29/04/17,Efectivo
+872,25,14,Venta,,10/08/17,Efectivo
+777,115,14,Venta,,29/01/17,Tarjeta
+867,140,12,Venta,,04/07/17,Tarjeta
+951,10,12,Venta,,18/10/17,Tarjeta
+608,195,12,Venta,,24/10/17,Efectivo
+885,38,10,Venta,,27/06/17,Tarjeta
+940,45,12,Venta,,27/01/17,Tarjeta
+1168,100,9,Venta,,28/03/17,Tarjeta
+944,56,11,Venta,,17/04/17,Tarjeta
+844,78,13,Venta,,24/01/17,Efectivo
+969,75,14,Venta,,12/04/17,Tarjeta
+883,123,12,Venta,,10/03/17,Tarjeta
+1119,9,11,Venta,,20/05/17,Tarjeta
+1096,16,11,Venta,,03/11/17,Efectivo
+771,3,8,Venta,,25/06/17,Tarjeta
+1136,174,14,Venta,,03/03/17,Efectivo
+1000,154,14,Venta,,28/10/17,Tarjeta
+724,112,11,Venta,,02/09/17,Tarjeta
+748,150,12,Venta,,17/08/17,Tarjeta
+901,148,11,Venta,,24/06/17,Tarjeta
+982,17,12,Venta,,01/07/17,Tarjeta
+612,73,13,Venta,,11/02/17,Tarjeta
+892,92,8,Venta,,23/03/17,Tarjeta
+1150,8,8,Venta,,12/03/17,Efectivo
+808,72,9,Venta,,01/04/17,Efectivo
+1073,163,10,Venta,,22/07/17,Tarjeta
+823,170,12,Venta,,11/10/17,Tarjeta
+1117,183,12,Venta,,22/04/17,Efectivo
+1125,174,14,Venta,,18/10/17,Efectivo
+1086,10,14,Venta,,08/11/17,Tarjeta
+964,54,9,Venta,,18/06/17,Tarjeta
+1034,74,13,Venta,,21/04/17,Tarjeta
+886,141,13,Venta,,05/06/17,Tarjeta
+889,160,8,Venta,,24/10/17,Tarjeta
+619,86,8,Venta,,14/07/17,Efectivo
+682,64,13,Venta,,08/12/17,Efectivo
+1176,177,8,Venta,,11/04/17,Tarjeta
+1036,136,11,Venta,,28/09/17,Tarjeta
+977,91,12,Venta,,01/08/17,Tarjeta
+1098,89,9,Venta,,26/08/17,Tarjeta
+913,7,13,Venta,,07/03/17,Efectivo
+1081,64,12,Venta,,03/03/17,Efectivo
+956,119,13,Venta,,22/04/17,Tarjeta
+683,5,14,Venta,,07/08/17,Efectivo
+929,6,9,Venta,,26/09/17,Efectivo
+1132,179,12,Venta,,22/11/17,Tarjeta
+1011,51,14,Venta,,12/07/17,Tarjeta
+662,194,13,Venta,,26/09/17,Efectivo
+906,114,11,Venta,,26/08/17,Efectivo
+922,19,9,Venta,,09/10/17,Efectivo
+765,99,10,Venta,,03/04/17,Efectivo
+1010,138,11,Venta,,29/03/17,Tarjeta
+658,5,9,Venta,,13/04/17,Tarjeta
+1061,65,8,Venta,,10/10/17,Efectivo
+959,164,8,Venta,,27/09/17,Efectivo
+1162,13,11,Venta,,08/11/17,Efectivo
+626,105,14,Venta,,30/01/17,Efectivo
+1173,17,13,Venta,,09/02/17,Efectivo
+981,200,9,Venta,,22/05/17,Tarjeta
+1056,84,9,Venta,,30/08/17,Tarjeta
+918,105,11,Venta,,23/10/17,Tarjeta
+1195,121,12,Venta,,13/05/17,Tarjeta
+1020,144,14,Venta,,26/01/17,Efectivo
+1172,131,12,Venta,,08/07/17,Tarjeta
+814,120,10,Venta,,31/08/17,Tarjeta
+665,114,13,Venta,,25/03/17,Efectivo
+740,195,10,Venta,,26/05/17,Efectivo
+1057,159,10,Venta,,30/01/17,Tarjeta
+1145,46,9,Venta,,31/03/17,Tarjeta
+1131,156,8,Venta,,01/10/17,Efectivo
+755,127,14,Venta,,24/02/17,Tarjeta
+1180,25,11,Venta,,09/02/17,Tarjeta
+877,195,11,Venta,,17/07/17,Tarjeta
+919,198,10,Venta,,31/03/17,Tarjeta
+663,72,8,Venta,,21/12/17,Tarjeta
+794,142,10,Venta,,02/03/17,Efectivo
+904,163,11,Venta,,15/03/17,Tarjeta
+950,172,10,Venta,,27/09/17,Efectivo
+634,116,12,Venta,,30/10/17,Efectivo
+896,141,10,Venta,,17/02/17,Efectivo
+780,125,8,Venta,,09/04/17,Tarjeta
+699,159,11,Venta,,18/04/17,Tarjeta
+774,151,13,Venta,,01/10/17,Tarjeta
+800,171,10,Venta,,08/06/17,Tarjeta
+1050,85,9,Venta,,29/08/17,Tarjeta
+630,100,10,Venta,,25/01/17,Efectivo
+841,132,14,Venta,,10/02/17,Efectivo
+1163,72,12,Venta,,24/11/17,Tarjeta
+875,116,11,Venta,,15/09/17,Efectivo
+741,58,9,Venta,,14/05/17,Tarjeta
+1025,180,14,Venta,,05/05/17,Tarjeta
+961,46,10,Venta,,11/12/17,Tarjeta
+1085,198,8,Venta,,20/06/17,Efectivo
+1133,98,11,Venta,,17/09/17,Efectivo
+625,67,8,Venta,,30/04/17,Tarjeta
+1018,181,8,Venta,,23/10/17,Efectivo
+824,183,9,Venta,,27/04/17,Efectivo
+902,91,10,Venta,,20/04/17,Efectivo
+974,164,9,Venta,,19/08/17,Tarjeta
+611,5,8,Venta,,23/04/17,Efectivo
+1142,187,14,Venta,,20/12/17,Efectivo
+1171,57,14,Venta,,08/03/17,Tarjeta
+659,177,13,Venta,,28/10/17,Tarjeta
+728,147,10,Venta,,21/01/17,Tarjeta
+1013,128,13,Venta,,07/09/17,Efectivo
+1093,168,8,Venta,,24/05/17,Tarjeta
+789,164,10,Venta,,14/12/17,Tarjeta
+1175,132,13,Venta,,04/08/17,Efectivo
+1184,154,14,Venta,,04/07/17,Efectivo
+1192,102,13,Venta,,02/09/17,Efectivo
+712,144,13,Venta,,09/09/17,Tarjeta
+937,32,8,Venta,,26/03/17,Tarjeta
+708,105,13,Venta,,30/05/17,Efectivo
+809,44,12,Venta,,05/02/17,Efectivo
+678,114,13,Venta,,07/04/17,Tarjeta
+759,101,11,Venta,,17/07/17,Tarjeta
+1111,70,9,Venta,,02/10/17,Tarjeta
+1058,159,14,Venta,,30/01/17,Efectivo
+745,83,8,Venta,,30/03/17,Efectivo
+803,117,12,Venta,,11/08/17,Tarjeta
+1040,166,8,Venta,,23/06/17,Tarjeta
+1017,4,14,Venta,,25/04/17,Efectivo
+910,58,12,Venta,,07/12/17,Tarjeta
+743,185,12,Venta,,30/11/17,Efectivo
+962,129,12,Venta,,23/04/17,Tarjeta
+761,163,8,Venta,,29/11/17,Efectivo
+783,54,10,Venta,,14/07/17,Efectivo
+1066,30,11,Venta,,01/11/17,Efectivo
+684,32,10,Venta,,13/04/17,Tarjeta
+854,54,9,Venta,,06/08/17,Tarjeta
+975,49,9,Venta,,12/05/17,Tarjeta
+737,66,13,Venta,,29/03/17,Efectivo
+978,161,8,Venta,,21/06/17,Efectivo
+1100,161,14,Venta,,24/02/17,Efectivo
+993,11,8,Venta,,17/04/17,Tarjeta
+836,3,9,Venta,,01/04/17,Tarjeta
+673,133,12,Venta,,08/08/17,Tarjeta
+852,88,8,Venta,,01/07/17,Tarjeta
+979,40,9,Venta,,06/12/17,Efectivo
+710,118,13,Venta,,12/02/17,Tarjeta
+967,6,11,Venta,,02/08/17,Efectivo
+744,175,11,Venta,,01/07/17,Tarjeta
+669,50,11,Venta,,15/12/17,Efectivo
+826,87,9,Venta,,04/08/17,Efectivo
+1028,123,11,Venta,,19/09/17,Efectivo
+1115,161,9,Venta,,21/03/17,Efectivo
+796,77,8,Venta,,28/02/17,Efectivo
+602,69,10,Venta,,04/09/17,Tarjeta
+928,93,14,Venta,,01/11/17,Efectivo
+810,106,13,Venta,,23/01/17,Efectivo
+1004,133,10,Venta,,09/02/17,Efectivo
+934,13,14,Venta,,02/04/17,Efectivo
+890,141,12,Venta,,02/12/17,Tarjeta
+718,79,12,Venta,,16/11/17,Efectivo
+1158,21,8,Venta,,21/10/17,Efectivo
+606,44,10,Venta,,16/07/17,Tarjeta
+1156,54,13,Venta,,28/08/17,Tarjeta
+894,181,14,Venta,,29/04/17,Tarjeta
+706,18,10,Venta,,27/05/17,Efectivo
+1169,124,14,Venta,,30/04/17,Tarjeta
+888,58,12,Venta,,26/10/17,Efectivo
+812,72,9,Venta,,11/08/17,Efectivo
+863,24,12,Venta,,24/11/17,Efectivo
+1084,116,8,Venta,,02/12/17,Efectivo
+1147,87,12,Venta,,21/05/17,Tarjeta
+651,78,9,Venta,,18/07/17,Efectivo
+1122,152,10,Venta,,30/03/17,Tarjeta
+931,145,10,Venta,,15/11/17,Tarjeta
+603,184,12,Venta,,20/11/17,Tarjeta
+1102,78,8,Venta,,26/06/17,Tarjeta
+617,137,12,Venta,,30/07/17,Efectivo
+667,87,12,Venta,,06/04/17,Efectivo
+1134,89,9,Venta,,28/09/17,Efectivo
+792,80,8,Venta,,20/07/17,Tarjeta
+676,126,8,Venta,,08/05/17,Tarjeta
+1160,171,11,Venta,,27/02/17,Tarjeta
+1049,12,13,Venta,,26/01/17,Tarjeta
+690,115,14,Venta,,10/08/17,Efectivo
+752,45,8,Venta,,09/12/17,Efectivo
+893,110,13,Venta,,16/08/17,Tarjeta
+858,96,10,Venta,,02/08/17,Tarjeta
+1193,107,10,Venta,,19/10/17,Efectivo
+1042,45,9,Venta,,15/03/17,Tarjeta
+970,161,9,Venta,,31/08/17,Efectivo
+622,11,8,Venta,,24/10/17,Efectivo
+1091,192,8,Venta,,13/11/17,Tarjeta
+639,18,8,Venta,,11/05/17,Efectivo
+668,144,8,Venta,,23/03/17,Tarjeta
+801,76,11,Venta,,18/07/17,Efectivo
+811,46,11,Venta,,28/02/17,Tarjeta
+837,120,11,Venta,,21/12/17,Efectivo
+645,44,8,Venta,,27/04/17,Efectivo
+1095,71,12,Venta,,01/08/17,Tarjeta
+921,4,9,Venta,,03/04/17,Tarjeta
+797,113,12,Venta,,23/03/17,Efectivo
+960,103,10,Venta,,03/10/17,Tarjeta
+1044,191,9,Venta,,28/05/17,Efectivo
+925,178,12,Venta,,11/05/17,Efectivo
+649,146,8,Venta,,23/01/17,Efectivo
+656,74,11,Venta,,13/08/17,Efectivo
+1016,191,10,Venta,,19/07/17,Tarjeta
+881,44,9,Venta,,20/02/17,Tarjeta
+798,37,13,Venta,,23/02/17,Tarjeta
+1186,41,8,Venta,,12/12/17,Efectivo
+1019,179,14,Venta,,04/08/17,Efectivo
+806,18,10,Venta,,08/09/17,Efectivo
+769,67,12,Venta,,03/06/17,Tarjeta
+1003,166,10,Venta,,03/09/17,Efectivo
+887,135,12,Venta,,13/05/17,Tarjeta
+637,56,11,Venta,,11/06/17,Efectivo
+1001,136,8,Venta,,15/08/17,Efectivo
+1076,55,10,Venta,,30/10/17,Tarjeta
+942,98,10,Venta,,17/03/17,Tarjeta
+1109,84,11,Venta,,01/06/17,Efectivo
+609,101,14,Venta,,15/01/17,Tarjeta
+947,73,13,Venta,,20/02/17,Tarjeta
+1116,197,9,Venta,,13/11/17,Efectivo
+693,75,10,Venta,,17/03/17,Tarjeta
+715,175,8,Venta,,09/07/17,Tarjeta
+1103,34,11,Venta,,25/05/17,Efectivo
+1083,107,11,Venta,,05/12/17,Efectivo
+1197,11,11,Venta,,30/01/17,Tarjeta
+1035,176,14,Venta,,05/06/17,Tarjeta
+1191,168,13,Venta,,16/12/17,Tarjeta
+756,44,11,Venta,,18/12/17,Efectivo
+1139,110,12,Venta,,19/11/17,Tarjeta
+966,111,11,Venta,,02/03/17,Efectivo
+936,70,11,Venta,,25/07/17,Tarjeta
+736,107,12,Venta,,03/08/17,Efectivo
+965,92,11,Venta,,20/11/17,Tarjeta
+1113,175,8,Venta,,20/12/17,Efectivo
+729,93,9,Venta,,18/10/17,Efectivo
+1080,152,13,Venta,,16/07/17,Efectivo
+638,83,14,Venta,,17/01/17,Tarjeta
+726,14,13,Venta,,18/05/17,Tarjeta
+915,30,11,Venta,,09/06/17,Tarjeta
+926,193,11,Venta,,11/05/17,Tarjeta
+856,30,8,Venta,,02/07/17,Efectivo
+1031,54,8,Venta,,11/03/17,Tarjeta
+631,151,11,Venta,,20/09/17,Efectivo
+695,128,13,Venta,,16/12/17,Tarjeta
+963,159,11,Venta,,14/06/17,Tarjeta
+1029,37,8,Venta,,22/07/17,Tarjeta
+845,153,14,Venta,,10/03/17,Tarjeta
+822,12,10,Venta,,12/04/17,Tarjeta
+1178,133,12,Venta,,14/02/17,Efectivo
+1185,179,11,Venta,,13/05/17,Efectivo
+1177,55,14,Venta,,19/08/17,Tarjeta
+733,156,13,Venta,,25/06/17,Tarjeta
+843,58,9,Venta,,10/02/17,Efectivo
+784,116,11,Venta,,09/03/17,Tarjeta
+949,99,10,Venta,,07/11/17,Efectivo
+642,37,9,Venta,,28/08/17,Efectivo
+1128,101,11,Venta,,23/11/17,Tarjeta
+1078,102,10,Venta,,29/07/17,Efectivo
+1129,30,14,Venta,,19/03/17,Efectivo
+876,15,13,Venta,,07/03/17,Efectivo
