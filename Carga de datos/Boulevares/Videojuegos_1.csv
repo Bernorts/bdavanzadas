@@ -18,284 +18,1484 @@ IDPRODUCTO,Rating,Clasificacion,Genero,Desarrollador,Jugadores
 17,4,M,FPS,Activition,1
 18,4,M,FPS,Activition,1
 19,4,M,FPS,Activition,1
-20,4,M,FPS,capcom,1
-21,5,M,FPS,capcom,1
-22,5,M,FPS,capcom,1
-23,5,M,FPS,capcom,1
-24,5,M,FPS,capcom,1
-25,5,M,FPS,capcom,1
-26,5,M,FPS,capcom,1
-27,5,M,FPS,capcom,1
-28,5,M,FPS,capcom,1
-29,5,M,FPS,capcom,1
-30,5,M,FPS,capcom,1
-31,5,M,FPS,capcom,1
-32,5,M,FPS,capcom,1
-33,5,M,FPS,capcom,1
-34,5,M,FPS,capcom,1
-35,5,M,FPS,capcom,1
-36,5,M,FPS,capcom,1
-37,5,M,FPS,capcom,1
-38,5,M,FPS,capcom,1
-39,5,M,FPS,capcom,1
-40,5,M,FPS,ubisoft,1
-41,4,M,FPS,ubisoft,1
-42,4,M,FPS,ubisoft,1
-43,4,M,FPS,ubisoft,1
-44,4,M,FPS,ubisoft,1
-45,4,M,FPS,ubisoft,1
-46,4,M,FPS,ubisoft,1
-47,4,M,FPS,ubisoft,1
-48,4,M,FPS,ubisoft,1
-49,4,M,FPS,ubisoft,1
-50,4,M,FPS,ubisoft,1
-51,4,M,FPS,ubisoft,1
-52,4,M,FPS,ubisoft,1
-53,4,M,FPS,ubisoft,1
-54,4,M,FPS,ubisoft,1
-55,4,M,FPS,ubisoft,1
-56,4,M,FPS,ubisoft,1
-57,4,M,FPS,ubisoft,1
-58,4,M,FPS,ubisoft,1
-59,4,M,FPS,ubisoft,1
-60,4,M,FPS,konami,1
-61,5,M,FPS,konami,1
-62,5,M,FPS,konami,1
-63,5,M,FPS,konami,1
-64,5,M,FPS,konami,1
-65,5,M,FPS,konami,1
-66,5,M,FPS,konami,1
-67,5,M,FPS,konami,1
-68,5,M,FPS,konami,1
-69,5,M,FPS,konami,1
-70,5,M,FPS,konami,1
-71,5,M,FPS,konami,1
-72,5,M,FPS,konami,1
-73,5,M,FPS,konami,1
-74,5,M,FPS,konami,1
-75,5,M,FPS,konami,1
-76,5,M,FPS,konami,1
-77,5,M,FPS,konami,1
-78,5,M,FPS,konami,1
-79,5,M,FPS,konami,1
-80,5,M,FPS,ubisoft,1
-81,3,M,FPS,ubisoft,1
-82,3,M,FPS,ubisoft,1
-83,3,M,FPS,ubisoft,1
-84,3,M,FPS,ubisoft,1
-85,3,M,FPS,ubisoft,1
-86,3,M,FPS,ubisoft,1
-87,3,M,FPS,ubisoft,1
-88,3,M,FPS,ubisoft,1
-89,3,M,FPS,ubisoft,1
-90,3,M,FPS,ubisoft,1
-91,3,M,FPS,ubisoft,1
-92,3,M,FPS,ubisoft,1
-93,3,M,FPS,ubisoft,1
-94,3,M,FPS,ubisoft,1
-95,3,M,FPS,ubisoft,1
-96,3,M,FPS,ubisoft,1
-97,3,M,FPS,ubisoft,1
-98,3,M,FPS,ubisoft,1
-99,3,M,FPS,ubisoft,1
-100,3,M,FPS,ubisoft,1
-101,4,M,FPS,Activition,1 a 16
-102,4,M,FPS,Activition,1 a 16
-103,4,M,FPS,Activition,1 a 16
-104,4,M,FPS,Activition,1 a 16
-105,4,M,FPS,Activition,1 a 16
-106,4,M,FPS,Activition,1 a 16
-107,4,M,FPS,Activition,1 a 16
-108,4,M,FPS,Activition,1 a 16
-109,4,M,FPS,Activition,1 a 16
-110,4,M,FPS,Activition,1 a 16
-111,4,M,FPS,Activition,1 a 16
-112,4,M,FPS,Activition,1 a 16
-113,4,M,FPS,Activition,1 a 16
-114,4,M,FPS,Activition,1 a 16
-115,4,M,FPS,Activition,1 a 16
-116,4,M,FPS,Activition,1 a 16
-117,4,M,FPS,Activition,1 a 16
-118,4,M,FPS,Activition,1 a 16
-119,4,M,FPS,Activition,1 a 16
-120,4,M,FPS,Activition,1 a 16
-121,5,M,FPS,Irrational Games,1
-122,5,M,FPS,Irrational Games,1
-123,5,M,FPS,Irrational Games,1
-124,5,M,FPS,Irrational Games,1
-125,5,M,FPS,Irrational Games,1
-126,5,M,FPS,Irrational Games,1
-127,5,M,FPS,Irrational Games,1
-128,5,M,FPS,Irrational Games,1
-129,5,M,FPS,Irrational Games,1
-130,5,M,FPS,Irrational Games,1
-131,5,M,FPS,Irrational Games,1
-132,5,M,FPS,Irrational Games,1
-133,5,M,FPS,Irrational Games,1
-134,5,M,FPS,Irrational Games,1
-135,5,M,FPS,Irrational Games,1
-136,5,M,FPS,Irrational Games,1
-137,5,M,FPS,Irrational Games,1
-138,5,M,FPS,Irrational Games,1
-139,5,M,FPS,Irrational Games,1
-140,5,M,FPS,Irrational Games,1
-141,5,M,FPS,Bungie,1 a 16
-142,5,M,FPS,Bungie,1 a 16
-143,5,M,FPS,Bungie,1 a 16
-144,5,M,FPS,Bungie,1 a 16
-145,5,M,FPS,Bungie,1 a 16
-146,5,M,FPS,Bungie,1 a 16
-147,5,M,FPS,Bungie,1 a 16
-148,5,M,FPS,Bungie,1 a 16
-149,5,M,FPS,Bungie,1 a 16
-150,5,M,FPS,Bungie,1 a 16
-151,5,M,FPS,Bungie,1 a 16
-152,5,M,FPS,Bungie,1 a 16
-153,5,M,FPS,Bungie,1 a 16
-154,5,M,FPS,Bungie,1 a 16
-155,5,M,FPS,Bungie,1 a 16
-156,5,M,FPS,Bungie,1 a 16
-157,5,M,FPS,Bungie,1 a 16
-158,5,M,FPS,Bungie,1 a 16
-159,5,M,FPS,Bungie,1 a 16
-160,5,M,FPS,Bungie,1 a 16
-161,4,M,FPS,EA Dice,1 a 40
-162,4,M,FPS,EA Dice,1 a 40
-163,4,M,FPS,EA Dice,1 a 40
-164,4,M,FPS,EA Dice,1 a 40
-165,4,M,FPS,EA Dice,1 a 40
-166,4,M,FPS,EA Dice,1 a 40
-167,4,M,FPS,EA Dice,1 a 40
-168,4,M,FPS,EA Dice,1 a 40
-169,4,M,FPS,EA Dice,1 a 40
-170,4,M,FPS,EA Dice,1 a 40
-171,4,M,FPS,EA Dice,1 a 40
-172,4,M,FPS,EA Dice,1 a 40
-173,4,M,FPS,EA Dice,1 a 40
-174,4,M,FPS,EA Dice,1 a 40
-175,4,M,FPS,EA Dice,1 a 40
-176,4,M,FPS,EA Dice,1 a 40
-177,4,M,FPS,EA Dice,1 a 40
-178,4,M,FPS,EA Dice,1 a 40
-179,4,M,FPS,EA Dice,1 a 40
-180,4,M,FPS,EA Dice,1 a 40
-181,4,E,Carreras,Nintendo,1 a 6
-182,4,E,Carreras,Nintendo,1 a 6
-183,4,E,Carreras,Nintendo,1 a 6
-184,4,E,Carreras,Nintendo,1 a 6
-185,4,E,Carreras,Nintendo,1 a 6
-186,4,E,Carreras,Nintendo,1 a 6
-187,4,E,Carreras,Nintendo,1 a 6
-188,4,E,Carreras,Nintendo,1 a 6
-189,4,E,Carreras,Nintendo,1 a 6
-190,4,E,Carreras,Nintendo,1 a 6
-191,4,E,Carreras,Nintendo,1 a 6
-192,4,E,Carreras,Nintendo,1 a 6
-193,4,E,Carreras,Nintendo,1 a 6
-194,4,E,Carreras,Nintendo,1 a 6
-195,4,E,Carreras,Nintendo,1 a 6
-196,4,E,Carreras,Nintendo,1 a 6
-197,4,E,Carreras,Nintendo,1 a 6
-198,4,E,Carreras,Nintendo,1 a 6
-199,4,E,Carreras,Nintendo,1 a 6
-200,4,E,Carreras,Nintendo,1 a 6
-201,5,T,MMO,Blizzard,1 a 40
-202,5,M,RPG,Blizzard,1 a 5
-203,5,T,MOBA,Blizzard,1 a 5
-204,3,E,Cartas,Blizzard,1 a 2
-205,2,T,RTS,Blizzard,1 a 2
-206,5,T,MMO,Blizzard,1 a 40
-207,5,T,MMO,Blizzard,1 a 40
-208,5,T,MMO,Blizzard,1 a 40
-209,5,T,MMO,Blizzard,1 a 40
-210,5,T,MMO,Blizzard,1 a 40
-211,5,T,MMO,Blizzard,1 a 40
-212,5,T,MMO,Blizzard,1 a 40
-213,5,T,MMO,Blizzard,1 a 40
-214,5,T,MMO,Blizzard,1 a 40
-215,5,T,MMO,Blizzard,1 a 40
-216,5,T,MMO,Blizzard,1 a 40
-217,5,T,MMO,Blizzard,1 a 40
-218,5,T,MMO,Blizzard,1 a 40
-219,5,T,MMO,Blizzard,1 a 40
-220,5,T,MMO,Blizzard,1 a 40
-221,5,T,MMO,Blizzard,1 a 40
-222,5,T,MMO,Blizzard,1 a 40
-223,5,T,MMO,Blizzard,1 a 40
-224,5,T,MMO,Blizzard,1 a 40
-225,5,M,RPG,Blizzard,1 a 5
-226,5,M,RPG,Blizzard,1 a 5
-227,5,M,RPG,Blizzard,1 a 5
-228,5,M,RPG,Blizzard,1 a 5
-229,5,M,RPG,Blizzard,1 a 5
-230,5,M,RPG,Blizzard,1 a 5
-231,5,M,RPG,Blizzard,1 a 5
-232,5,M,RPG,Blizzard,1 a 5
-233,5,M,RPG,Blizzard,1 a 5
-234,5,M,RPG,Blizzard,1 a 5
-235,5,M,RPG,Blizzard,1 a 5
-236,5,M,RPG,Blizzard,1 a 5
-237,5,M,RPG,Blizzard,1 a 5
-238,5,M,RPG,Blizzard,1 a 5
-239,5,M,RPG,Blizzard,1 a 5
-240,5,M,RPG,Blizzard,1 a 5
-241,5,M,RPG,Blizzard,1 a 5
-242,5,M,RPG,Blizzard,1 a 5
-243,5,M,RPG,Blizzard,1 a 5
-244,5,T,MOBA,Blizzard,1 a 5
-245,5,T,MOBA,Blizzard,1 a 5
-246,5,T,MOBA,Blizzard,1 a 5
-247,5,T,MOBA,Blizzard,1 a 5
-248,5,T,MOBA,Blizzard,1 a 5
-249,5,T,MOBA,Blizzard,1 a 5
-250,5,T,MOBA,Blizzard,1 a 5
-251,5,T,MOBA,Blizzard,1 a 5
-252,5,T,MOBA,Blizzard,1 a 5
-253,5,T,MOBA,Blizzard,1 a 5
-254,5,T,MOBA,Blizzard,1 a 5
-255,5,T,MOBA,Blizzard,1 a 5
-256,5,T,MOBA,Blizzard,1 a 5
-257,5,T,MOBA,Blizzard,1 a 5
-258,5,T,MOBA,Blizzard,1 a 5
-259,5,T,MOBA,Blizzard,1 a 5
-260,5,T,MOBA,Blizzard,1 a 5
-261,5,T,MOBA,Blizzard,1 a 5
-262,5,T,MOBA,Blizzard,1 a 5
-263,3,E,Cartas,Blizzard,1 a 2
-264,3,E,Cartas,Blizzard,1 a 2
-265,3,E,Cartas,Blizzard,1 a 2
-266,3,E,Cartas,Blizzard,1 a 2
-267,3,E,Cartas,Blizzard,1 a 2
-268,3,E,Cartas,Blizzard,1 a 2
-269,3,E,Cartas,Blizzard,1 a 2
-270,3,E,Cartas,Blizzard,1 a 2
-271,3,E,Cartas,Blizzard,1 a 2
-272,3,E,Cartas,Blizzard,1 a 2
-273,3,E,Cartas,Blizzard,1 a 2
-274,3,E,Cartas,Blizzard,1 a 2
-275,3,E,Cartas,Blizzard,1 a 2
-276,3,E,Cartas,Blizzard,1 a 2
-277,3,E,Cartas,Blizzard,1 a 2
-278,3,E,Cartas,Blizzard,1 a 2
-279,3,E,Cartas,Blizzard,1 a 2
-280,3,E,Cartas,Blizzard,1 a 2
-281,3,E,Cartas,Blizzard,1 a 2
-282,2,T,RTS,Blizzard,1 a 2
-283,2,T,RTS,Blizzard,1 a 2
-284,2,T,RTS,Blizzard,1 a 2
-285,2,T,RTS,Blizzard,1 a 2
-286,2,T,RTS,Blizzard,1 a 2
-287,2,T,RTS,Blizzard,1 a 2
-288,2,T,RTS,Blizzard,1 a 2
-289,2,T,RTS,Blizzard,1 a 2
-290,2,T,RTS,Blizzard,1 a 2
-291,2,T,RTS,Blizzard,1 a 2
-292,2,T,RTS,Blizzard,1 a 2
-293,2,T,RTS,Blizzard,1 a 2
-294,2,T,RTS,Blizzard,1 a 2
-295,2,T,RTS,Blizzard,1 a 2
-296,2,T,RTS,Blizzard,1 a 2
-297,2,T,RTS,Blizzard,1 a 2
-298,2,T,RTS,Blizzard,1 a 2
-299,2,T,RTS,Blizzard,1 a 2
-300,2,T,RTS,Blizzard,1 a 2
+20,4,M,FPS,Activition,1
+21,4,M,FPS,Activition,1
+22,4,M,FPS,Activition,1
+23,4,M,FPS,Activition,1
+24,4,M,FPS,Activition,1
+25,4,M,FPS,Activition,1
+26,4,M,FPS,Activition,1
+27,4,M,FPS,Activition,1
+28,4,M,FPS,Activition,1
+29,4,M,FPS,Activition,1
+30,4,M,FPS,Activition,1
+31,4,M,FPS,Activition,1
+32,4,M,FPS,Activition,1
+33,4,M,FPS,Activition,1
+34,4,M,FPS,Activition,1
+35,4,M,FPS,Activition,1
+36,4,M,FPS,Activition,1
+37,4,M,FPS,Activition,1
+38,4,M,FPS,Activition,1
+39,4,M,FPS,Activition,1
+40,4,M,FPS,Activition,1
+41,4,M,FPS,Activition,1
+42,4,M,FPS,Activition,1
+43,4,M,FPS,Activition,1
+44,4,M,FPS,Activition,1
+45,4,M,FPS,Activition,1
+46,4,M,FPS,Activition,1
+47,4,M,FPS,Activition,1
+48,4,M,FPS,Activition,1
+49,4,M,FPS,Activition,1
+50,4,M,FPS,Activition,1
+51,4,M,FPS,Activition,1
+52,4,M,FPS,Activition,1
+53,4,M,FPS,Activition,1
+54,4,M,FPS,Activition,1
+55,4,M,FPS,Activition,1
+56,4,M,FPS,Activition,1
+57,4,M,FPS,Activition,1
+58,4,M,FPS,Activition,1
+59,4,M,FPS,Activition,1
+60,4,M,FPS,Activition,1
+61,4,M,FPS,Activition,1
+62,4,M,FPS,Activition,1
+63,4,M,FPS,Activition,1
+64,4,M,FPS,Activition,1
+65,4,M,FPS,Activition,1
+66,4,M,FPS,Activition,1
+67,4,M,FPS,Activition,1
+68,4,M,FPS,Activition,1
+69,4,M,FPS,Activition,1
+70,4,M,FPS,Activition,1
+71,4,M,FPS,Activition,1
+72,4,M,FPS,Activition,1
+73,4,M,FPS,Activition,1
+74,4,M,FPS,Activition,1
+75,4,M,FPS,Activition,1
+76,4,M,FPS,Activition,1
+77,4,M,FPS,Activition,1
+78,4,M,FPS,Activition,1
+79,4,M,FPS,Activition,1
+80,4,M,FPS,Activition,1
+81,4,M,FPS,Activition,1
+82,4,M,FPS,Activition,1
+83,4,M,FPS,Activition,1
+84,4,M,FPS,Activition,1
+85,4,M,FPS,Activition,1
+86,4,M,FPS,Activition,1
+87,4,M,FPS,Activition,1
+88,4,M,FPS,Activition,1
+89,4,M,FPS,Activition,1
+90,4,M,FPS,Activition,1
+91,4,M,FPS,Activition,1
+92,4,M,FPS,Activition,1
+93,4,M,FPS,Activition,1
+94,4,M,FPS,Activition,1
+95,4,M,FPS,Activition,1
+96,4,M,FPS,Activition,1
+97,4,M,FPS,Activition,1
+98,4,M,FPS,Activition,1
+99,4,M,FPS,Activition,1
+100,4,M,FPS,Activition,1
+101,4,M,FPS,capcom,1
+102,5,M,FPS,capcom,1
+103,5,M,FPS,capcom,1
+104,5,M,FPS,capcom,1
+105,5,M,FPS,capcom,1
+106,5,M,FPS,capcom,1
+107,5,M,FPS,capcom,1
+108,5,M,FPS,capcom,1
+109,5,M,FPS,capcom,1
+110,5,M,FPS,capcom,1
+111,5,M,FPS,capcom,1
+112,5,M,FPS,capcom,1
+113,5,M,FPS,capcom,1
+114,5,M,FPS,capcom,1
+115,5,M,FPS,capcom,1
+116,5,M,FPS,capcom,1
+117,5,M,FPS,capcom,1
+118,5,M,FPS,capcom,1
+119,5,M,FPS,capcom,1
+120,5,M,FPS,capcom,1
+121,4,M,FPS,capcom,1
+122,5,M,FPS,capcom,1
+123,5,M,FPS,capcom,1
+124,5,M,FPS,capcom,1
+125,5,M,FPS,capcom,1
+126,5,M,FPS,capcom,1
+127,5,M,FPS,capcom,1
+128,5,M,FPS,capcom,1
+129,5,M,FPS,capcom,1
+130,5,M,FPS,capcom,1
+131,5,M,FPS,capcom,1
+132,5,M,FPS,capcom,1
+133,5,M,FPS,capcom,1
+134,5,M,FPS,capcom,1
+135,5,M,FPS,capcom,1
+136,5,M,FPS,capcom,1
+137,5,M,FPS,capcom,1
+138,5,M,FPS,capcom,1
+139,5,M,FPS,capcom,1
+140,5,M,FPS,capcom,1
+141,4,M,FPS,capcom,1
+142,5,M,FPS,capcom,1
+143,5,M,FPS,capcom,1
+144,5,M,FPS,capcom,1
+145,5,M,FPS,capcom,1
+146,5,M,FPS,capcom,1
+147,5,M,FPS,capcom,1
+148,5,M,FPS,capcom,1
+149,5,M,FPS,capcom,1
+150,5,M,FPS,capcom,1
+151,5,M,FPS,capcom,1
+152,5,M,FPS,capcom,1
+153,5,M,FPS,capcom,1
+154,5,M,FPS,capcom,1
+155,5,M,FPS,capcom,1
+156,5,M,FPS,capcom,1
+157,5,M,FPS,capcom,1
+158,5,M,FPS,capcom,1
+159,5,M,FPS,capcom,1
+160,5,M,FPS,capcom,1
+161,4,M,FPS,capcom,1
+162,5,M,FPS,capcom,1
+163,5,M,FPS,capcom,1
+164,5,M,FPS,capcom,1
+165,5,M,FPS,capcom,1
+166,5,M,FPS,capcom,1
+167,5,M,FPS,capcom,1
+168,5,M,FPS,capcom,1
+169,5,M,FPS,capcom,1
+170,5,M,FPS,capcom,1
+171,5,M,FPS,capcom,1
+172,5,M,FPS,capcom,1
+173,5,M,FPS,capcom,1
+174,5,M,FPS,capcom,1
+175,5,M,FPS,capcom,1
+176,5,M,FPS,capcom,1
+177,5,M,FPS,capcom,1
+178,5,M,FPS,capcom,1
+179,5,M,FPS,capcom,1
+180,5,M,FPS,capcom,1
+181,4,M,FPS,capcom,1
+182,5,M,FPS,capcom,1
+183,5,M,FPS,capcom,1
+184,5,M,FPS,capcom,1
+185,5,M,FPS,capcom,1
+186,5,M,FPS,capcom,1
+187,5,M,FPS,capcom,1
+188,5,M,FPS,capcom,1
+189,5,M,FPS,capcom,1
+190,5,M,FPS,capcom,1
+191,5,M,FPS,capcom,1
+192,5,M,FPS,capcom,1
+193,5,M,FPS,capcom,1
+194,5,M,FPS,capcom,1
+195,5,M,FPS,capcom,1
+196,5,M,FPS,capcom,1
+197,5,M,FPS,capcom,1
+198,5,M,FPS,capcom,1
+199,5,M,FPS,capcom,1
+200,5,M,FPS,capcom,1
+201,5,M,FPS,ubisoft,1
+202,4,M,FPS,ubisoft,1
+203,4,M,FPS,ubisoft,1
+204,4,M,FPS,ubisoft,1
+205,4,M,FPS,ubisoft,1
+206,4,M,FPS,ubisoft,1
+207,4,M,FPS,ubisoft,1
+208,4,M,FPS,ubisoft,1
+209,4,M,FPS,ubisoft,1
+210,4,M,FPS,ubisoft,1
+211,4,M,FPS,ubisoft,1
+212,4,M,FPS,ubisoft,1
+213,4,M,FPS,ubisoft,1
+214,4,M,FPS,ubisoft,1
+215,4,M,FPS,ubisoft,1
+216,4,M,FPS,ubisoft,1
+217,4,M,FPS,ubisoft,1
+218,4,M,FPS,ubisoft,1
+219,4,M,FPS,ubisoft,1
+220,4,M,FPS,ubisoft,1
+221,5,M,FPS,ubisoft,1
+222,4,M,FPS,ubisoft,1
+223,4,M,FPS,ubisoft,1
+224,4,M,FPS,ubisoft,1
+225,4,M,FPS,ubisoft,1
+226,4,M,FPS,ubisoft,1
+227,4,M,FPS,ubisoft,1
+228,4,M,FPS,ubisoft,1
+229,4,M,FPS,ubisoft,1
+230,4,M,FPS,ubisoft,1
+231,4,M,FPS,ubisoft,1
+232,4,M,FPS,ubisoft,1
+233,4,M,FPS,ubisoft,1
+234,4,M,FPS,ubisoft,1
+235,4,M,FPS,ubisoft,1
+236,4,M,FPS,ubisoft,1
+237,4,M,FPS,ubisoft,1
+238,4,M,FPS,ubisoft,1
+239,4,M,FPS,ubisoft,1
+240,4,M,FPS,ubisoft,1
+241,5,M,FPS,ubisoft,1
+242,4,M,FPS,ubisoft,1
+243,4,M,FPS,ubisoft,1
+244,4,M,FPS,ubisoft,1
+245,4,M,FPS,ubisoft,1
+246,4,M,FPS,ubisoft,1
+247,4,M,FPS,ubisoft,1
+248,4,M,FPS,ubisoft,1
+249,4,M,FPS,ubisoft,1
+250,4,M,FPS,ubisoft,1
+251,4,M,FPS,ubisoft,1
+252,4,M,FPS,ubisoft,1
+253,4,M,FPS,ubisoft,1
+254,4,M,FPS,ubisoft,1
+255,4,M,FPS,ubisoft,1
+256,4,M,FPS,ubisoft,1
+257,4,M,FPS,ubisoft,1
+258,4,M,FPS,ubisoft,1
+259,4,M,FPS,ubisoft,1
+260,4,M,FPS,ubisoft,1
+261,5,M,FPS,ubisoft,1
+262,4,M,FPS,ubisoft,1
+263,4,M,FPS,ubisoft,1
+264,4,M,FPS,ubisoft,1
+265,4,M,FPS,ubisoft,1
+266,4,M,FPS,ubisoft,1
+267,4,M,FPS,ubisoft,1
+268,4,M,FPS,ubisoft,1
+269,4,M,FPS,ubisoft,1
+270,4,M,FPS,ubisoft,1
+271,4,M,FPS,ubisoft,1
+272,4,M,FPS,ubisoft,1
+273,4,M,FPS,ubisoft,1
+274,4,M,FPS,ubisoft,1
+275,4,M,FPS,ubisoft,1
+276,4,M,FPS,ubisoft,1
+277,4,M,FPS,ubisoft,1
+278,4,M,FPS,ubisoft,1
+279,4,M,FPS,ubisoft,1
+280,4,M,FPS,ubisoft,1
+281,5,M,FPS,ubisoft,1
+282,4,M,FPS,ubisoft,1
+283,4,M,FPS,ubisoft,1
+284,4,M,FPS,ubisoft,1
+285,4,M,FPS,ubisoft,1
+286,4,M,FPS,ubisoft,1
+287,4,M,FPS,ubisoft,1
+288,4,M,FPS,ubisoft,1
+289,4,M,FPS,ubisoft,1
+290,4,M,FPS,ubisoft,1
+291,4,M,FPS,ubisoft,1
+292,4,M,FPS,ubisoft,1
+293,4,M,FPS,ubisoft,1
+294,4,M,FPS,ubisoft,1
+295,4,M,FPS,ubisoft,1
+296,4,M,FPS,ubisoft,1
+297,4,M,FPS,ubisoft,1
+298,4,M,FPS,ubisoft,1
+299,4,M,FPS,ubisoft,1
+300,4,M,FPS,ubisoft,1
+301,4,M,FPS,konami,1
+302,5,M,FPS,konami,1
+303,5,M,FPS,konami,1
+304,5,M,FPS,konami,1
+305,5,M,FPS,konami,1
+306,5,M,FPS,konami,1
+307,5,M,FPS,konami,1
+308,5,M,FPS,konami,1
+309,5,M,FPS,konami,1
+310,5,M,FPS,konami,1
+311,5,M,FPS,konami,1
+312,5,M,FPS,konami,1
+313,5,M,FPS,konami,1
+314,5,M,FPS,konami,1
+315,5,M,FPS,konami,1
+316,5,M,FPS,konami,1
+317,5,M,FPS,konami,1
+318,5,M,FPS,konami,1
+319,5,M,FPS,konami,1
+320,5,M,FPS,konami,1
+321,4,M,FPS,konami,1
+322,5,M,FPS,konami,1
+323,5,M,FPS,konami,1
+324,5,M,FPS,konami,1
+325,5,M,FPS,konami,1
+326,5,M,FPS,konami,1
+327,5,M,FPS,konami,1
+328,5,M,FPS,konami,1
+329,5,M,FPS,konami,1
+330,5,M,FPS,konami,1
+331,5,M,FPS,konami,1
+332,5,M,FPS,konami,1
+333,5,M,FPS,konami,1
+334,5,M,FPS,konami,1
+335,5,M,FPS,konami,1
+336,5,M,FPS,konami,1
+337,5,M,FPS,konami,1
+338,5,M,FPS,konami,1
+339,5,M,FPS,konami,1
+340,5,M,FPS,konami,1
+341,4,M,FPS,konami,1
+342,5,M,FPS,konami,1
+343,5,M,FPS,konami,1
+344,5,M,FPS,konami,1
+345,5,M,FPS,konami,1
+346,5,M,FPS,konami,1
+347,5,M,FPS,konami,1
+348,5,M,FPS,konami,1
+349,5,M,FPS,konami,1
+350,5,M,FPS,konami,1
+351,5,M,FPS,konami,1
+352,5,M,FPS,konami,1
+353,5,M,FPS,konami,1
+354,5,M,FPS,konami,1
+355,5,M,FPS,konami,1
+356,5,M,FPS,konami,1
+357,5,M,FPS,konami,1
+358,5,M,FPS,konami,1
+359,5,M,FPS,konami,1
+360,5,M,FPS,konami,1
+361,4,M,FPS,konami,1
+362,5,M,FPS,konami,1
+363,5,M,FPS,konami,1
+364,5,M,FPS,konami,1
+365,5,M,FPS,konami,1
+366,5,M,FPS,konami,1
+367,5,M,FPS,konami,1
+368,5,M,FPS,konami,1
+369,5,M,FPS,konami,1
+370,5,M,FPS,konami,1
+371,5,M,FPS,konami,1
+372,5,M,FPS,konami,1
+373,5,M,FPS,konami,1
+374,5,M,FPS,konami,1
+375,5,M,FPS,konami,1
+376,5,M,FPS,konami,1
+377,5,M,FPS,konami,1
+378,5,M,FPS,konami,1
+379,5,M,FPS,konami,1
+380,5,M,FPS,konami,1
+381,4,M,FPS,konami,1
+382,5,M,FPS,konami,1
+383,5,M,FPS,konami,1
+384,5,M,FPS,konami,1
+385,5,M,FPS,konami,1
+386,5,M,FPS,konami,1
+387,5,M,FPS,konami,1
+388,5,M,FPS,konami,1
+389,5,M,FPS,konami,1
+390,5,M,FPS,konami,1
+391,5,M,FPS,konami,1
+392,5,M,FPS,konami,1
+393,5,M,FPS,konami,1
+394,5,M,FPS,konami,1
+395,5,M,FPS,konami,1
+396,5,M,FPS,konami,1
+397,5,M,FPS,konami,1
+398,5,M,FPS,konami,1
+399,5,M,FPS,konami,1
+400,5,M,FPS,konami,1
+401,5,M,FPS,ubisoft,1
+402,3,M,FPS,ubisoft,1
+403,3,M,FPS,ubisoft,1
+404,3,M,FPS,ubisoft,1
+405,3,M,FPS,ubisoft,1
+406,3,M,FPS,ubisoft,1
+407,3,M,FPS,ubisoft,1
+408,3,M,FPS,ubisoft,1
+409,3,M,FPS,ubisoft,1
+410,3,M,FPS,ubisoft,1
+411,3,M,FPS,ubisoft,1
+412,3,M,FPS,ubisoft,1
+413,3,M,FPS,ubisoft,1
+414,3,M,FPS,ubisoft,1
+415,3,M,FPS,ubisoft,1
+416,3,M,FPS,ubisoft,1
+417,3,M,FPS,ubisoft,1
+418,3,M,FPS,ubisoft,1
+419,3,M,FPS,ubisoft,1
+420,3,M,FPS,ubisoft,1
+421,3,M,FPS,ubisoft,1
+422,5,M,FPS,ubisoft,1
+423,3,M,FPS,ubisoft,1
+424,3,M,FPS,ubisoft,1
+425,3,M,FPS,ubisoft,1
+426,3,M,FPS,ubisoft,1
+427,3,M,FPS,ubisoft,1
+428,3,M,FPS,ubisoft,1
+429,3,M,FPS,ubisoft,1
+430,3,M,FPS,ubisoft,1
+431,3,M,FPS,ubisoft,1
+432,3,M,FPS,ubisoft,1
+433,3,M,FPS,ubisoft,1
+434,3,M,FPS,ubisoft,1
+435,3,M,FPS,ubisoft,1
+436,3,M,FPS,ubisoft,1
+437,3,M,FPS,ubisoft,1
+438,3,M,FPS,ubisoft,1
+439,3,M,FPS,ubisoft,1
+440,3,M,FPS,ubisoft,1
+441,3,M,FPS,ubisoft,1
+442,3,M,FPS,ubisoft,1
+443,5,M,FPS,ubisoft,1
+444,3,M,FPS,ubisoft,1
+445,3,M,FPS,ubisoft,1
+446,3,M,FPS,ubisoft,1
+447,3,M,FPS,ubisoft,1
+448,3,M,FPS,ubisoft,1
+449,3,M,FPS,ubisoft,1
+450,3,M,FPS,ubisoft,1
+451,3,M,FPS,ubisoft,1
+452,3,M,FPS,ubisoft,1
+453,3,M,FPS,ubisoft,1
+454,3,M,FPS,ubisoft,1
+455,3,M,FPS,ubisoft,1
+456,3,M,FPS,ubisoft,1
+457,3,M,FPS,ubisoft,1
+458,3,M,FPS,ubisoft,1
+459,3,M,FPS,ubisoft,1
+460,3,M,FPS,ubisoft,1
+461,3,M,FPS,ubisoft,1
+462,3,M,FPS,ubisoft,1
+463,3,M,FPS,ubisoft,1
+464,5,M,FPS,ubisoft,1
+465,3,M,FPS,ubisoft,1
+466,3,M,FPS,ubisoft,1
+467,3,M,FPS,ubisoft,1
+468,3,M,FPS,ubisoft,1
+469,3,M,FPS,ubisoft,1
+470,3,M,FPS,ubisoft,1
+471,3,M,FPS,ubisoft,1
+472,3,M,FPS,ubisoft,1
+473,3,M,FPS,ubisoft,1
+474,3,M,FPS,ubisoft,1
+475,3,M,FPS,ubisoft,1
+476,3,M,FPS,ubisoft,1
+477,3,M,FPS,ubisoft,1
+478,3,M,FPS,ubisoft,1
+479,3,M,FPS,ubisoft,1
+480,3,M,FPS,ubisoft,1
+481,3,M,FPS,ubisoft,1
+482,3,M,FPS,ubisoft,1
+483,3,M,FPS,ubisoft,1
+484,3,M,FPS,ubisoft,1
+485,5,M,FPS,ubisoft,1
+486,3,M,FPS,ubisoft,1
+487,3,M,FPS,ubisoft,1
+488,3,M,FPS,ubisoft,1
+489,3,M,FPS,ubisoft,1
+490,3,M,FPS,ubisoft,1
+491,3,M,FPS,ubisoft,1
+492,3,M,FPS,ubisoft,1
+493,3,M,FPS,ubisoft,1
+494,3,M,FPS,ubisoft,1
+495,3,M,FPS,ubisoft,1
+496,3,M,FPS,ubisoft,1
+497,3,M,FPS,ubisoft,1
+498,3,M,FPS,ubisoft,1
+499,3,M,FPS,ubisoft,1
+500,3,M,FPS,ubisoft,1
+1001,4,M,FPS,Activition,1 a 16
+1002,4,M,FPS,Activition,1 a 16
+1003,4,M,FPS,Activition,1 a 16
+1004,4,M,FPS,Activition,1 a 16
+1005,4,M,FPS,Activition,1 a 16
+1006,4,M,FPS,Activition,1 a 16
+1007,4,M,FPS,Activition,1 a 16
+1008,4,M,FPS,Activition,1 a 16
+1009,4,M,FPS,Activition,1 a 16
+1010,4,M,FPS,Activition,1 a 16
+1011,4,M,FPS,Activition,1 a 16
+1012,4,M,FPS,Activition,1 a 16
+1013,4,M,FPS,Activition,1 a 16
+1014,4,M,FPS,Activition,1 a 16
+1015,4,M,FPS,Activition,1 a 16
+1016,4,M,FPS,Activition,1 a 16
+1017,4,M,FPS,Activition,1 a 16
+1018,4,M,FPS,Activition,1 a 16
+1019,4,M,FPS,Activition,1 a 16
+1020,4,M,FPS,Activition,1 a 16
+1021,4,M,FPS,Activition,1 a 16
+1022,4,M,FPS,Activition,1 a 16
+1023,4,M,FPS,Activition,1 a 16
+1024,4,M,FPS,Activition,1 a 16
+1025,4,M,FPS,Activition,1 a 16
+1026,4,M,FPS,Activition,1 a 16
+1027,4,M,FPS,Activition,1 a 16
+1028,4,M,FPS,Activition,1 a 16
+1029,4,M,FPS,Activition,1 a 16
+1030,4,M,FPS,Activition,1 a 16
+1031,4,M,FPS,Activition,1 a 16
+1032,4,M,FPS,Activition,1 a 16
+1033,4,M,FPS,Activition,1 a 16
+1034,4,M,FPS,Activition,1 a 16
+1035,4,M,FPS,Activition,1 a 16
+1036,4,M,FPS,Activition,1 a 16
+1037,4,M,FPS,Activition,1 a 16
+1038,4,M,FPS,Activition,1 a 16
+1039,4,M,FPS,Activition,1 a 16
+1040,4,M,FPS,Activition,1 a 16
+1041,4,M,FPS,Activition,1 a 16
+1042,4,M,FPS,Activition,1 a 16
+1043,4,M,FPS,Activition,1 a 16
+1044,4,M,FPS,Activition,1 a 16
+1045,4,M,FPS,Activition,1 a 16
+1046,4,M,FPS,Activition,1 a 16
+1047,4,M,FPS,Activition,1 a 16
+1048,4,M,FPS,Activition,1 a 16
+1049,4,M,FPS,Activition,1 a 16
+1050,4,M,FPS,Activition,1 a 16
+1051,4,M,FPS,Activition,1 a 16
+1052,4,M,FPS,Activition,1 a 16
+1053,4,M,FPS,Activition,1 a 16
+1054,4,M,FPS,Activition,1 a 16
+1055,4,M,FPS,Activition,1 a 16
+1056,4,M,FPS,Activition,1 a 16
+1057,4,M,FPS,Activition,1 a 16
+1058,4,M,FPS,Activition,1 a 16
+1059,4,M,FPS,Activition,1 a 16
+1060,4,M,FPS,Activition,1 a 16
+1061,4,M,FPS,Activition,1 a 16
+1062,4,M,FPS,Activition,1 a 16
+1063,4,M,FPS,Activition,1 a 16
+1064,4,M,FPS,Activition,1 a 16
+1065,4,M,FPS,Activition,1 a 16
+1066,4,M,FPS,Activition,1 a 16
+1067,4,M,FPS,Activition,1 a 16
+1068,4,M,FPS,Activition,1 a 16
+1069,4,M,FPS,Activition,1 a 16
+1070,4,M,FPS,Activition,1 a 16
+1071,4,M,FPS,Activition,1 a 16
+1072,4,M,FPS,Activition,1 a 16
+1073,4,M,FPS,Activition,1 a 16
+1074,4,M,FPS,Activition,1 a 16
+1075,4,M,FPS,Activition,1 a 16
+1076,4,M,FPS,Activition,1 a 16
+1077,4,M,FPS,Activition,1 a 16
+1078,4,M,FPS,Activition,1 a 16
+1079,4,M,FPS,Activition,1 a 16
+1080,4,M,FPS,Activition,1 a 16
+1081,4,M,FPS,Activition,1 a 16
+1082,4,M,FPS,Activition,1 a 16
+1083,4,M,FPS,Activition,1 a 16
+1084,4,M,FPS,Activition,1 a 16
+1085,4,M,FPS,Activition,1 a 16
+1086,4,M,FPS,Activition,1 a 16
+1087,4,M,FPS,Activition,1 a 16
+1088,4,M,FPS,Activition,1 a 16
+1089,4,M,FPS,Activition,1 a 16
+1090,4,M,FPS,Activition,1 a 16
+1091,4,M,FPS,Activition,1 a 16
+1092,4,M,FPS,Activition,1 a 16
+1093,4,M,FPS,Activition,1 a 16
+1094,4,M,FPS,Activition,1 a 16
+1095,4,M,FPS,Activition,1 a 16
+1096,4,M,FPS,Activition,1 a 16
+1097,4,M,FPS,Activition,1 a 16
+1098,4,M,FPS,Activition,1 a 16
+1099,4,M,FPS,Activition,1 a 16
+1100,4,M,FPS,Activition,1 a 16
+1101,5,M,FPS,Irrational Games,1
+1102,5,M,FPS,Irrational Games,1
+1103,5,M,FPS,Irrational Games,1
+1104,5,M,FPS,Irrational Games,1
+1105,5,M,FPS,Irrational Games,1
+1106,5,M,FPS,Irrational Games,1
+1107,5,M,FPS,Irrational Games,1
+1108,5,M,FPS,Irrational Games,1
+1109,5,M,FPS,Irrational Games,1
+1110,5,M,FPS,Irrational Games,1
+1111,5,M,FPS,Irrational Games,1
+1112,5,M,FPS,Irrational Games,1
+1113,5,M,FPS,Irrational Games,1
+1114,5,M,FPS,Irrational Games,1
+1115,5,M,FPS,Irrational Games,1
+1116,5,M,FPS,Irrational Games,1
+1117,5,M,FPS,Irrational Games,1
+1118,5,M,FPS,Irrational Games,1
+1119,5,M,FPS,Irrational Games,1
+1120,5,M,FPS,Irrational Games,1
+1121,5,M,FPS,Irrational Games,1
+1122,5,M,FPS,Irrational Games,1
+1123,5,M,FPS,Irrational Games,1
+1124,5,M,FPS,Irrational Games,1
+1125,5,M,FPS,Irrational Games,1
+1126,5,M,FPS,Irrational Games,1
+1127,5,M,FPS,Irrational Games,1
+1128,5,M,FPS,Irrational Games,1
+1129,5,M,FPS,Irrational Games,1
+1130,5,M,FPS,Irrational Games,1
+1131,5,M,FPS,Irrational Games,1
+1132,5,M,FPS,Irrational Games,1
+1133,5,M,FPS,Irrational Games,1
+1134,5,M,FPS,Irrational Games,1
+1135,5,M,FPS,Irrational Games,1
+1136,5,M,FPS,Irrational Games,1
+1137,5,M,FPS,Irrational Games,1
+1138,5,M,FPS,Irrational Games,1
+1139,5,M,FPS,Irrational Games,1
+1140,5,M,FPS,Irrational Games,1
+1141,5,M,FPS,Irrational Games,1
+1142,5,M,FPS,Irrational Games,1
+1143,5,M,FPS,Irrational Games,1
+1144,5,M,FPS,Irrational Games,1
+1145,5,M,FPS,Irrational Games,1
+1146,5,M,FPS,Irrational Games,1
+1147,5,M,FPS,Irrational Games,1
+1148,5,M,FPS,Irrational Games,1
+1149,5,M,FPS,Irrational Games,1
+1150,5,M,FPS,Irrational Games,1
+1151,5,M,FPS,Irrational Games,1
+1152,5,M,FPS,Irrational Games,1
+1153,5,M,FPS,Irrational Games,1
+1154,5,M,FPS,Irrational Games,1
+1155,5,M,FPS,Irrational Games,1
+1156,5,M,FPS,Irrational Games,1
+1157,5,M,FPS,Irrational Games,1
+1158,5,M,FPS,Irrational Games,1
+1159,5,M,FPS,Irrational Games,1
+1160,5,M,FPS,Irrational Games,1
+1161,5,M,FPS,Irrational Games,1
+1162,5,M,FPS,Irrational Games,1
+1163,5,M,FPS,Irrational Games,1
+1164,5,M,FPS,Irrational Games,1
+1165,5,M,FPS,Irrational Games,1
+1166,5,M,FPS,Irrational Games,1
+1167,5,M,FPS,Irrational Games,1
+1168,5,M,FPS,Irrational Games,1
+1169,5,M,FPS,Irrational Games,1
+1170,5,M,FPS,Irrational Games,1
+1171,5,M,FPS,Irrational Games,1
+1172,5,M,FPS,Irrational Games,1
+1173,5,M,FPS,Irrational Games,1
+1174,5,M,FPS,Irrational Games,1
+1175,5,M,FPS,Irrational Games,1
+1176,5,M,FPS,Irrational Games,1
+1177,5,M,FPS,Irrational Games,1
+1178,5,M,FPS,Irrational Games,1
+1179,5,M,FPS,Irrational Games,1
+1180,5,M,FPS,Irrational Games,1
+1181,5,M,FPS,Irrational Games,1
+1182,5,M,FPS,Irrational Games,1
+1183,5,M,FPS,Irrational Games,1
+1184,5,M,FPS,Irrational Games,1
+1185,5,M,FPS,Irrational Games,1
+1186,5,M,FPS,Irrational Games,1
+1187,5,M,FPS,Irrational Games,1
+1188,5,M,FPS,Irrational Games,1
+1189,5,M,FPS,Irrational Games,1
+1190,5,M,FPS,Irrational Games,1
+1191,5,M,FPS,Irrational Games,1
+1192,5,M,FPS,Irrational Games,1
+1193,5,M,FPS,Irrational Games,1
+1194,5,M,FPS,Irrational Games,1
+1195,5,M,FPS,Irrational Games,1
+1196,5,M,FPS,Irrational Games,1
+1197,5,M,FPS,Irrational Games,1
+1198,5,M,FPS,Irrational Games,1
+1199,5,M,FPS,Irrational Games,1
+1200,5,M,FPS,Irrational Games,1
+1201,5,M,FPS,Bungie,1 a 16
+1202,5,M,FPS,Bungie,1 a 16
+1203,5,M,FPS,Bungie,1 a 16
+1204,5,M,FPS,Bungie,1 a 16
+1205,5,M,FPS,Bungie,1 a 16
+1206,5,M,FPS,Bungie,1 a 16
+1207,5,M,FPS,Bungie,1 a 16
+1208,5,M,FPS,Bungie,1 a 16
+1209,5,M,FPS,Bungie,1 a 16
+1210,5,M,FPS,Bungie,1 a 16
+1211,5,M,FPS,Bungie,1 a 16
+1212,5,M,FPS,Bungie,1 a 16
+1213,5,M,FPS,Bungie,1 a 16
+1214,5,M,FPS,Bungie,1 a 16
+1215,5,M,FPS,Bungie,1 a 16
+1216,5,M,FPS,Bungie,1 a 16
+1217,5,M,FPS,Bungie,1 a 16
+1218,5,M,FPS,Bungie,1 a 16
+1219,5,M,FPS,Bungie,1 a 16
+1220,5,M,FPS,Bungie,1 a 16
+1221,5,M,FPS,Bungie,1 a 16
+1222,5,M,FPS,Bungie,1 a 16
+1223,5,M,FPS,Bungie,1 a 16
+1224,5,M,FPS,Bungie,1 a 16
+1225,5,M,FPS,Bungie,1 a 16
+1226,5,M,FPS,Bungie,1 a 16
+1227,5,M,FPS,Bungie,1 a 16
+1228,5,M,FPS,Bungie,1 a 16
+1229,5,M,FPS,Bungie,1 a 16
+1230,5,M,FPS,Bungie,1 a 16
+1231,5,M,FPS,Bungie,1 a 16
+1232,5,M,FPS,Bungie,1 a 16
+1233,5,M,FPS,Bungie,1 a 16
+1234,5,M,FPS,Bungie,1 a 16
+1235,5,M,FPS,Bungie,1 a 16
+1236,5,M,FPS,Bungie,1 a 16
+1237,5,M,FPS,Bungie,1 a 16
+1238,5,M,FPS,Bungie,1 a 16
+1239,5,M,FPS,Bungie,1 a 16
+1240,5,M,FPS,Bungie,1 a 16
+1241,5,M,FPS,Bungie,1 a 16
+1242,5,M,FPS,Bungie,1 a 16
+1243,5,M,FPS,Bungie,1 a 16
+1244,5,M,FPS,Bungie,1 a 16
+1245,5,M,FPS,Bungie,1 a 16
+1246,5,M,FPS,Bungie,1 a 16
+1247,5,M,FPS,Bungie,1 a 16
+1248,5,M,FPS,Bungie,1 a 16
+1249,5,M,FPS,Bungie,1 a 16
+1250,5,M,FPS,Bungie,1 a 16
+1251,5,M,FPS,Bungie,1 a 16
+1252,5,M,FPS,Bungie,1 a 16
+1253,5,M,FPS,Bungie,1 a 16
+1254,5,M,FPS,Bungie,1 a 16
+1255,5,M,FPS,Bungie,1 a 16
+1256,5,M,FPS,Bungie,1 a 16
+1257,5,M,FPS,Bungie,1 a 16
+1258,5,M,FPS,Bungie,1 a 16
+1259,5,M,FPS,Bungie,1 a 16
+1260,5,M,FPS,Bungie,1 a 16
+1261,5,M,FPS,Bungie,1 a 16
+1262,5,M,FPS,Bungie,1 a 16
+1263,5,M,FPS,Bungie,1 a 16
+1264,5,M,FPS,Bungie,1 a 16
+1265,5,M,FPS,Bungie,1 a 16
+1266,5,M,FPS,Bungie,1 a 16
+1267,5,M,FPS,Bungie,1 a 16
+1268,5,M,FPS,Bungie,1 a 16
+1269,5,M,FPS,Bungie,1 a 16
+1270,5,M,FPS,Bungie,1 a 16
+1271,5,M,FPS,Bungie,1 a 16
+1272,5,M,FPS,Bungie,1 a 16
+1273,5,M,FPS,Bungie,1 a 16
+1274,5,M,FPS,Bungie,1 a 16
+1275,5,M,FPS,Bungie,1 a 16
+1276,5,M,FPS,Bungie,1 a 16
+1277,5,M,FPS,Bungie,1 a 16
+1278,5,M,FPS,Bungie,1 a 16
+1279,5,M,FPS,Bungie,1 a 16
+1280,5,M,FPS,Bungie,1 a 16
+1281,5,M,FPS,Bungie,1 a 16
+1282,5,M,FPS,Bungie,1 a 16
+1283,5,M,FPS,Bungie,1 a 16
+1284,5,M,FPS,Bungie,1 a 16
+1285,5,M,FPS,Bungie,1 a 16
+1286,5,M,FPS,Bungie,1 a 16
+1287,5,M,FPS,Bungie,1 a 16
+1288,5,M,FPS,Bungie,1 a 16
+1289,5,M,FPS,Bungie,1 a 16
+1290,5,M,FPS,Bungie,1 a 16
+1291,5,M,FPS,Bungie,1 a 16
+1292,5,M,FPS,Bungie,1 a 16
+1293,5,M,FPS,Bungie,1 a 16
+1294,5,M,FPS,Bungie,1 a 16
+1295,5,M,FPS,Bungie,1 a 16
+1296,5,M,FPS,Bungie,1 a 16
+1297,5,M,FPS,Bungie,1 a 16
+1298,5,M,FPS,Bungie,1 a 16
+1299,5,M,FPS,Bungie,1 a 16
+1300,5,M,FPS,Bungie,1 a 16
+1301,4,M,FPS,EA Dice,1 a 40
+1302,4,M,FPS,EA Dice,1 a 40
+1303,4,M,FPS,EA Dice,1 a 40
+1304,4,M,FPS,EA Dice,1 a 40
+1305,4,M,FPS,EA Dice,1 a 40
+1306,4,M,FPS,EA Dice,1 a 40
+1307,4,M,FPS,EA Dice,1 a 40
+1308,4,M,FPS,EA Dice,1 a 40
+1309,4,M,FPS,EA Dice,1 a 40
+1310,4,M,FPS,EA Dice,1 a 40
+1311,4,M,FPS,EA Dice,1 a 40
+1312,4,M,FPS,EA Dice,1 a 40
+1313,4,M,FPS,EA Dice,1 a 40
+1314,4,M,FPS,EA Dice,1 a 40
+1315,4,M,FPS,EA Dice,1 a 40
+1316,4,M,FPS,EA Dice,1 a 40
+1317,4,M,FPS,EA Dice,1 a 40
+1318,4,M,FPS,EA Dice,1 a 40
+1319,4,M,FPS,EA Dice,1 a 40
+1320,4,M,FPS,EA Dice,1 a 40
+1321,4,M,FPS,EA Dice,1 a 40
+1322,4,M,FPS,EA Dice,1 a 40
+1323,4,M,FPS,EA Dice,1 a 40
+1324,4,M,FPS,EA Dice,1 a 40
+1325,4,M,FPS,EA Dice,1 a 40
+1326,4,M,FPS,EA Dice,1 a 40
+1327,4,M,FPS,EA Dice,1 a 40
+1328,4,M,FPS,EA Dice,1 a 40
+1329,4,M,FPS,EA Dice,1 a 40
+1330,4,M,FPS,EA Dice,1 a 40
+1331,4,M,FPS,EA Dice,1 a 40
+1332,4,M,FPS,EA Dice,1 a 40
+1333,4,M,FPS,EA Dice,1 a 40
+1334,4,M,FPS,EA Dice,1 a 40
+1335,4,M,FPS,EA Dice,1 a 40
+1336,4,M,FPS,EA Dice,1 a 40
+1337,4,M,FPS,EA Dice,1 a 40
+1338,4,M,FPS,EA Dice,1 a 40
+1339,4,M,FPS,EA Dice,1 a 40
+1340,4,M,FPS,EA Dice,1 a 40
+1341,4,M,FPS,EA Dice,1 a 40
+1342,4,M,FPS,EA Dice,1 a 40
+1343,4,M,FPS,EA Dice,1 a 40
+1344,4,M,FPS,EA Dice,1 a 40
+1345,4,M,FPS,EA Dice,1 a 40
+1346,4,M,FPS,EA Dice,1 a 40
+1347,4,M,FPS,EA Dice,1 a 40
+1348,4,M,FPS,EA Dice,1 a 40
+1349,4,M,FPS,EA Dice,1 a 40
+1350,4,M,FPS,EA Dice,1 a 40
+1351,4,M,FPS,EA Dice,1 a 40
+1352,4,M,FPS,EA Dice,1 a 40
+1353,4,M,FPS,EA Dice,1 a 40
+1354,4,M,FPS,EA Dice,1 a 40
+1355,4,M,FPS,EA Dice,1 a 40
+1356,4,M,FPS,EA Dice,1 a 40
+1357,4,M,FPS,EA Dice,1 a 40
+1358,4,M,FPS,EA Dice,1 a 40
+1359,4,M,FPS,EA Dice,1 a 40
+1360,4,M,FPS,EA Dice,1 a 40
+1361,4,M,FPS,EA Dice,1 a 40
+1362,4,M,FPS,EA Dice,1 a 40
+1363,4,M,FPS,EA Dice,1 a 40
+1364,4,M,FPS,EA Dice,1 a 40
+1365,4,M,FPS,EA Dice,1 a 40
+1366,4,M,FPS,EA Dice,1 a 40
+1367,4,M,FPS,EA Dice,1 a 40
+1368,4,M,FPS,EA Dice,1 a 40
+1369,4,M,FPS,EA Dice,1 a 40
+1370,4,M,FPS,EA Dice,1 a 40
+1371,4,M,FPS,EA Dice,1 a 40
+1372,4,M,FPS,EA Dice,1 a 40
+1373,4,M,FPS,EA Dice,1 a 40
+1374,4,M,FPS,EA Dice,1 a 40
+1375,4,M,FPS,EA Dice,1 a 40
+1376,4,M,FPS,EA Dice,1 a 40
+1377,4,M,FPS,EA Dice,1 a 40
+1378,4,M,FPS,EA Dice,1 a 40
+1379,4,M,FPS,EA Dice,1 a 40
+1380,4,M,FPS,EA Dice,1 a 40
+1381,4,M,FPS,EA Dice,1 a 40
+1382,4,M,FPS,EA Dice,1 a 40
+1383,4,M,FPS,EA Dice,1 a 40
+1384,4,M,FPS,EA Dice,1 a 40
+1385,4,M,FPS,EA Dice,1 a 40
+1386,4,M,FPS,EA Dice,1 a 40
+1387,4,M,FPS,EA Dice,1 a 40
+1388,4,M,FPS,EA Dice,1 a 40
+1389,4,M,FPS,EA Dice,1 a 40
+1390,4,M,FPS,EA Dice,1 a 40
+1391,4,M,FPS,EA Dice,1 a 40
+1392,4,M,FPS,EA Dice,1 a 40
+1393,4,M,FPS,EA Dice,1 a 40
+1394,4,M,FPS,EA Dice,1 a 40
+1395,4,M,FPS,EA Dice,1 a 40
+1396,4,M,FPS,EA Dice,1 a 40
+1397,4,M,FPS,EA Dice,1 a 40
+1398,4,M,FPS,EA Dice,1 a 40
+1399,4,M,FPS,EA Dice,1 a 40
+1400,4,M,FPS,EA Dice,1 a 40
+1401,4,E,Carreras,Nintendo,1 a 6
+1402,4,E,Carreras,Nintendo,1 a 6
+1403,4,E,Carreras,Nintendo,1 a 6
+1404,4,E,Carreras,Nintendo,1 a 6
+1405,4,E,Carreras,Nintendo,1 a 6
+1406,4,E,Carreras,Nintendo,1 a 6
+1407,4,E,Carreras,Nintendo,1 a 6
+1408,4,E,Carreras,Nintendo,1 a 6
+1409,4,E,Carreras,Nintendo,1 a 6
+1410,4,E,Carreras,Nintendo,1 a 6
+1411,4,E,Carreras,Nintendo,1 a 6
+1412,4,E,Carreras,Nintendo,1 a 6
+1413,4,E,Carreras,Nintendo,1 a 6
+1414,4,E,Carreras,Nintendo,1 a 6
+1415,4,E,Carreras,Nintendo,1 a 6
+1416,4,E,Carreras,Nintendo,1 a 6
+1417,4,E,Carreras,Nintendo,1 a 6
+1418,4,E,Carreras,Nintendo,1 a 6
+1419,4,E,Carreras,Nintendo,1 a 6
+1420,4,E,Carreras,Nintendo,1 a 6
+1421,4,E,Carreras,Nintendo,1 a 6
+1422,4,E,Carreras,Nintendo,1 a 6
+1423,4,E,Carreras,Nintendo,1 a 6
+1424,4,E,Carreras,Nintendo,1 a 6
+1425,4,E,Carreras,Nintendo,1 a 6
+1426,4,E,Carreras,Nintendo,1 a 6
+1427,4,E,Carreras,Nintendo,1 a 6
+1428,4,E,Carreras,Nintendo,1 a 6
+1429,4,E,Carreras,Nintendo,1 a 6
+1430,4,E,Carreras,Nintendo,1 a 6
+1431,4,E,Carreras,Nintendo,1 a 6
+1432,4,E,Carreras,Nintendo,1 a 6
+1433,4,E,Carreras,Nintendo,1 a 6
+1434,4,E,Carreras,Nintendo,1 a 6
+1435,4,E,Carreras,Nintendo,1 a 6
+1436,4,E,Carreras,Nintendo,1 a 6
+1437,4,E,Carreras,Nintendo,1 a 6
+1438,4,E,Carreras,Nintendo,1 a 6
+1439,4,E,Carreras,Nintendo,1 a 6
+1440,4,E,Carreras,Nintendo,1 a 6
+1441,4,E,Carreras,Nintendo,1 a 6
+1442,4,E,Carreras,Nintendo,1 a 6
+1443,4,E,Carreras,Nintendo,1 a 6
+1444,4,E,Carreras,Nintendo,1 a 6
+1445,4,E,Carreras,Nintendo,1 a 6
+1446,4,E,Carreras,Nintendo,1 a 6
+1447,4,E,Carreras,Nintendo,1 a 6
+1448,4,E,Carreras,Nintendo,1 a 6
+1449,4,E,Carreras,Nintendo,1 a 6
+1450,4,E,Carreras,Nintendo,1 a 6
+1451,4,E,Carreras,Nintendo,1 a 6
+1452,4,E,Carreras,Nintendo,1 a 6
+1453,4,E,Carreras,Nintendo,1 a 6
+1454,4,E,Carreras,Nintendo,1 a 6
+1455,4,E,Carreras,Nintendo,1 a 6
+1456,4,E,Carreras,Nintendo,1 a 6
+1457,4,E,Carreras,Nintendo,1 a 6
+1458,4,E,Carreras,Nintendo,1 a 6
+1459,4,E,Carreras,Nintendo,1 a 6
+1460,4,E,Carreras,Nintendo,1 a 6
+1461,4,E,Carreras,Nintendo,1 a 6
+1462,4,E,Carreras,Nintendo,1 a 6
+1463,4,E,Carreras,Nintendo,1 a 6
+1464,4,E,Carreras,Nintendo,1 a 6
+1465,4,E,Carreras,Nintendo,1 a 6
+1466,4,E,Carreras,Nintendo,1 a 6
+1467,4,E,Carreras,Nintendo,1 a 6
+1468,4,E,Carreras,Nintendo,1 a 6
+1469,4,E,Carreras,Nintendo,1 a 6
+1470,4,E,Carreras,Nintendo,1 a 6
+1471,4,E,Carreras,Nintendo,1 a 6
+1472,4,E,Carreras,Nintendo,1 a 6
+1473,4,E,Carreras,Nintendo,1 a 6
+1474,4,E,Carreras,Nintendo,1 a 6
+1475,4,E,Carreras,Nintendo,1 a 6
+1476,4,E,Carreras,Nintendo,1 a 6
+1477,4,E,Carreras,Nintendo,1 a 6
+1478,4,E,Carreras,Nintendo,1 a 6
+1479,4,E,Carreras,Nintendo,1 a 6
+1480,4,E,Carreras,Nintendo,1 a 6
+1481,4,E,Carreras,Nintendo,1 a 6
+1482,4,E,Carreras,Nintendo,1 a 6
+1483,4,E,Carreras,Nintendo,1 a 6
+1484,4,E,Carreras,Nintendo,1 a 6
+1485,4,E,Carreras,Nintendo,1 a 6
+1486,4,E,Carreras,Nintendo,1 a 6
+1487,4,E,Carreras,Nintendo,1 a 6
+1488,4,E,Carreras,Nintendo,1 a 6
+1489,4,E,Carreras,Nintendo,1 a 6
+1490,4,E,Carreras,Nintendo,1 a 6
+1491,4,E,Carreras,Nintendo,1 a 6
+1492,4,E,Carreras,Nintendo,1 a 6
+1493,4,E,Carreras,Nintendo,1 a 6
+1494,4,E,Carreras,Nintendo,1 a 6
+1495,4,E,Carreras,Nintendo,1 a 6
+1496,4,E,Carreras,Nintendo,1 a 6
+1497,4,E,Carreras,Nintendo,1 a 6
+1498,4,E,Carreras,Nintendo,1 a 6
+1499,4,E,Carreras,Nintendo,1 a 6
+1500,4,E,Carreras,Nintendo,1 a 6
+2001,5,T,MMO,Blizzard,1 a 40
+2002,5,T,MMO,Blizzard,1 a 40
+2003,5,T,MMO,Blizzard,1 a 40
+2004,5,T,MMO,Blizzard,1 a 40
+2005,5,T,MMO,Blizzard,1 a 40
+2006,5,T,MMO,Blizzard,1 a 40
+2007,5,T,MMO,Blizzard,1 a 40
+2008,5,T,MMO,Blizzard,1 a 40
+2009,5,T,MMO,Blizzard,1 a 40
+2010,5,T,MMO,Blizzard,1 a 40
+2011,5,T,MMO,Blizzard,1 a 40
+2012,5,T,MMO,Blizzard,1 a 40
+2013,5,T,MMO,Blizzard,1 a 40
+2014,5,T,MMO,Blizzard,1 a 40
+2015,5,T,MMO,Blizzard,1 a 40
+2016,5,T,MMO,Blizzard,1 a 40
+2017,5,T,MMO,Blizzard,1 a 40
+2018,5,T,MMO,Blizzard,1 a 40
+2019,5,T,MMO,Blizzard,1 a 40
+2020,5,T,MMO,Blizzard,1 a 40
+2021,5,T,MMO,Blizzard,1 a 40
+2022,5,T,MMO,Blizzard,1 a 40
+2023,5,T,MMO,Blizzard,1 a 40
+2024,5,T,MMO,Blizzard,1 a 40
+2025,5,T,MMO,Blizzard,1 a 40
+2026,5,T,MMO,Blizzard,1 a 40
+2027,5,T,MMO,Blizzard,1 a 40
+2028,5,T,MMO,Blizzard,1 a 40
+2029,5,T,MMO,Blizzard,1 a 40
+2030,5,T,MMO,Blizzard,1 a 40
+2031,5,T,MMO,Blizzard,1 a 40
+2032,5,T,MMO,Blizzard,1 a 40
+2033,5,T,MMO,Blizzard,1 a 40
+2034,5,T,MMO,Blizzard,1 a 40
+2035,5,T,MMO,Blizzard,1 a 40
+2036,5,T,MMO,Blizzard,1 a 40
+2037,5,T,MMO,Blizzard,1 a 40
+2038,5,T,MMO,Blizzard,1 a 40
+2039,5,T,MMO,Blizzard,1 a 40
+2040,5,T,MMO,Blizzard,1 a 40
+2041,5,T,MMO,Blizzard,1 a 40
+2042,5,T,MMO,Blizzard,1 a 40
+2043,5,T,MMO,Blizzard,1 a 40
+2044,5,T,MMO,Blizzard,1 a 40
+2045,5,T,MMO,Blizzard,1 a 40
+2046,5,T,MMO,Blizzard,1 a 40
+2047,5,T,MMO,Blizzard,1 a 40
+2048,5,T,MMO,Blizzard,1 a 40
+2049,5,T,MMO,Blizzard,1 a 40
+2050,5,T,MMO,Blizzard,1 a 40
+2051,5,T,MMO,Blizzard,1 a 40
+2052,5,T,MMO,Blizzard,1 a 40
+2053,5,T,MMO,Blizzard,1 a 40
+2054,5,T,MMO,Blizzard,1 a 40
+2055,5,T,MMO,Blizzard,1 a 40
+2056,5,T,MMO,Blizzard,1 a 40
+2057,5,T,MMO,Blizzard,1 a 40
+2058,5,T,MMO,Blizzard,1 a 40
+2059,5,T,MMO,Blizzard,1 a 40
+2060,5,T,MMO,Blizzard,1 a 40
+2061,5,T,MMO,Blizzard,1 a 40
+2062,5,T,MMO,Blizzard,1 a 40
+2063,5,T,MMO,Blizzard,1 a 40
+2064,5,T,MMO,Blizzard,1 a 40
+2065,5,T,MMO,Blizzard,1 a 40
+2066,5,T,MMO,Blizzard,1 a 40
+2067,5,T,MMO,Blizzard,1 a 40
+2068,5,T,MMO,Blizzard,1 a 40
+2069,5,T,MMO,Blizzard,1 a 40
+2070,5,T,MMO,Blizzard,1 a 40
+2071,5,T,MMO,Blizzard,1 a 40
+2072,5,T,MMO,Blizzard,1 a 40
+2073,5,T,MMO,Blizzard,1 a 40
+2074,5,T,MMO,Blizzard,1 a 40
+2075,5,T,MMO,Blizzard,1 a 40
+2076,5,T,MMO,Blizzard,1 a 40
+2077,5,T,MMO,Blizzard,1 a 40
+2078,5,T,MMO,Blizzard,1 a 40
+2079,5,T,MMO,Blizzard,1 a 40
+2080,5,T,MMO,Blizzard,1 a 40
+2081,5,T,MMO,Blizzard,1 a 40
+2082,5,T,MMO,Blizzard,1 a 40
+2083,5,T,MMO,Blizzard,1 a 40
+2084,5,T,MMO,Blizzard,1 a 40
+2085,5,T,MMO,Blizzard,1 a 40
+2086,5,T,MMO,Blizzard,1 a 40
+2087,5,T,MMO,Blizzard,1 a 40
+2088,5,T,MMO,Blizzard,1 a 40
+2089,5,T,MMO,Blizzard,1 a 40
+2090,5,T,MMO,Blizzard,1 a 40
+2091,5,T,MMO,Blizzard,1 a 40
+2092,5,T,MMO,Blizzard,1 a 40
+2093,5,T,MMO,Blizzard,1 a 40
+2094,5,T,MMO,Blizzard,1 a 40
+2095,5,T,MMO,Blizzard,1 a 40
+2096,5,T,MMO,Blizzard,1 a 40
+2097,5,T,MMO,Blizzard,1 a 40
+2098,5,T,MMO,Blizzard,1 a 40
+2099,5,T,MMO,Blizzard,1 a 40
+2100,5,M,RPG,Blizzard,1 a 5
+2101,5,M,RPG,Blizzard,1 a 5
+2102,5,M,RPG,Blizzard,1 a 5
+2103,5,M,RPG,Blizzard,1 a 5
+2104,5,M,RPG,Blizzard,1 a 5
+2105,5,M,RPG,Blizzard,1 a 5
+2106,5,M,RPG,Blizzard,1 a 5
+2107,5,M,RPG,Blizzard,1 a 5
+2108,5,M,RPG,Blizzard,1 a 5
+2109,5,M,RPG,Blizzard,1 a 5
+2110,5,M,RPG,Blizzard,1 a 5
+2111,5,M,RPG,Blizzard,1 a 5
+2112,5,M,RPG,Blizzard,1 a 5
+2113,5,M,RPG,Blizzard,1 a 5
+2114,5,M,RPG,Blizzard,1 a 5
+2115,5,M,RPG,Blizzard,1 a 5
+2116,5,M,RPG,Blizzard,1 a 5
+2117,5,M,RPG,Blizzard,1 a 5
+2118,5,M,RPG,Blizzard,1 a 5
+2119,5,M,RPG,Blizzard,1 a 5
+2120,5,M,RPG,Blizzard,1 a 5
+2121,5,M,RPG,Blizzard,1 a 5
+2122,5,M,RPG,Blizzard,1 a 5
+2123,5,M,RPG,Blizzard,1 a 5
+2124,5,M,RPG,Blizzard,1 a 5
+2125,5,M,RPG,Blizzard,1 a 5
+2126,5,M,RPG,Blizzard,1 a 5
+2127,5,M,RPG,Blizzard,1 a 5
+2128,5,M,RPG,Blizzard,1 a 5
+2129,5,M,RPG,Blizzard,1 a 5
+2130,5,M,RPG,Blizzard,1 a 5
+2131,5,M,RPG,Blizzard,1 a 5
+2132,5,M,RPG,Blizzard,1 a 5
+2133,5,M,RPG,Blizzard,1 a 5
+2134,5,M,RPG,Blizzard,1 a 5
+2135,5,M,RPG,Blizzard,1 a 5
+2136,5,M,RPG,Blizzard,1 a 5
+2137,5,M,RPG,Blizzard,1 a 5
+2138,5,M,RPG,Blizzard,1 a 5
+2139,5,M,RPG,Blizzard,1 a 5
+2140,5,M,RPG,Blizzard,1 a 5
+2141,5,M,RPG,Blizzard,1 a 5
+2142,5,M,RPG,Blizzard,1 a 5
+2143,5,M,RPG,Blizzard,1 a 5
+2144,5,M,RPG,Blizzard,1 a 5
+2145,5,M,RPG,Blizzard,1 a 5
+2146,5,M,RPG,Blizzard,1 a 5
+2147,5,M,RPG,Blizzard,1 a 5
+2148,5,M,RPG,Blizzard,1 a 5
+2149,5,M,RPG,Blizzard,1 a 5
+2150,5,M,RPG,Blizzard,1 a 5
+2151,5,M,RPG,Blizzard,1 a 5
+2152,5,M,RPG,Blizzard,1 a 5
+2153,5,M,RPG,Blizzard,1 a 5
+2154,5,M,RPG,Blizzard,1 a 5
+2155,5,M,RPG,Blizzard,1 a 5
+2156,5,M,RPG,Blizzard,1 a 5
+2157,5,M,RPG,Blizzard,1 a 5
+2158,5,M,RPG,Blizzard,1 a 5
+2159,5,M,RPG,Blizzard,1 a 5
+2160,5,M,RPG,Blizzard,1 a 5
+2161,5,M,RPG,Blizzard,1 a 5
+2162,5,M,RPG,Blizzard,1 a 5
+2163,5,M,RPG,Blizzard,1 a 5
+2164,5,M,RPG,Blizzard,1 a 5
+2165,5,M,RPG,Blizzard,1 a 5
+2166,5,M,RPG,Blizzard,1 a 5
+2167,5,M,RPG,Blizzard,1 a 5
+2168,5,M,RPG,Blizzard,1 a 5
+2169,5,M,RPG,Blizzard,1 a 5
+2170,5,M,RPG,Blizzard,1 a 5
+2171,5,M,RPG,Blizzard,1 a 5
+2172,5,M,RPG,Blizzard,1 a 5
+2173,5,M,RPG,Blizzard,1 a 5
+2174,5,M,RPG,Blizzard,1 a 5
+2175,5,M,RPG,Blizzard,1 a 5
+2176,5,M,RPG,Blizzard,1 a 5
+2177,5,M,RPG,Blizzard,1 a 5
+2178,5,M,RPG,Blizzard,1 a 5
+2179,5,M,RPG,Blizzard,1 a 5
+2180,5,M,RPG,Blizzard,1 a 5
+2181,5,M,RPG,Blizzard,1 a 5
+2182,5,M,RPG,Blizzard,1 a 5
+2183,5,M,RPG,Blizzard,1 a 5
+2184,5,M,RPG,Blizzard,1 a 5
+2185,5,M,RPG,Blizzard,1 a 5
+2186,5,M,RPG,Blizzard,1 a 5
+2187,5,M,RPG,Blizzard,1 a 5
+2188,5,M,RPG,Blizzard,1 a 5
+2189,5,M,RPG,Blizzard,1 a 5
+2190,5,M,RPG,Blizzard,1 a 5
+2191,5,M,RPG,Blizzard,1 a 5
+2192,5,M,RPG,Blizzard,1 a 5
+2193,5,M,RPG,Blizzard,1 a 5
+2194,5,M,RPG,Blizzard,1 a 5
+2195,5,M,RPG,Blizzard,1 a 5
+2196,5,M,RPG,Blizzard,1 a 5
+2197,5,M,RPG,Blizzard,1 a 5
+2198,5,M,RPG,Blizzard,1 a 5
+2199,5,M,RPG,Blizzard,1 a 5
+2200,5,T,MOBA,Blizzard,1 a 5
+2201,5,T,MOBA,Blizzard,1 a 5
+2202,5,T,MOBA,Blizzard,1 a 5
+2203,5,T,MOBA,Blizzard,1 a 5
+2204,5,T,MOBA,Blizzard,1 a 5
+2205,5,T,MOBA,Blizzard,1 a 5
+2206,5,T,MOBA,Blizzard,1 a 5
+2207,5,T,MOBA,Blizzard,1 a 5
+2208,5,T,MOBA,Blizzard,1 a 5
+2209,5,T,MOBA,Blizzard,1 a 5
+2210,5,T,MOBA,Blizzard,1 a 5
+2211,5,T,MOBA,Blizzard,1 a 5
+2212,5,T,MOBA,Blizzard,1 a 5
+2213,5,T,MOBA,Blizzard,1 a 5
+2214,5,T,MOBA,Blizzard,1 a 5
+2215,5,T,MOBA,Blizzard,1 a 5
+2216,5,T,MOBA,Blizzard,1 a 5
+2217,5,T,MOBA,Blizzard,1 a 5
+2218,5,T,MOBA,Blizzard,1 a 5
+2219,5,T,MOBA,Blizzard,1 a 5
+2220,5,T,MOBA,Blizzard,1 a 5
+2221,5,T,MOBA,Blizzard,1 a 5
+2222,5,T,MOBA,Blizzard,1 a 5
+2223,5,T,MOBA,Blizzard,1 a 5
+2224,5,T,MOBA,Blizzard,1 a 5
+2225,5,T,MOBA,Blizzard,1 a 5
+2226,5,T,MOBA,Blizzard,1 a 5
+2227,5,T,MOBA,Blizzard,1 a 5
+2228,5,T,MOBA,Blizzard,1 a 5
+2229,5,T,MOBA,Blizzard,1 a 5
+2230,5,T,MOBA,Blizzard,1 a 5
+2231,5,T,MOBA,Blizzard,1 a 5
+2232,5,T,MOBA,Blizzard,1 a 5
+2233,5,T,MOBA,Blizzard,1 a 5
+2234,5,T,MOBA,Blizzard,1 a 5
+2235,5,T,MOBA,Blizzard,1 a 5
+2236,5,T,MOBA,Blizzard,1 a 5
+2237,5,T,MOBA,Blizzard,1 a 5
+2238,5,T,MOBA,Blizzard,1 a 5
+2239,5,T,MOBA,Blizzard,1 a 5
+2240,5,T,MOBA,Blizzard,1 a 5
+2241,5,T,MOBA,Blizzard,1 a 5
+2242,5,T,MOBA,Blizzard,1 a 5
+2243,5,T,MOBA,Blizzard,1 a 5
+2244,5,T,MOBA,Blizzard,1 a 5
+2245,5,T,MOBA,Blizzard,1 a 5
+2246,5,T,MOBA,Blizzard,1 a 5
+2247,5,T,MOBA,Blizzard,1 a 5
+2248,5,T,MOBA,Blizzard,1 a 5
+2249,5,T,MOBA,Blizzard,1 a 5
+2250,5,T,MOBA,Blizzard,1 a 5
+2251,5,T,MOBA,Blizzard,1 a 5
+2252,5,T,MOBA,Blizzard,1 a 5
+2253,5,T,MOBA,Blizzard,1 a 5
+2254,5,T,MOBA,Blizzard,1 a 5
+2255,5,T,MOBA,Blizzard,1 a 5
+2256,5,T,MOBA,Blizzard,1 a 5
+2257,5,T,MOBA,Blizzard,1 a 5
+2258,5,T,MOBA,Blizzard,1 a 5
+2259,5,T,MOBA,Blizzard,1 a 5
+2260,5,T,MOBA,Blizzard,1 a 5
+2261,5,T,MOBA,Blizzard,1 a 5
+2262,5,T,MOBA,Blizzard,1 a 5
+2263,5,T,MOBA,Blizzard,1 a 5
+2264,5,T,MOBA,Blizzard,1 a 5
+2265,5,T,MOBA,Blizzard,1 a 5
+2266,5,T,MOBA,Blizzard,1 a 5
+2267,5,T,MOBA,Blizzard,1 a 5
+2268,5,T,MOBA,Blizzard,1 a 5
+2269,5,T,MOBA,Blizzard,1 a 5
+2270,5,T,MOBA,Blizzard,1 a 5
+2271,5,T,MOBA,Blizzard,1 a 5
+2272,5,T,MOBA,Blizzard,1 a 5
+2273,5,T,MOBA,Blizzard,1 a 5
+2274,5,T,MOBA,Blizzard,1 a 5
+2275,5,T,MOBA,Blizzard,1 a 5
+2276,5,T,MOBA,Blizzard,1 a 5
+2277,5,T,MOBA,Blizzard,1 a 5
+2278,5,T,MOBA,Blizzard,1 a 5
+2279,5,T,MOBA,Blizzard,1 a 5
+2280,5,T,MOBA,Blizzard,1 a 5
+2281,5,T,MOBA,Blizzard,1 a 5
+2282,5,T,MOBA,Blizzard,1 a 5
+2283,5,T,MOBA,Blizzard,1 a 5
+2284,5,T,MOBA,Blizzard,1 a 5
+2285,5,T,MOBA,Blizzard,1 a 5
+2286,5,T,MOBA,Blizzard,1 a 5
+2287,5,T,MOBA,Blizzard,1 a 5
+2288,5,T,MOBA,Blizzard,1 a 5
+2289,5,T,MOBA,Blizzard,1 a 5
+2290,5,T,MOBA,Blizzard,1 a 5
+2291,5,T,MOBA,Blizzard,1 a 5
+2292,5,T,MOBA,Blizzard,1 a 5
+2293,5,T,MOBA,Blizzard,1 a 5
+2294,5,T,MOBA,Blizzard,1 a 5
+2295,5,T,MOBA,Blizzard,1 a 5
+2296,5,T,MOBA,Blizzard,1 a 5
+2297,5,T,MOBA,Blizzard,1 a 5
+2298,5,T,MOBA,Blizzard,1 a 5
+2299,5,T,MOBA,Blizzard,1 a 5
+2300,3,E,Cartas,Blizzard,1 a 2
+2301,3,E,Cartas,Blizzard,1 a 2
+2302,3,E,Cartas,Blizzard,1 a 2
+2303,3,E,Cartas,Blizzard,1 a 2
+2304,3,E,Cartas,Blizzard,1 a 2
+2305,3,E,Cartas,Blizzard,1 a 2
+2306,3,E,Cartas,Blizzard,1 a 2
+2307,3,E,Cartas,Blizzard,1 a 2
+2308,3,E,Cartas,Blizzard,1 a 2
+2309,3,E,Cartas,Blizzard,1 a 2
+2310,3,E,Cartas,Blizzard,1 a 2
+2311,3,E,Cartas,Blizzard,1 a 2
+2312,3,E,Cartas,Blizzard,1 a 2
+2313,3,E,Cartas,Blizzard,1 a 2
+2314,3,E,Cartas,Blizzard,1 a 2
+2315,3,E,Cartas,Blizzard,1 a 2
+2316,3,E,Cartas,Blizzard,1 a 2
+2317,3,E,Cartas,Blizzard,1 a 2
+2318,3,E,Cartas,Blizzard,1 a 2
+2319,3,E,Cartas,Blizzard,1 a 2
+2320,3,E,Cartas,Blizzard,1 a 2
+2321,3,E,Cartas,Blizzard,1 a 2
+2322,3,E,Cartas,Blizzard,1 a 2
+2323,3,E,Cartas,Blizzard,1 a 2
+2324,3,E,Cartas,Blizzard,1 a 2
+2325,3,E,Cartas,Blizzard,1 a 2
+2326,3,E,Cartas,Blizzard,1 a 2
+2327,3,E,Cartas,Blizzard,1 a 2
+2328,3,E,Cartas,Blizzard,1 a 2
+2329,3,E,Cartas,Blizzard,1 a 2
+2330,3,E,Cartas,Blizzard,1 a 2
+2331,3,E,Cartas,Blizzard,1 a 2
+2332,3,E,Cartas,Blizzard,1 a 2
+2333,3,E,Cartas,Blizzard,1 a 2
+2334,3,E,Cartas,Blizzard,1 a 2
+2335,3,E,Cartas,Blizzard,1 a 2
+2336,3,E,Cartas,Blizzard,1 a 2
+2337,3,E,Cartas,Blizzard,1 a 2
+2338,3,E,Cartas,Blizzard,1 a 2
+2339,3,E,Cartas,Blizzard,1 a 2
+2340,3,E,Cartas,Blizzard,1 a 2
+2341,3,E,Cartas,Blizzard,1 a 2
+2342,3,E,Cartas,Blizzard,1 a 2
+2343,3,E,Cartas,Blizzard,1 a 2
+2344,3,E,Cartas,Blizzard,1 a 2
+2345,3,E,Cartas,Blizzard,1 a 2
+2346,3,E,Cartas,Blizzard,1 a 2
+2347,3,E,Cartas,Blizzard,1 a 2
+2348,3,E,Cartas,Blizzard,1 a 2
+2349,3,E,Cartas,Blizzard,1 a 2
+2350,3,E,Cartas,Blizzard,1 a 2
+2351,3,E,Cartas,Blizzard,1 a 2
+2352,3,E,Cartas,Blizzard,1 a 2
+2353,3,E,Cartas,Blizzard,1 a 2
+2354,3,E,Cartas,Blizzard,1 a 2
+2355,3,E,Cartas,Blizzard,1 a 2
+2356,3,E,Cartas,Blizzard,1 a 2
+2357,3,E,Cartas,Blizzard,1 a 2
+2358,3,E,Cartas,Blizzard,1 a 2
+2359,3,E,Cartas,Blizzard,1 a 2
+2360,3,E,Cartas,Blizzard,1 a 2
+2361,3,E,Cartas,Blizzard,1 a 2
+2362,3,E,Cartas,Blizzard,1 a 2
+2363,3,E,Cartas,Blizzard,1 a 2
+2364,3,E,Cartas,Blizzard,1 a 2
+2365,3,E,Cartas,Blizzard,1 a 2
+2366,3,E,Cartas,Blizzard,1 a 2
+2367,3,E,Cartas,Blizzard,1 a 2
+2368,3,E,Cartas,Blizzard,1 a 2
+2369,3,E,Cartas,Blizzard,1 a 2
+2370,3,E,Cartas,Blizzard,1 a 2
+2371,3,E,Cartas,Blizzard,1 a 2
+2372,3,E,Cartas,Blizzard,1 a 2
+2373,3,E,Cartas,Blizzard,1 a 2
+2374,3,E,Cartas,Blizzard,1 a 2
+2375,3,E,Cartas,Blizzard,1 a 2
+2376,3,E,Cartas,Blizzard,1 a 2
+2377,3,E,Cartas,Blizzard,1 a 2
+2378,3,E,Cartas,Blizzard,1 a 2
+2379,3,E,Cartas,Blizzard,1 a 2
+2380,3,E,Cartas,Blizzard,1 a 2
+2381,3,E,Cartas,Blizzard,1 a 2
+2382,3,E,Cartas,Blizzard,1 a 2
+2383,3,E,Cartas,Blizzard,1 a 2
+2384,3,E,Cartas,Blizzard,1 a 2
+2385,3,E,Cartas,Blizzard,1 a 2
+2386,3,E,Cartas,Blizzard,1 a 2
+2387,3,E,Cartas,Blizzard,1 a 2
+2388,3,E,Cartas,Blizzard,1 a 2
+2389,3,E,Cartas,Blizzard,1 a 2
+2390,3,E,Cartas,Blizzard,1 a 2
+2391,3,E,Cartas,Blizzard,1 a 2
+2392,3,E,Cartas,Blizzard,1 a 2
+2393,3,E,Cartas,Blizzard,1 a 2
+2394,3,E,Cartas,Blizzard,1 a 2
+2395,3,E,Cartas,Blizzard,1 a 2
+2396,3,E,Cartas,Blizzard,1 a 2
+2397,3,E,Cartas,Blizzard,1 a 2
+2398,3,E,Cartas,Blizzard,1 a 2
+2399,3,E,Cartas,Blizzard,1 a 2
+2400,3,E,Cartas,Blizzard,1 a 2
+2401,2,T,RTS,Blizzard,1 a 2
+2402,2,T,RTS,Blizzard,1 a 2
+2403,2,T,RTS,Blizzard,1 a 2
+2404,2,T,RTS,Blizzard,1 a 2
+2405,2,T,RTS,Blizzard,1 a 2
+2406,2,T,RTS,Blizzard,1 a 2
+2407,2,T,RTS,Blizzard,1 a 2
+2408,2,T,RTS,Blizzard,1 a 2
+2409,2,T,RTS,Blizzard,1 a 2
+2410,2,T,RTS,Blizzard,1 a 2
+2411,2,T,RTS,Blizzard,1 a 2
+2412,2,T,RTS,Blizzard,1 a 2
+2413,2,T,RTS,Blizzard,1 a 2
+2414,2,T,RTS,Blizzard,1 a 2
+2415,2,T,RTS,Blizzard,1 a 2
+2416,2,T,RTS,Blizzard,1 a 2
+2417,2,T,RTS,Blizzard,1 a 2
+2418,2,T,RTS,Blizzard,1 a 2
+2419,2,T,RTS,Blizzard,1 a 2
+2420,2,T,RTS,Blizzard,1 a 2
+2421,2,T,RTS,Blizzard,1 a 2
+2422,2,T,RTS,Blizzard,1 a 2
+2423,2,T,RTS,Blizzard,1 a 2
+2424,2,T,RTS,Blizzard,1 a 2
+2425,2,T,RTS,Blizzard,1 a 2
+2426,2,T,RTS,Blizzard,1 a 2
+2427,2,T,RTS,Blizzard,1 a 2
+2428,2,T,RTS,Blizzard,1 a 2
+2429,2,T,RTS,Blizzard,1 a 2
+2430,2,T,RTS,Blizzard,1 a 2
+2431,2,T,RTS,Blizzard,1 a 2
+2432,2,T,RTS,Blizzard,1 a 2
+2433,2,T,RTS,Blizzard,1 a 2
+2434,2,T,RTS,Blizzard,1 a 2
+2435,2,T,RTS,Blizzard,1 a 2
+2436,2,T,RTS,Blizzard,1 a 2
+2437,2,T,RTS,Blizzard,1 a 2
+2438,2,T,RTS,Blizzard,1 a 2
+2439,2,T,RTS,Blizzard,1 a 2
+2440,2,T,RTS,Blizzard,1 a 2
+2441,2,T,RTS,Blizzard,1 a 2
+2442,2,T,RTS,Blizzard,1 a 2
+2443,2,T,RTS,Blizzard,1 a 2
+2444,2,T,RTS,Blizzard,1 a 2
+2445,2,T,RTS,Blizzard,1 a 2
+2446,2,T,RTS,Blizzard,1 a 2
+2447,2,T,RTS,Blizzard,1 a 2
+2448,2,T,RTS,Blizzard,1 a 2
+2449,2,T,RTS,Blizzard,1 a 2
+2450,2,T,RTS,Blizzard,1 a 2
+2451,2,T,RTS,Blizzard,1 a 2
+2452,2,T,RTS,Blizzard,1 a 2
+2453,2,T,RTS,Blizzard,1 a 2
+2454,2,T,RTS,Blizzard,1 a 2
+2455,2,T,RTS,Blizzard,1 a 2
+2456,2,T,RTS,Blizzard,1 a 2
+2457,2,T,RTS,Blizzard,1 a 2
+2458,2,T,RTS,Blizzard,1 a 2
+2459,2,T,RTS,Blizzard,1 a 2
+2460,2,T,RTS,Blizzard,1 a 2
+2461,2,T,RTS,Blizzard,1 a 2
+2462,2,T,RTS,Blizzard,1 a 2
+2463,2,T,RTS,Blizzard,1 a 2
+2464,2,T,RTS,Blizzard,1 a 2
+2465,2,T,RTS,Blizzard,1 a 2
+2466,2,T,RTS,Blizzard,1 a 2
+2467,2,T,RTS,Blizzard,1 a 2
+2468,2,T,RTS,Blizzard,1 a 2
+2469,2,T,RTS,Blizzard,1 a 2
+2470,2,T,RTS,Blizzard,1 a 2
+2471,2,T,RTS,Blizzard,1 a 2
+2472,2,T,RTS,Blizzard,1 a 2
+2473,2,T,RTS,Blizzard,1 a 2
+2474,2,T,RTS,Blizzard,1 a 2
+2475,2,T,RTS,Blizzard,1 a 2
+2476,2,T,RTS,Blizzard,1 a 2
+2477,2,T,RTS,Blizzard,1 a 2
+2478,2,T,RTS,Blizzard,1 a 2
+2479,2,T,RTS,Blizzard,1 a 2
+2480,2,T,RTS,Blizzard,1 a 2
+2481,2,T,RTS,Blizzard,1 a 2
+2482,2,T,RTS,Blizzard,1 a 2
+2483,2,T,RTS,Blizzard,1 a 2
+2484,2,T,RTS,Blizzard,1 a 2
+2485,2,T,RTS,Blizzard,1 a 2
+2486,2,T,RTS,Blizzard,1 a 2
+2487,2,T,RTS,Blizzard,1 a 2
+2488,2,T,RTS,Blizzard,1 a 2
+2489,2,T,RTS,Blizzard,1 a 2
+2490,2,T,RTS,Blizzard,1 a 2
+2491,2,T,RTS,Blizzard,1 a 2
+2492,2,T,RTS,Blizzard,1 a 2
+2493,2,T,RTS,Blizzard,1 a 2
+2494,2,T,RTS,Blizzard,1 a 2
+2495,2,T,RTS,Blizzard,1 a 2
+2496,2,T,RTS,Blizzard,1 a 2
+2497,2,T,RTS,Blizzard,1 a 2
+2498,2,T,RTS,Blizzard,1 a 2
+2499,2,T,RTS,Blizzard,1 a 2
+2500,2,T,RTS,Blizzard,1 a 2
