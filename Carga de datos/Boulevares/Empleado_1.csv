@@ -1,21 +1,8 @@
-IDSucursal,Nombre,Apellidos,Direccion,Telefono,Email,FechaRegistro,Puesto,Salario
-1,Alastair,Eminson,3 Dexter Court,923-796-9227,aeminson0@bigcartel.com,01/12/12,Engineering,44.97
-1,Ev,Devenport,758 Stone Corner Parkway,355-264-4618,edevenport1@vimeo.com,02/03/17,Services,87.81
-1,Olympie,Sunter,6 Dakota Center,754-436-8876,osunter2@php.net,01/12/11,Legal,18.78
-1,Keriann,Corder,5432 Reindahl Avenue,530-626-1567,kcorder3@eepurl.com,02/03/10,Marketing,80.41
-1,Livvy,Plane,83 Magdeline Park,633-193-4746,lplane4@slashdot.org,02/03/17,Support,58.34
-1,Delila,Dalziell,67859 Duke Parkway,914-805-7847,ddalziell5@disqus.com,01/12/15,Business Development,84.39
-1,Michal,Tidmas,4 Roth Way,409-662-0301,mtidmas6@barnesandnoble.com,01/12/13,Human Resources,60.05
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
+idEmpleado,IDSucursal,Nombre,Apellidos,Direccion,Telefono,Email,FechaRegistro,Puesto,Salario
+1,1,Alastair,Eminson,3 Dexter Court,923-796-9227,aeminson0@bigcartel.com,01/12/17,Engineering,44.97
+2,1,Ev,Devenport,758 Stone Corner Parkway,355-264-4618,edevenport1@vimeo.com,02/03/17,Services,87.81
+3,1,Olympie,Sunter,6 Dakota Center,754-436-8876,osunter2@php.net,01/12/17,Legal,18.78
+4,1,Keriann,Corder,5432 Reindahl Avenue,530-626-1567,kcorder3@eepurl.com,02/03/17,Marketing,80.41
+5,1,Livvy,Plane,83 Magdeline Park,633-193-4746,lplane4@slashdot.org,02/03/17,Support,58.34
+6,1,Delila,Dalziell,67859 Duke Parkway,914-805-7847,ddalziell5@disqus.com,01/12/17,Business Development,84.39
+7,1,Michal,Tidmas,4 Roth Way,409-662-0301,mtidmas6@barnesandnoble.com,01/12/17,Human Resources,60.05

@@ -1,8 +1,8 @@
 idempleado,IDSucursal,Nombre,Apellidos,Direccion,Telefono,Email,FechaRegistro,Puesto,Salario
-8,2,Melvin,O'Callaghan,43512 Grover Drive,621-487-9308,mocallaghan7@java.com,01/12/18,Human Resources,70.11
-9,2,Addie,Coxon,93903 Steensland Circle,919-116-5308,acoxon8@mit.edu,01/12/12,Accounting,69.97
+8,2,Melvin,O'Callaghan,43512 Grover Drive,621-487-9308,mocallaghan7@java.com,01/12/17,Human Resources,70.11
+9,2,Addie,Coxon,93903 Steensland Circle,919-116-5308,acoxon8@mit.edu,01/12/17,Accounting,69.97
 10,2,Tabor,Marshal,78781 Armistice Pass,237-739-0694,tmarshal9@nature.com,02/03/17,Accounting,20.55
 11,2,Lorianna,Kneesha,2875 Trailsway Place,269-876-7162,lkneeshaa@yahoo.co.jp,01/12/17,Support,70.13
-12,2,Lolita,Youngman,24 Merchant Point,538-327-9379,lyoungmanb@mlb.com,02/03/08,Services,74.81
-13,2,Caria,Heino,6 Donald Plaza,503-543-2143,cheinoc@newyorker.com,02/03/01,Sales,61.92
-14,2,Hardy,Ornelas,3 Loomis Trail,105-463-8108,hornelasd@vk.com,01/12/92,Legal,84.23
+12,2,Lolita,Youngman,24 Merchant Point,538-327-9379,lyoungmanb@mlb.com,02/03/17,Services,74.81
+13,2,Caria,Heino,6 Donald Plaza,503-543-2143,cheinoc@newyorker.com,02/03/17,Sales,61.92
+14,2,Hardy,Ornelas,3 Loomis Trail,105-463-8108,hornelasd@vk.com,01/12/17,Legal,84.23
